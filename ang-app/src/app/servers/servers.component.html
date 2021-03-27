@@ -24,8 +24,10 @@ In <button>-tag:
    Add server
 </button>
 
+<!--<p [innerText]="allowNewServer"></p> &lt;!&ndash; [innerText] is a DOM-property for <p>&ndash;&gt;-->
+<!--<p>{{serverCreationStatus}}</p>-->
+<p *ngIf="serverCreated">{{serverCreationStatus}}</p>
 
-<p [innerText]="allowNewServer"></p> <!-- [innerText] is a DOM-property for <p>-->
-<p>{{serverCreationStatus}}</p>
+
 <app-server></app-server>
 <app-server></app-server>
