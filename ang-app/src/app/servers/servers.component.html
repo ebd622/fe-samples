@@ -1,20 +1,28 @@
-<label>Server Name</label>
+<label>Server Name (Event Binding)</label>
 <input
   type="text"
   class="form-control"
-  (input)="onUpdateServerName($event)">
+  (input)="onUpdateServerName($event)"> <!--(input) is an event of input-tag -->
+
+<label>Server Name (Two-way data bindig)</label>
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)] = "serverName"> <!--[(ngModel)] is a directive from FormsModule-->
+
 <p>{{serverName}}</p>
+
+<!--
+In <button>-tag:
+[disabled] is a DOM-property for <button>
+(click) is a button-event
+-->
 <button
   class="btn btn-primary"
   [disabled]="!allowNewServer"
   (click)="onCreateServer()">
    Add server
 </button>
-<!--
-In <button>-tag:
-[disabled] is a DOM-property for <button>
-(click) is a button-event
--->
 
 
 <p [innerText]="allowNewServer"></p> <!-- [innerText] is a DOM-property for <p>-->
