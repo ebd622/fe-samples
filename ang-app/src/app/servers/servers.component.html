@@ -1,6 +1,17 @@
 <button
   class="btn btn-primary"
-  [disabled]="!allowNewServer">Add server</button> <!-- [disabled] is a DOM-property for <button>-->
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()">
+   Add server
+</button>
+<!--
+In <button>-tag:
+[disabled] is a DOM-property for <button>
+(click) is a button-event
+-->
+
+
 <p [innerText]="allowNewServer"></p> <!-- [innerText] is a DOM-property for <p>-->
+<p>{{serverCreationStatus}}</p>
 <app-server></app-server>
 <app-server></app-server>
