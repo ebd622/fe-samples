@@ -28,4 +28,12 @@ In <button>-tag:
 <!--<p>{{serverCreationStatus}}</p>-->
 <p *ngIf="serverCreated">Server was created, name: {{serverCreationStatus}}</p>
 
-<app-server *ngFor="let oneServer of servers"></app-server>
+<!--<app-server *ngFor="let oneServer of servers"></app-server>-->
+
+<ul>
+  <li *ngFor="let oneServer of servers; let i = index">
+    <app-server
+      [index] = "i"
+      [serverName]="oneServer"></app-server>
+  </li>
+</ul>
