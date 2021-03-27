@@ -26,7 +26,10 @@ In <button>-tag:
 
 <!--<p [innerText]="allowNewServer"></p> &lt;!&ndash; [innerText] is a DOM-property for <p>&ndash;&gt;-->
 <!--<p>{{serverCreationStatus}}</p>-->
-<p *ngIf="serverCreated">{{serverCreationStatus}}</p>
+<p *ngIf="serverCreated; else noServer">Server was created, name: {{serverCreationStatus}}</p>
+<ng-template #noServer>
+  <p>No server was created!</p>
+</ng-template>
 
 
 <app-server></app-server>
