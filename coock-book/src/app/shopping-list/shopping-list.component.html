@@ -4,7 +4,12 @@
     <hr>
     <p>(list component)</p>
     <ul class="list-group">
-      <a class="list-group-item" style="cursor: pointer"></a>
+      <a class="list-group-item"
+         style="cursor: pointer"
+         *ngFor="let ingr of ingredients"
+      >
+        {{ingr.name}} ({{ingr.amount}})
+      </a>
     </ul>
   </div>
 </div>
