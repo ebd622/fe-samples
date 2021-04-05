@@ -10,7 +10,12 @@
       <!-- [srvElement]="..." is a custom property binding ("srvElement" is an alias of a custom property)-->
       <app-server-element
         *ngFor="let oneServeElement of serverElements"
-        [srvElement]="oneServeElement"></app-server-element>
+        [srvElement]="oneServeElement">
+        <p>
+          <strong *ngIf="oneServeElement.type === 'server'" style="color: red">{{ oneServeElement.content }}</strong>
+          <em *ngIf="oneServeElement.type === 'blueprint'">{{ oneServeElement.content }}</em>
+        </p>
+      </app-server-element>
     </div>
   </div>
 </div>
