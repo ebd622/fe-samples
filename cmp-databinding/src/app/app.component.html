@@ -1,5 +1,9 @@
 <div class="container">
-  <app-cookpit></app-cookpit>
+  <!--Custom event-binding: serverCreated and blueprintCreated are custom events-->
+  <app-cookpit
+    (serverCreated)="onServerAdded($event)"
+    (blueprintCreated)="onBlueprintAdded($event)">
+  </app-cookpit>
   <hr>
   <div class="row">
     <div class="col-xs-12">
