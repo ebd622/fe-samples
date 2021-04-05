@@ -3,10 +3,10 @@
   <hr>
   <div class="row">
     <div class="col-xs-12">
-      <!-- [element]="..." is a custom property binding ("element" is a custom property)-->
+      <!-- [srvElement]="..." is a custom property binding ("srvElement" is an alias of a custom property)-->
       <app-server-element
         *ngFor="let oneServeElement of serverElements"
-        [element]="oneServeElement"></app-server-element>
+        [srvElement]="oneServeElement"></app-server-element>
     </div>
   </div>
 </div>
