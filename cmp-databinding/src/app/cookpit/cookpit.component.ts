@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, ElementRef, EventEmitter, OnInit, Output, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-cookpit',
@@ -9,9 +9,9 @@ export class CookpitComponent implements OnInit {
   /*Event properties*/
   @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
   @Output('bpCreated') blueprintCreated = new EventEmitter<{serverName: string, serverContent: string}>();
-
   newServerName = '';
-  newServerContent = '';
+  /*newServerContent = ''; */
+  @ViewChild('serverContentInput', {static: true}) serverContentInp: ElementRef;
 
   constructor() { }
 
@@ -20,14 +20,14 @@ export class CookpitComponent implements OnInit {
   onAddServer(nameInput: HTMLInputElement) {
     this.serverCreated.emit({
       serverName: nameInput.value,
-      serverContent: this.newServerContent
+      serverContent: this.serverContentInp.nativeElement.value
     });
   }
 
   onAddBlueprint() {
     this.blueprintCreated.emit({
       serverName: this.newServerName,
-      serverContent: this.newServerContent
+      serverContent: this.serverContentInp.nativeElement.value
     });
   }
 
