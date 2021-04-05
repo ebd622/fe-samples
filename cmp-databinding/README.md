@@ -1,4 +1,6 @@
-# MyFirstApp
+# cmp-databinding
+
+This is an example of how components can communicate to each other using custom property binding and event binding.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
