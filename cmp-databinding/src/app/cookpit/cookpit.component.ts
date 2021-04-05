@@ -17,9 +17,9 @@ export class CookpitComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  onAddServer() {
+  onAddServer(nameInput: HTMLInputElement) {
     this.serverCreated.emit({
-      serverName: this.newServerName,
+      serverName: nameInput.value,
       serverContent: this.newServerContent
     });
   }
