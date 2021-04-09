@@ -3,11 +3,17 @@
 <div class="row">
   <!--1. A column for recepie-list-->
   <div class="col-md-5">
-    <app-recipes-list></app-recipes-list>
+    <app-recipes-list
+      (recipeWasSelected)= "selectedRecipe = $event"></app-recipes-list>
   </div>
   <!--2. A column for recepie-list-->
   <div class="col-md-7">
-    <app-recipes-detail></app-recipes-detail>
+    <app-recipes-detail
+      *ngIf="selectedRecipe; else infoText"
+      [rcpDetails]="selectedRecipe"></app-recipes-detail>
+    <ng-template #infoText>
+      <p>Please select a recipe</p>
+    </ng-template>
   </div>
 </div>
 </div>

@@ -10,7 +10,8 @@
   <div class="col-xs-12">
     <app-recipe-item
       *ngFor="let oneRcp of recepies"
-      [recipe]="oneRcp"></app-recipe-item>
+      [recipe]="oneRcp"
+      (recipeSelected)="onRecipeSelected(oneRcp)" ></app-recipe-item>
   </div>
 </div>
 </div>
