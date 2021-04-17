@@ -6,7 +6,7 @@ import {AccountService} from '../account.service';
   selector: 'app-new-account',
   templateUrl: './new-account.component.html',
   styleUrls: ['./new-account.component.css'],
-  providers: [LoggingService, AccountService] /*Inform Angular how to crete a service*/
+  providers: [LoggingService] /*Inform Angular how to crete a service*/
 })
 export class NewAccountComponent {
 
