@@ -1,21 +1,23 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import {LoggingService} from '../logging.service';
+import {AccountService} from '../account.service';
 
 @Component({
   selector: 'app-account',
   templateUrl: './account.component.html',
   styleUrls: ['./account.component.css'],
-  providers: [LoggingService] /*Inform Angular how to crete a service*/
+  providers: [LoggingService,AccountService] /*Inform Angular how to crete a service*/
 })
 export class AccountComponent {
   @Input() account: {name: string, status: string};
   @Input() id: number;
-  @Output() statusChanged = new EventEmitter<{id: number, newStatus: string}>();
 
-  constructor(private logginService: LoggingService){} /*Create a service "logginService": dependency injection */
+  constructor(private logginService: LoggingService,
+              private accountService: AccountService){} /*Create a service "logginService": dependency injection */
 
   onSetTo(status: string) {
-    this.statusChanged.emit({id: this.id, newStatus: status});
+    this.accountService.updateAccount(this.id, status);
+
     this.logginService.logStatusChange(status);
   }
 }
