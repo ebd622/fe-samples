@@ -1,5 +1,5 @@
 import {LoggingService} from './logging.service';
-import {Injectable} from '@angular/core';
+import {EventEmitter, Injectable} from '@angular/core';
 
 @Injectable() /*It means that something will be injected into the service (in our case "LogginService")*/
 export class AccountService {
@@ -17,6 +17,9 @@ export class AccountService {
       status: 'unknown'
     }
   ];
+
+  //Add an event to enable 'cross-component communication'
+  statusUpdated = new EventEmitter<string>();
 
   constructor(private logginService: LoggingService){}
 

@@ -17,7 +17,7 @@ export class AccountComponent {
 
   onSetTo(status: string) {
     this.accountService.updateAccount(this.id, status);
-
     //this.logginService.logStatusChange(status);
+    this.accountService.statusUpdated.emit(status); //The emmited event will be catched in "new-account.component"
   }
 }
