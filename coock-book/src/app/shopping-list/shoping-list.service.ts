@@ -17,4 +17,9 @@ export class ShopingListService {
     this.ingredients.push(ingr);
     this.ingredientAdded.emit(this.ingredients.slice());
   }
+
+  addIngredients(ingrs: Ingredient []){
+    this.ingredients.push(...ingrs); // "..." is a spread operator
+    this.ingredientAdded.emit(this.ingredients.slice());
+  }
 }
