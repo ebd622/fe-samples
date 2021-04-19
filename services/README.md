@@ -1,6 +1,6 @@
 # Services
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+This is a demo of how to design and use services
 
 ## Development server
 
