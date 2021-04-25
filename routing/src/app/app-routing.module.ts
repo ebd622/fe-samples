@@ -7,13 +7,14 @@ import {EditServerComponent} from './servers/edit-server/edit-server.component';
 import {RouterModule, Routes} from '@angular/router';
 import {UserComponent} from './users/user/user.component';
 import {HomeComponent} from './home/home.component';
+import {AuthGuard} from './auth-guard.service';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'users', component: UsersComponent, children: [
       {path: ':id/:name', component: UserComponent}
     ]},
-  {path: 'servers', component: ServersComponent, children: [
+  {path: 'servers', canActivate: [AuthGuard], component: ServersComponent, children: [
       {path: ':id', component: ServerComponent},
       {path: ':id/edit', component: EditServerComponent}
     ]},
