@@ -1,4 +1,4 @@
-# Services
+# Section 9: Using Services & Dependency Injection
 
 This is a demo of how to design and use services
 
