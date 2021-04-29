@@ -1,4 +1,4 @@
-# cmp-databinding
+# Components & Databinding: deep dive
 
 This is an example of how components can communicate to each other using custom property binding and event binding.
 
