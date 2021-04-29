@@ -7,7 +7,9 @@ This is an example of how components can communicate to each other using custom 
 * L65: Splitting Apps into components
 * L66: Property & Event binding
 * L67: Binding to custom properties
-
+* L68: Assigning an alias to custom properties
+* L69: Binding to custom events
+* L70: Assigning an alias to custom events
 
 ## Code scaffolding
 
