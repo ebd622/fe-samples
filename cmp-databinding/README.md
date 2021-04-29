@@ -2,11 +2,12 @@
 
 This is an example of how components can communicate to each other using custom property binding and event binding.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+## Key points
 
-## Development server
+* L65: Splitting Apps into components
+* L66: Property & Event binding
+* L67: Binding to custom properties
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
