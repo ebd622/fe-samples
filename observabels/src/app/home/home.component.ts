@@ -1,5 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {interval, Observable, Subscription} from 'rxjs';
+import {filter, map} from 'rxjs/internal/operators';
 
 @Component({
   selector: 'app-home',
@@ -33,7 +34,17 @@ export class HomeComponent implements OnInit, OnDestroy {
           count++;
         }, 1000);
       });
-      this.firstObsSubscriprion = customIntervalObservable.subscribe(data => {
+
+      // Use operators (filters and map) to process data
+      const observableWithOperator = customIntervalObservable.pipe(
+          filter((data: number) => {
+            return data > 0;
+      }),
+          map((data: number) => {
+        return 'Round ' + (data + 1);
+      }));
+
+      this.firstObsSubscriprion = observableWithOperator.subscribe(data => {
         console.log(data);
       }, error => {
         // Error handler: This is a plase where you can process an error: send something to back-end and so on
