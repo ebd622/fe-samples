@@ -7,10 +7,15 @@ This is an example on how to use Observabels
 * Operators
 * Subjects
 
+<img src="../img/Observable.png" width="80%">
+
+<img src="../img/Observable_2.png" width="80%">
+
+<img src="../img/operators.png" width="80%">
 
 
 ## Resourcse
 * https://rxjs-dev.firebaseapp.com/
 
 
-<img src="../img/Observable.png" width="80%">
+
