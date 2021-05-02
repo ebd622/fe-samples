@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'filter'
+  name: 'filter',
+  pure: false // Be careful with this prop, it can cause a performance issue! It means a pipe will be always recalculated when data is changed (see L248).
 })
 export class FilterPipe implements PipeTransform {
 
