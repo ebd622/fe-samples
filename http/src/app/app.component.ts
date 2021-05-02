@@ -15,7 +15,12 @@ export class AppComponent implements OnInit {
 
   onCreatePost(postData: { title: string; content: string }) {
     // Send Http request
-    console.log(postData);
+    //console.log(postData);
+    this.http.post(
+      'https://...',
+      postData).subscribe(resposeData => {
+        console.log(resposeData);
+    });
   }
 
   onFetchPosts() {
