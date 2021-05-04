@@ -9,7 +9,7 @@ This is an example on how to use Observabels
 
 ## Observable and Observer
 
-**Observable** is a data source (click Button, http-request and so on), it emits data. </br>
+**Observable** is a data source (for instance, button click, http-request and so on). It emits data. </br>
 **Observer** it is a subscribe function, it is your code which will be executed at a particular moment. 
 
 <img src="../img/Observable.png" width="80%">
