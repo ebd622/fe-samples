@@ -43,7 +43,8 @@ There are tons of built-in operators.
 TODO
 
 ## Resourcse
-* https://rxjs-dev.firebaseapp.com/
+* RxJS: https://rxjs-dev.firebaseapp.com/
+* Observables in Angular: https://angular.io/guide/observables-in-angular
 
 
 
