@@ -19,8 +19,9 @@ Observable might emit data like:
 * error;
 * it may get completed (for example, http-request: it is completed when it gets a response);
 
-
 <img src="../img/Observable_2.png" width="60%">
+
+With an **observer** we handle async-tasks because all these data sources are *user events*, we don't know when they will happen. 
 
 ## Operators
 TODO
