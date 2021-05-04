@@ -24,8 +24,13 @@ Observable might emit data like:
 With an **observer** we handle async-tasks because all these data sources are *user events*, we don't know when they will happen and how long they will take. 
 
 ## Operators
-TODO
+**Operators** are the future of RxJS library, they turn Observable into awesome constructs. 
+
 <img src="../img/operators.png" width="80%">
+
+Operators are used between Observable and Subscription to process data (transform them, filter out and so on). In this way you subscribe to the *result of the operator*. 
+
+There are tons of built-in operators.
 
 ## Subjects
 TODO
