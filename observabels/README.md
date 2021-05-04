@@ -20,7 +20,7 @@ Observable might emit data like:
 * it may get completed (for example, http-request: it is completed when it gets a response);
 
 
-<img src="../img/Observable_2.png" width="80%">
+<img src="../img/Observable_2.png" width="60%">
 
 ## Operators
 TODO
