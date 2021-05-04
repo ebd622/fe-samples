@@ -1,6 +1,11 @@
 # Observables
 
-This is an example on how to use Observabels
+Angular makes use of observables as an interface to handle a variety of common asynchronous operations. </br>
+For example:
+
+* Transmitting data between components;
+* The HTTP module uses observables to handle AJAX requests and responses.
+* The Router and Forms modules use observables to listen for and respond to user-input events.
 
 ## Key Points
 * Observable and Observer
