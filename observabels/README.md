@@ -1,6 +1,6 @@
 # Observables
 
-**Observable** in Angular is an object impoeted from third-paerty library RxJS. It follows the *observable design pattern*.
+**Observable** in Angular is an object imported from third-party library RxJS. It follows the *observable design pattern*.
 
 Angular makes use of observables as an interface to handle a variety of common asynchronous operations. </br>
 For example:
