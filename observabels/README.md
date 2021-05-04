@@ -15,7 +15,7 @@ This is an example on how to use Observabels
 <img src="../img/Observable.png" width="80%">
 
 Observable might emit data like:
-* couple of normal data packages (for example, click a button);
+* normal data packages which will never complete (for example, click a button: we never know how many time a user may click a button);
 * error;
 * it may get completed (for example, http-request)
 
