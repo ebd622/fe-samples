@@ -40,7 +40,9 @@ Operators are used between Observable and Subscription to process data (transfor
 There are tons of built-in operators.
 
 ## Subjects
-TODO
+Subject is a special kind of Observable, it is provided by RxJS.  
+
+Subject is similar to EventEmitter (provided be Angular) but Subject is recommended way. At the end using Subject is more efficient than EventEmitter.
 
 ## Resourcse
 * RxJS: https://rxjs-dev.firebaseapp.com/
