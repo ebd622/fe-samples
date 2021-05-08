@@ -48,9 +48,9 @@ export class AppComponent implements OnInit {
         map(responseData => {
           const postArray = [];
           for (const key in responseData) {
-            //console.log(key);
+            // console.log(responseData[key]._id.$oid);
             if (responseData.hasOwnProperty(key)){
-              postArray.push({...responseData[key], id: key});
+              postArray.push({...responseData[key], id: responseData[key]._id.$oid});
             }
           }
           return postArray;
