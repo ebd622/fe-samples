@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {map} from 'rxjs/internal/operators';
+import {Post} from './post.model';
 
 @Component({
   selector: 'app-root',
@@ -24,8 +25,8 @@ export class AppComponent implements OnInit {
 
   onCreatePost(postData: { title: string; content: string }) {
     // Send Http request
-    //console.log(postData);
-    this.http.post(
+    // console.log(postData);
+    this.http.post<Post>(
       'http://localhost:8080/collection1',
       postData, this.httpOptions).subscribe(resposeData => {
         console.log(resposeData);
@@ -43,14 +44,15 @@ export class AppComponent implements OnInit {
 
   private fetchPosts(){
     this.http
-      .get('http://localhost:8080/collection1', this.httpOptions)
+      .get<Post>('http://localhost:8080/collection1', this.httpOptions)
       .pipe(
         map(responseData => {
-          const postArray = [];
+          const postArray: Post[] = [];
           for (const key in responseData) {
-            // console.log(responseData[key]._id.$oid);
+            console.log(responseData[key]);
             if (responseData.hasOwnProperty(key)){
-              postArray.push({...responseData[key], id: responseData[key]._id.$oid});
+              //postArray.push({...responseData[key], id: responseData[key]._id.$oid});
+              postArray.push({title: responseData[key].title, content: responseData[key].content, id: responseData[key]._id.$oid});
             }
           }
           return postArray;
