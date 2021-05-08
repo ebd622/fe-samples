@@ -10,6 +10,8 @@ import {Post} from './post.model';
 })
 export class AppComponent implements OnInit {
   loadedPosts: Post[] = [];
+  isFatching = false;
+
   private httpOptions = {
     headers: new HttpHeaders({
       'Content-Type':  'application/json',
@@ -43,6 +45,7 @@ export class AppComponent implements OnInit {
   }
 
   private fetchPosts(){
+    this.isFatching = true;
     this.http
       .get<Post>('http://localhost:8080/collection1', this.httpOptions)
       .pipe(
@@ -59,8 +62,9 @@ export class AppComponent implements OnInit {
         })
       )
       .subscribe(posts => {
+        // console.log(posts);
+        this.isFatching = false;
         this.loadedPosts = posts;
-        //console.log(posts);
       });
   }
 }
