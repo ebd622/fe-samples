@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {map} from 'rxjs/internal/operators';
 import {Post} from './post.model';
+import {PostsService} from './posts.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import {Post} from './post.model';
 })
 export class AppComponent implements OnInit {
   loadedPosts: Post[] = [];
-  isFatching = false;
+  //isFatching = false;
 
   private httpOptions = {
     headers: new HttpHeaders({
@@ -19,20 +20,16 @@ export class AppComponent implements OnInit {
     })
   };
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private postService: PostsService) {}
 
   ngOnInit() {
-    this.fetchPosts();
+    this.postService.fetchPosts();
   }
 
   onCreatePost(postData: { title: string; content: string }) {
     // Send Http request
     // console.log(postData);
-    this.http.post<Post>(
-      'http://localhost:8080/collection1',
-      postData, this.httpOptions).subscribe(resposeData => {
-        console.log(resposeData);
-    });
+    this.postService.createAndStorePost(postData);
   }
 
   onFetchPosts() {
@@ -45,26 +42,7 @@ export class AppComponent implements OnInit {
   }
 
   private fetchPosts(){
-    this.isFatching = true;
-    this.http
-      .get<Post>('http://localhost:8080/collection1', this.httpOptions)
-      .pipe(
-        map(responseData => {
-          const postArray: Post[] = [];
-          for (const key in responseData) {
-            console.log(responseData[key]);
-            if (responseData.hasOwnProperty(key)){
-              //postArray.push({...responseData[key], id: responseData[key]._id.$oid});
-              postArray.push({title: responseData[key].title, content: responseData[key].content, id: responseData[key]._id.$oid});
-            }
-          }
-          return postArray;
-        })
-      )
-      .subscribe(posts => {
-        // console.log(posts);
-        this.isFatching = false;
-        this.loadedPosts = posts;
-      });
+    //this.isFatching = true;
+    this.postService.fetchPosts();
   }
 }
