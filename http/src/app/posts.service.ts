@@ -12,14 +12,14 @@ export class PostsService {
 
     this.http.post<Post>(
       'http://localhost:8080/collection1',
-      postData, this.authService.httpOptions).subscribe(resposeData => {
+      postData, this.authService.getAuthHeaders()).subscribe(resposeData => {
       console.log(resposeData);
     });
 
   }
   fetchPosts(){
-    this.http
-      .get<Post>('http://localhost:8080/collection1', this.authService.httpOptions)
+    return this.http
+      .get<Post>('http://localhost:8080/collection1', this.authService.getAuthHeaders())
       .pipe(
         map(responseData => {
           const postArray: Post[] = [];
@@ -32,13 +32,6 @@ export class PostsService {
           }
           return postArray;
         })
-      )
-      .subscribe(posts => {
-        // console.log(posts);
-        //this.isFatching = false;
-        //this.loadedPosts = posts;
-      });
-
+      );
   }
-
 }

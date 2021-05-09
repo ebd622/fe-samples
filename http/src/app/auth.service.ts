@@ -3,7 +3,7 @@ import {Injectable} from '@angular/core';
 
 @Injectable({providedIn: 'root'})
 export class AuthService {
-  httpOptions = {
+  private httpOptions = {
     headers: new HttpHeaders({
       'Content-Type':  'application/json',
       'Authorization': 'Basic ' + btoa('admin:secret')

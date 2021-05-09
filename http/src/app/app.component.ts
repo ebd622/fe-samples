@@ -11,19 +11,12 @@ import {PostsService} from './posts.service';
 })
 export class AppComponent implements OnInit {
   loadedPosts: Post[] = [];
-  //isFatching = false;
-
-  private httpOptions = {
-    headers: new HttpHeaders({
-      'Content-Type':  'application/json',
-      'Authorization': 'Basic ' + btoa('admin:secret')
-    })
-  };
+  isFatching = false;
 
   constructor(private http: HttpClient, private postService: PostsService) {}
 
   ngOnInit() {
-    this.postService.fetchPosts();
+    this.fetchPosts();
   }
 
   onCreatePost(postData: { title: string; content: string }) {
@@ -42,7 +35,10 @@ export class AppComponent implements OnInit {
   }
 
   private fetchPosts(){
-    //this.isFatching = true;
-    this.postService.fetchPosts();
+    this.isFatching = true;
+    this.postService.fetchPosts().subscribe(posts => {
+      this.isFatching = false;
+      this.loadedPosts = posts;
+    });
   }
 }
