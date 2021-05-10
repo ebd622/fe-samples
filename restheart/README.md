@@ -2,9 +2,25 @@
 
 RESTHeart is used as a back-end service in all examples.
 
-## Development server
+## Quick start with RESTHeart
+The easiest and quickest way is to deploy and run RestHeart with Docker
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### 1. Download yaml
+```
+$ mkdir restheart && cd restheart
+$ curl https://raw.githubusercontent.com/SoftInstigate/restheart/master/docker-compose.yml --output docker-compose.yml
+```
+
+#### 2. Start services
+```
+$ docker-compose up -d
+```
+
+Use the following credentials to login:
+```
+username: admin
+password: secret
+```
 
 ## Resources
 
