@@ -29,6 +29,12 @@ password: secret
 curl -u admin:secret http://localhost:8080
 ```
 
+#### 4. Stop services
+```
+$ docker-compose stop
+```
+
+
 ## Resources
 
 * How to run RESTHeart with Docker: https://restheart.org/docs/v3/docker/
