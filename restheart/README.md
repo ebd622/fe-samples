@@ -24,10 +24,17 @@ password: secret
 
 #### 3. Usage
 
-#### 3.1 Get all existing collections
+##### 3.1 Get all existing collections
 ```
 curl -u admin:secret http://localhost:8080
 ```
+
+##### 3.1 Get all documents from a particular collection
+```
+curl -u admin:secret http://localhost:8080/collection1
+```
+
+
 
 #### 4. Stop services
 ```
