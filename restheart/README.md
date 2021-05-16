@@ -22,6 +22,13 @@ username: admin
 password: secret
 ```
 
+#### 3. Usage
+
+#### 3.1 Get all existing collections
+```
+curl -u admin:secret http://localhost:8080
+```
+
 ## Resources
 
 * How to run RESTHeart with Docker: https://restheart.org/docs/v3/docker/
