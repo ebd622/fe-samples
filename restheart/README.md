@@ -34,13 +34,17 @@ curl -u admin:secret http://localhost:8080
 curl -u admin:secret http://localhost:8080/collection1
 ```
 
+##### 3.2 Create a new document in a collection
+```
+curl -i -u "admin:secret" -H "Content-Type:application/json" -X POST -d '{"title":"test","content":"content"}' http://localhost:8080/collection1
+```
 
+More examples: https://restheart.org/docs/v6/try/
 
 #### 4. Stop services
 ```
 $ docker-compose stop
 ```
-
 
 ## Resources
 
