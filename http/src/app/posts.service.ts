@@ -7,16 +7,16 @@ import {map} from 'rxjs/internal/operators';
 @Injectable({providedIn: 'root'})
 export class PostsService {
   constructor(private http: HttpClient, private authService: AuthService){}
-  createAndStorePost(postData: Post){
-    //const postData: Post = {title: title, content: content};
 
+  // Here we create observable and also subscribe to it
+  createAndStorePost(postData: Post){
     this.http.post<Post>(
       'http://localhost:8080/collection1',
       postData, this.authService.getAuthHeaders()).subscribe(resposeData => {
       console.log(resposeData);
     });
-
   }
+  // The method returns observable ("subscribe" is used in app.module)
   fetchPosts(){
     return this.http
       .get<Post>('http://localhost:8080/collection1', this.authService.getAuthHeaders())
@@ -34,4 +34,5 @@ export class PostsService {
         })
       );
   }
+
 }
