@@ -43,8 +43,17 @@ curl -u admin:secret http://localhost:8080/collection1
 ```
 curl -i -u "admin:secret" -H "Content-Type:application/json" -X POST -d '{"title":"test","content":"content"}' http://localhost:8080/collection1
 ```
+##### 3.3 Delete a document from a collection
+TODO
 
-More examples: https://restheart.org/docs/v6/try/
+##### 3.4 Delete all documents from a collection
+TODO
+
+##### 3.5 Delete a collection
+```
+curl -i -u "admin:secret" -H "Content-Type:application/json" -H "if-Match:<ETag>" -X DELETE http://localhost:8080/collection2
+```
+
 
 #### 4. Stop services
 ```
