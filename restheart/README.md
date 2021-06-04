@@ -29,6 +29,11 @@ password: secret
 curl -u admin:secret http://localhost:8080
 ```
 
+##### 3.x Create a new collection
+```
+curl -i -u "admin:secret" -H "Content-Type:application/json" -X PUT http://localhost:8080/new_collection
+```
+
 ##### 3.1 Get all documents from a particular collection
 ```
 curl -u admin:secret http://localhost:8080/collection1
