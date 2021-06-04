@@ -39,6 +39,26 @@ curl -i -u "admin:secret" -H "Content-Type:application/json" -X PUT http://local
 curl -u admin:secret http://localhost:8080/collection1
 ```
 
+##### 3.x Get ETag fro a particular collection (returned via headers)
+```
+curl -i -u admin:secret http://localhost:8080/collection1
+```
+```
+X-Powered-By: restheart.org
+Auth-Token-Location: /tokens/admin
+Access-Control-Expose-Headers: Location, ETag, X-Powered-By, Auth-Token, Auth-Token-Valid-Until, Auth-Token-Location
+Date: Fri, 04 Jun 2021 08:32:13 GMT
+Auth-Token: 686158tl6p2cjkvs4kvx2wl28dvcsjscp4adjreizmpord3llx
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+ETag: 60b9e08c7a0a3e29a426b110
+Auth-Token-Valid-Until: 2021-06-04T08:47:13.924265100Z
+Access-Control-Allow-Credentials: true
+Content-Type: application/json
+Content-Length: 125
+```
+Here `ETag` is an ID of a collection. It used when you need to delete the whole collection
+
 ##### 3.2 Create a new document in a collection
 ```
 curl -i -u "admin:secret" -H "Content-Type:application/json" -X POST -d '{"title":"test","content":"content"}' http://localhost:8080/collection1
