@@ -64,7 +64,11 @@ Here `ETag` is an ID of a collection. It used when you need to delete the whole 
 curl -i -u "admin:secret" -H "Content-Type:application/json" -X POST -d '{"title":"test","content":"content"}' http://localhost:8080/collection1
 ```
 ##### 3.3 Delete a document from a collection
-TODO
+```
+curl -i -u "admin:secret" -H "Content-Type:application/json" -X DELETE http://localhost:8080/collection1/<oid>
+```
+`oid` is an ID of a document
+
 
 ##### 3.4 Delete all documents from a collection
 TODO
