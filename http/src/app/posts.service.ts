@@ -36,6 +36,7 @@ export class PostsService {
   }
 
   deletePosts(){
+    // TODO: this doesn't work with RestHeart API! Quetsion: how to delete ALL documents in RestHeart API???
     return this.http.delete('http://localhost:8080/collection1', this.authService.getAuthHeaders());
   }
 

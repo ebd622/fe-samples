@@ -13,6 +13,7 @@ import {post} from 'selenium-webdriver/http';
 export class AppComponent implements OnInit {
   loadedPosts: Post[] = [];
   isFatching = false;
+  error = null;
 
   constructor(private http: HttpClient, private postService: PostsService) {}
 
@@ -34,8 +35,9 @@ export class AppComponent implements OnInit {
   onClearPosts() {
     this.postService.deletePosts().subscribe(() => {
       this.loadedPosts = [];
+    }, error => {
+      this.error = error.message;
     });
-    // Send Http request
   }
 
   private fetchPosts(){
@@ -43,6 +45,9 @@ export class AppComponent implements OnInit {
     this.postService.fetchPosts().subscribe(posts => {
       this.isFatching = false;
       this.loadedPosts = posts;
+    }, error => {
+      this.error = error.message;
+      console.log(error);
     });
   }
 }
