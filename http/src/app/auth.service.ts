@@ -20,6 +20,10 @@ export class AuthService {
   // }
   // ***********************************
 
+  getAuth() {
+    return this.httpAuth
+  }
+
   getAuthHeaders() {
     return {
       headers: this.httpAuth

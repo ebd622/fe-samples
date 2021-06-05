@@ -12,7 +12,13 @@ export class PostsService {
   createAndStorePost(postData: Post){
     this.http.post<Post>(
       'http://localhost:8080/collection1',
-      postData, this.authService.getAuthHeaders()).subscribe(resposeData => {
+      postData,
+      {
+        observe: 'response', // It's requre to get a full response (i.e. headers, status code and so on)
+        headers: this.authService.getAuth()
+      }
+      // this.authService.getAuthHeaders()
+    ).subscribe(resposeData => {
       console.log(resposeData);
     });
   }
