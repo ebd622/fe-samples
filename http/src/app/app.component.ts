@@ -46,8 +46,12 @@ export class AppComponent implements OnInit {
       this.isFatching = false;
       this.loadedPosts = posts;
     }, error => {
+      this.isFatching = false;
       this.error = error.message;
       console.log(error);
     });
+  }
+  onHandleError(){
+    this.error = null;
   }
 }
