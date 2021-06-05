@@ -1,4 +1,5 @@
 import {HttpHandler, HttpHeaders, HttpInterceptor, HttpRequest} from '@angular/common/http';
+import {tap} from 'rxjs/internal/operators';
 
 /*
 Here we intercept all requests before they will leave the application
@@ -19,6 +20,11 @@ export class AuthInterceptorService implements HttpInterceptor{
     // return next.handle(modifiedRequest);
     // ******************************************************************
 
-    return next.handle(req);
+    return next.handle(req).pipe(
+      tap(event => {
+        console.log(event);
+        console.log('Response arrivied!');
+      })
+    );
   }
 }
