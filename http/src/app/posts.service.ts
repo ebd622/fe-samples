@@ -35,4 +35,8 @@ export class PostsService {
       );
   }
 
+  deletePosts(){
+    return this.http.delete('http://localhost:8080/collection1', this.authService.getAuthHeaders());
+  }
+
 }

@@ -3,6 +3,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {map} from 'rxjs/internal/operators';
 import {Post} from './post.model';
 import {PostsService} from './posts.service';
+import {post} from 'selenium-webdriver/http';
 
 @Component({
   selector: 'app-root',
@@ -31,6 +32,9 @@ export class AppComponent implements OnInit {
   }
 
   onClearPosts() {
+    this.postService.deletePosts().subscribe(() => {
+      this.loadedPosts = [];
+    });
     // Send Http request
   }
 
