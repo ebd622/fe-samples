@@ -1,5 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {catchError} from 'rxjs/internal/operators';
+import {throwError} from 'rxjs';
 
 // Check for details how to authenticate: https://firebase.google.com/docs/reference/rest/auth#section-create-email-password
 interface AuthResponseData{
@@ -20,7 +22,19 @@ export class AuthService {
       email: email,
       password: password,
       returnSecurityToken: true
-    }
+    }).pipe(
+      // Here we process error and return it as obserwable (uins pipe)
+      catchError(errorRes => {
+        let errorMessage = 'An unknown error occured!';
+        if(!errorRes.error || ! errorRes.error.error){
+          return throwError(errorMessage);
+        }
+        switch (errorRes.error.error.message){
+          case 'EMAIL_EXISTS': errorMessage = 'This email exists already';
+        }
+        return throwError(errorMessage);
+      })
+
     );
 
   }
