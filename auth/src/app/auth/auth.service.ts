@@ -14,8 +14,8 @@ export class AuthService {
   constructor(private http: HttpClient){}
   signup(email: string, password: string){
     return this.http.post<AuthResponseData>(
-      // API_KEY needs to be retrieved from Firebase-account
-      'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[API_KEY]',
+      // [API_KEY] needs to be retrieved from Firebase-account
+      'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=API_KEY',
     {
       email: email,
       password: password,

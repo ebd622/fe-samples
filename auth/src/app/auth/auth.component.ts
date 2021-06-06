@@ -8,6 +8,8 @@ import {AuthService} from './auth.service';
 })
 export class AuthComponent {
   isLoginMode = true;
+  isLoading = false;
+  error: string = null;
 
   constructor(protected authService: AuthService){}
   onSwitchMode(){
@@ -20,13 +22,18 @@ export class AuthComponent {
     const email = form.value.email;
     const pass = form.value.password;
 
+    this.isLoading = true;
     if(this.isLoginMode){
       // DO nothing, already authenticated
     } else {
       this.authService.signup(email, pass).subscribe(responseData => {
         console.log(responseData);
+        this.isLoading = false;
       }, error => {
         console.log(error);
+        this.error = 'An error happened';
+        this.isLoading = false;
+
       });
     }
 
