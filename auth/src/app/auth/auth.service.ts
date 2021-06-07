@@ -4,20 +4,23 @@ import {catchError} from 'rxjs/internal/operators';
 import {throwError} from 'rxjs';
 
 // Check for details how to authenticate: https://firebase.google.com/docs/reference/rest/auth#section-create-email-password
-interface AuthResponseData{
+export interface AuthResponseData{
   idToken:	string;	    // A Firebase Auth ID token for the newly created user.
   email:	string;       // 	The email for the newly created user.
   refreshToken: string; //	A Firebase Auth refresh token for the newly created user.
   expiresIn: string;    //	The number of seconds in which the ID token expires.
   localId: string;      //  The uid of the newly created user
+  registered? : boolean;
 }
 @Injectable({providedIn: 'root'})
 export class AuthService {
+  API_KEY = '';
+
   constructor(private http: HttpClient){}
   signup(email: string, password: string){
     return this.http.post<AuthResponseData>(
       // [API_KEY] needs to be retrieved from Firebase-account
-      'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=API_KEY',
+      'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=' + this.API_KEY,
     {
       email: email,
       password: password,
@@ -36,6 +39,15 @@ export class AuthService {
       })
 
     );
+  }
 
+  login(email: string, password: string){
+    return this.http.post<AuthResponseData>('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=' + this.API_KEY,
+      {
+        email: email,
+        password: password,
+        returnSecurityToken: true
+      }
+    );
   }
 }
