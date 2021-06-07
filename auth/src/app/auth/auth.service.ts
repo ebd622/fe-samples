@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {catchError} from 'rxjs/internal/operators';
 import {throwError} from 'rxjs';
 
@@ -26,18 +26,12 @@ export class AuthService {
       password: password,
       returnSecurityToken: true
     }).pipe(
-      // Here we process error and return it as obserwable (uins pipe)
-      catchError(errorRes => {
-        let errorMessage = 'An unknown error occured!';
-        if(!errorRes.error || ! errorRes.error.error){
-          return throwError(errorMessage);
-        }
-        switch (errorRes.error.error.message){
-          case 'EMAIL_EXISTS': errorMessage = 'This email exists already';
-        }
-        return throwError(errorMessage);
-      })
-
+      /*
+          Here we process an error and return it as an observable ("pipe" returns observable)
+          This is the same as:
+          catchError(errorRes => {...})
+       */
+      catchError(this.handleError)
     );
   }
 
@@ -48,6 +42,32 @@ export class AuthService {
         password: password,
         returnSecurityToken: true
       }
+    ).pipe(
+      catchError(this.handleError)
     );
   }
+
+  /**
+   * Centrilize method to handle errors
+   * @param {HttpErrorResponse} errorRes
+   * @returns {Observable<never>}
+   */
+  private handleError(errorRes: HttpErrorResponse){
+    let errorMessage = 'An unknown error occured!';
+    if(!errorRes.error || ! errorRes.error.error){
+      return throwError(errorMessage);
+    }
+    switch (errorRes.error.error.message){
+      case 'EMAIL_EXISTS': errorMessage = 'This email exists already';
+        break;
+      case 'EMAIL_NOT_FOUND': errorMessage = 'This email is not found';
+        break;
+      case 'INVALID_PASSWORD': errorMessage = 'The password is not valid';
+        break;
+
+    }
+    return throwError(errorMessage);
+  }
+
+
 }

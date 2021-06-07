@@ -30,6 +30,7 @@ export class AuthComponent {
     } else {
       authObs = this.authService.signup(email, pass);
     }
+
     authObs.subscribe(
       responseData => {
         console.log(responseData);
