@@ -1,8 +1,9 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {catchError, tap} from 'rxjs/internal/operators';
-import {Subject, throwError} from 'rxjs';
+import {BehaviorSubject, Subject, throwError} from 'rxjs';
 import {User} from './user.module';
+import {Router} from '@angular/router';
 
 // Check for details how to authenticate: https://firebase.google.com/docs/reference/rest/auth#section-create-email-password
 export interface AuthResponseData{
@@ -17,9 +18,9 @@ export interface AuthResponseData{
 export class AuthService {
   API_KEY = '';
 
-  user = new Subject<User>();
+  user = new BehaviorSubject<User>(null); // use this instead of: user = new Subject<User>();
 
-  constructor(private http: HttpClient){}
+  constructor(private http: HttpClient, private router: Router){}
   signup(email: string, password: string){
     return this.http.post<AuthResponseData>(
       // [API_KEY] needs to be retrieved from Firebase-account
@@ -50,6 +51,11 @@ export class AuthService {
     );
   }
 
+  logout(){
+    this.user.next(null);
+    this.router.navigate(['/auth'])
+    console.log("Log out");
+  }
   login(email: string, password: string){
     return this.http.post<AuthResponseData>('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=' + this.API_KEY,
       {
