@@ -1,7 +1,8 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
-import {catchError} from 'rxjs/internal/operators';
-import {throwError} from 'rxjs';
+import {catchError, tap} from 'rxjs/internal/operators';
+import {Subject, throwError} from 'rxjs';
+import {User} from './user.module';
 
 // Check for details how to authenticate: https://firebase.google.com/docs/reference/rest/auth#section-create-email-password
 export interface AuthResponseData{
@@ -16,6 +17,8 @@ export interface AuthResponseData{
 export class AuthService {
   API_KEY = '';
 
+  user = new Subject<User>();
+
   constructor(private http: HttpClient){}
   signup(email: string, password: string){
     return this.http.post<AuthResponseData>(
@@ -27,11 +30,23 @@ export class AuthService {
       returnSecurityToken: true
     }).pipe(
       /*
-          Here we process an error and return it as an observable ("pipe" returns observable)
+          1. Here we process an error and return it as an observable ("pipe" returns observable)
           This is the same as:
           catchError(errorRes => {...})
        */
-      catchError(this.handleError)
+      catchError(this.handleError),
+
+      /*
+          2. Here we create a user from a data returned by a server
+       */
+      tap(resData => {
+        this.handleAuthentication(
+          resData.email,
+          resData.localId,
+          resData.idToken,
+          resData.expiresIn
+        );
+      })
     );
   }
 
@@ -43,7 +58,15 @@ export class AuthService {
         returnSecurityToken: true
       }
     ).pipe(
-      catchError(this.handleError)
+      catchError(this.handleError),
+      tap(resData => {
+        this.handleAuthentication(
+          resData.email,
+          resData.localId,
+          resData.idToken,
+          resData.expiresIn
+        );
+      })
     );
   }
 
@@ -69,5 +92,14 @@ export class AuthService {
     return throwError(errorMessage);
   }
 
+  private handleAuthentication( email: string, userId: string, token: string, expiresIn: string) {
+    const expitationDate = new Date(new Date().getTime() + +expiresIn * 1000);
+    const user = new User(
+      email,
+      userId,
+      token,
+      expitationDate);
+    this.user.next(user); // emit the user as logged in
 
+  }
 }
