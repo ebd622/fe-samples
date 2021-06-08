@@ -19,6 +19,7 @@ export class AuthService {
   API_KEY = '';
 
   user = new BehaviorSubject<User>(null); // use this instead of: user = new Subject<User>();
+  private tokenExpirationTimer: any;
 
   constructor(private http: HttpClient, private router: Router){}
   signup(email: string, password: string){
@@ -77,13 +78,35 @@ export class AuthService {
     // 3. Check if retrieved user has a valid token
     if(loadedUser.token){
       this.user.next(loadedUser);
+      // Calculte remaining expitration time
+      const exprirationDuration =
+        new Date(userData._tokenExpirationDate).getTime() -
+        new Date().getTime();
+
+      // call auto-logout
+      this.autoLogout(exprirationDuration);
     }
   }
 
   logout(){
     this.user.next(null);
     this.router.navigate(['/auth'])
+    localStorage.removeItem('userData');
+    if(this.tokenExpirationTimer){
+      clearTimeout(this.tokenExpirationTimer);
+    }
+    this.tokenExpirationTimer = null;
     console.log("Log out");
+  }
+
+  autoLogout(expirationDuration: number){
+    console.log('Autologout time: ' + expirationDuration);
+    this.tokenExpirationTimer = setTimeout(() => {
+      this.logout();
+      },
+      expirationDuration);
+      // 2000); // for debug only
+
   }
   login(email: string, password: string){
     return this.http.post<AuthResponseData>('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=' + this.API_KEY,
@@ -128,6 +151,10 @@ export class AuthService {
   }
 
   private handleAuthentication( email: string, userId: string, token: string, expiresIn: string) {
+    if(!expiresIn){
+      expiresIn = '3600';
+    }
+    console.log('expiresIn: ' + expiresIn);
     const expitationDate = new Date(new Date().getTime() + +expiresIn * 1000);
     const user = new User(
       email,
@@ -135,6 +162,7 @@ export class AuthService {
       token,
       expitationDate);
     this.user.next(user); // emit the user as logged in
+    this.autoLogout(+expiresIn * 1000); // set timer
     localStorage.setItem('userData', JSON.stringify(user));
 
   }
