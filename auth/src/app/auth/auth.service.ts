@@ -152,6 +152,7 @@ export class AuthService {
 
   private handleAuthentication( email: string, userId: string, token: string, expiresIn: string) {
     if(!expiresIn){
+      // TODO: check why an epmty [expiresIn] comes from a calling function...
       expiresIn = '3600';
     }
     console.log('expiresIn: ' + expiresIn);
