@@ -51,6 +51,35 @@ export class AuthService {
     );
   }
 
+  /**
+   * Retrived authenticated user (if any) from a localstorage
+   */
+  autoLogin(){
+    // 1. Fetch a user from localstorage
+    const userData: {
+      email: string;
+      id: string;
+      _token: string;
+      _tokenExpirationDate: string
+    } = JSON.parse(localStorage.getItem('userData')); // confert strin into JSON-object
+    if(!userData){
+      return;
+    }
+
+    // 2. Create a user from retrieved data
+    const loadedUser = new User(
+      userData.email,
+      userData.id,
+      userData._token,
+      new Date(userData._tokenExpirationDate)
+    );
+
+    // 3. Check if retrieved user has a valid token
+    if(loadedUser.token){
+      this.user.next(loadedUser);
+    }
+  }
+
   logout(){
     this.user.next(null);
     this.router.navigate(['/auth'])
@@ -106,6 +135,7 @@ export class AuthService {
       token,
       expitationDate);
     this.user.next(user); // emit the user as logged in
+    localStorage.setItem('userData', JSON.stringify(user));
 
   }
 }
