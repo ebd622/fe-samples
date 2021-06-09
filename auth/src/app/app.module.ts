@@ -48,6 +48,9 @@ import {PlaceholderDirective} from './shared/placeholder/placeholder.directive';
     AppRoutingModule
   ],
   providers: [ShoppingListService, RecipeService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ // This is not required for Angulat v >= 9
+    AlertComponent
+  ]
 })
 export class AppModule {}
