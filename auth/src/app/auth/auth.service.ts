@@ -22,6 +22,7 @@ export class AuthService {
   private tokenExpirationTimer: any;
 
   constructor(private http: HttpClient, private router: Router){}
+
   signup(email: string, password: string){
     return this.http.post<AuthResponseData>(
       // [API_KEY] needs to be retrieved from Firebase-account
@@ -58,12 +59,13 @@ export class AuthService {
   autoLogin(){
     // 1. Fetch a user from localstorage
     const userData: {
-      email: string;
-      id: string;
-      _token: string;
+      email: string,
+      id: string,
+      _token: string,
       _tokenExpirationDate: string
-    } = JSON.parse(localStorage.getItem('userData')); // confert strin into JSON-object
+    } = JSON.parse(localStorage.getItem('userData')); // convert a string into JSON-object
     if(!userData){
+      console.log("autoLogin: userData is empty! ")
       return;
     }
 
@@ -76,6 +78,7 @@ export class AuthService {
     );
 
     // 3. Check if retrieved user has a valid token
+    console.log('loadedUser:' + JSON.stringify(loadedUser));
     if(loadedUser.token){
       this.user.next(loadedUser);
       // Calculte remaining expitration time
@@ -84,6 +87,7 @@ export class AuthService {
         new Date().getTime();
 
       // call auto-logout
+      console.log('exprirationDuration: ' + exprirationDuration);
       this.autoLogout(exprirationDuration);
     }
   }
@@ -96,11 +100,9 @@ export class AuthService {
       clearTimeout(this.tokenExpirationTimer);
     }
     this.tokenExpirationTimer = null;
-    console.log("Log out");
   }
 
   autoLogout(expirationDuration: number){
-    console.log('Autologout time: ' + expirationDuration);
     this.tokenExpirationTimer = setTimeout(() => {
       this.logout();
       },
@@ -153,7 +155,7 @@ export class AuthService {
   private handleAuthentication( email: string, userId: string, token: string, expiresIn: string) {
     if(!expiresIn){
       // TODO: check why an epmty [expiresIn] comes from a calling function...
-      expiresIn = '3600';
+      expiresIn = '4600';
     }
     console.log('expiresIn: ' + expiresIn);
     const expitationDate = new Date(new Date().getTime() + +expiresIn * 1000);
