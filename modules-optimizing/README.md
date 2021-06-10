@@ -1,4 +1,4 @@
-# Section 20: Authentication and Route Protection in Angular
+# Section 22: Angular modules & Optimizing Angular Apps
 
 Firebase is used as a backend in the examples.
 
