@@ -49,7 +49,7 @@ import {PlaceholderDirective} from './shared/placeholder/placeholder.directive';
   ],
   providers: [ShoppingListService, RecipeService],
   bootstrap: [AppComponent],
-  entryComponents: [ // This is not required for Angulat v >= 9
+  entryComponents: [ // This is not required to secify AlertComponent here when using Angulat v >= 9
     AlertComponent
   ]
 })
