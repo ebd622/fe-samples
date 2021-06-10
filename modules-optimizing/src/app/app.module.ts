@@ -22,10 +22,10 @@ import {AuthModul} from './auth/auth.modul';
     HttpClientModule,
     AppRoutingModule,
     // RecipesModule, // This will be "lazy" loaded in app-routing.module.ts
-    ShoppingListModule,
+    // ShoppingListModule, will be "lazy" loaded in app-routing.module.ts
     SharedModule,
     CoreModules,
-    AuthModul
+    // AuthModul will be "lazy" loaded in app-routing.module.ts
   ],
   bootstrap: [AppComponent]
 })

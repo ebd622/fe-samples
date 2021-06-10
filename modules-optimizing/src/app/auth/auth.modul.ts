@@ -10,7 +10,7 @@ import {SharedModule} from '../shared/shared.module';
   ],
   imports: [
     RouterModule.forChild([
-      { path: 'auth', component: AuthComponent }
+      { path: '', component: AuthComponent } // path 'auth' will be lazy loaded
     ]),
     SharedModule,
     FormsModule
