@@ -6,7 +6,6 @@ import {HttpClientModule} from '@angular/common/http';
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {AppRoutingModule} from './app-routing.module';
-import {RecipesModule} from './recipes/recipes.module';
 import {ShoppingListModule} from './shopping-list/shopping-list.module';
 import {SharedModule} from './shared/shared.module';
 import {CoreModules} from './core.modules';
@@ -22,7 +21,7 @@ import {AuthModul} from './auth/auth.modul';
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
-    RecipesModule,
+    // RecipesModule, // This will be "lazy" loaded in app-routing.module.ts
     ShoppingListModule,
     SharedModule,
     CoreModules,
