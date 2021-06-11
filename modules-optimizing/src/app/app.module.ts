@@ -10,6 +10,7 @@ import {ShoppingListModule} from './shopping-list/shopping-list.module';
 import {SharedModule} from './shared/shared.module';
 import {CoreModules} from './core.modules';
 import {AuthModul} from './auth/auth.modul';
+import {LoggingService} from './logging.service';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import {AuthModul} from './auth/auth.modul';
     CoreModules,
     // AuthModul will be "lazy" loaded in app-routing.module.ts
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  // providers: [LoggingService]
 })
 export class AppModule {}
