@@ -2,7 +2,7 @@
 The repository contains examples of Angular apps.
 
 ### TOC
-* Section 5: [Components & Databinding: Deep Dive](#../cmp-databinding)
+* Section 5: [Components & Databinding: Deep Dive](../cmp-databinding)
 * Section 9: Using Services & Dependency Injection
 * Section 11: Changing Pages with Routing
 * Section 13 :Observables
