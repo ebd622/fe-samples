@@ -6,6 +6,9 @@ The repository contains examples of Angular apps.
 * Section 9: [Using Services & Dependency Injection](services)
 * Section 11: [Changing Pages with Routing](routing)
 * Section 13: [Observables](observabels)
+* Section 15: Handling Forms in Angular Apps
+  * [Forms](forms)
+  * [Forms Reactive](forms-reactive)
 * Section 17: [Using Pipes to Transform Output](pipes)
 * Section 18: [Making Http Requests](http)
 * Section 20: [Authentication & Route Protection in Angular](auth)
