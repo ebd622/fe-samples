@@ -29,7 +29,7 @@ describe('Component: User', () => {
   it('should display the user name if user is logged in', () => {
     let fixture = TestBed.createComponent(UserComponent);
     let app = fixture.debugElement.componentInstance;
-    app.isLoggedIn = true;
+    app.isLoggedIn = true; // Emulate user logging
     fixture.detectChanges();
     let compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('p').textContent).toContain(app.user.name);
