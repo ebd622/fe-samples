@@ -1,4 +1,4 @@
-# Section 20: Authentication and Route Protection in Angular
+# Section 20-21: [Authentication and Route Protection in Angular] and [Dynamic Components]
 
 Firebase is used as a backend in the examples.
 
