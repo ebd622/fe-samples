@@ -14,6 +14,24 @@ export class AppComponent {
 
   suggestUserName() {
     const suggestedName = 'Superuser';
+    // Option1: overwrite all fields in the form
+    // this.signupForm.setValue({
+    //   userData: {
+    //     username: suggestedName,
+    //     email: ''
+    //   },
+    //   secret: 'pet',
+    //   questionAnswer: '',
+    //   gender: 'male'
+    // });
+
+    // Option2: overwrite only required field
+    this.signupForm.form.patchValue({
+      userData: {
+        username: suggestedName
+      }
+    });
+
   }
 
   // Option 1
