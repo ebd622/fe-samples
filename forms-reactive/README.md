@@ -1,6 +1,9 @@
 # Forms-reactive in Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+## Key points: 
+* L200: Introduction to the Reactive
+* L201: Reactive: Creating a Form in Code
+* 
 
 ## Development server
 
