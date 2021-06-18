@@ -3,7 +3,7 @@
 ## Key points: 
 * L200: Introduction to the Reactive
 * L202: Reactive: Creating a Form in Code
-* L202: 
+* L203: Reactive: Syncing HTML and Form
  
 
 ## Development server
