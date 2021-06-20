@@ -6,7 +6,7 @@
 * L203: Reactive: Syncing HTML and Form
 * L204: Reactive: Submitting the Form
 * L205: Reactive: Adding Validation
-* L206: 
+* L206: Reactive: Getting access to controls
  
 
 ## Development server
