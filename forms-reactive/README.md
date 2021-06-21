@@ -8,6 +8,7 @@
 * L205: Reactive: Adding Validation
 * L206: Reactive: Getting access to controls
 * L207: Reactive: Gropuping Controls
+* L208: Fixing a bug
  
 
 ## Development server
