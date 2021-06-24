@@ -10,6 +10,7 @@
 * L207: Reactive: Gropuping Controls
 * L208: Fixing a bug
 * L209: Reactive: Arrays of Form Controls (FormArray)
+* L210: Reactive: Creating Custom Validators
  
 
 ## Development server
