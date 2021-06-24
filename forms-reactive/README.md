@@ -11,6 +11,8 @@
 * L208: Fixing a bug
 * L209: Reactive: Arrays of Form Controls (FormArray)
 * L210: Reactive: Creating Custom Validators
+* 211. Reactive: Using error codes
+* 212: Reactive: Creating a custom async validator
  
 
 ## Development server
