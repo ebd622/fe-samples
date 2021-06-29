@@ -14,6 +14,7 @@
 * L211: Reactive: Using error codes
 * L212: Reactive: Creating a custom async validator
 * L213: Reactive: reacting to Status or Value Changes
+* L214: Setting and patching values
  
 
 ## Development server
