@@ -1,9 +1,9 @@
 # Section 20-21: [Authentication and Route Protection in Angular] and [Dynamic Components]
 
-Firebase is used as a backend in the examples.
+## Key points
+* L286: How authentication works
+* L287: Adding the Auth Page
 
-Here you can find more info about Firebase Auth REST API: 
-https://firebase.google.com/docs/reference/rest/auth#section-sign-in-email-password
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
