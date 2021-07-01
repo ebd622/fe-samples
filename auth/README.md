@@ -3,6 +3,8 @@
 ## Key points
 * L286: How authentication works
 * L287: Adding the Auth Page
+* L288: Switching between Auth Modes
+* 
 
 
 
