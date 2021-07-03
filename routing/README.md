@@ -1,6 +1,9 @@
 # Section 11: Changing Pages with Routing
 
 ## Key points
+* L124: Why do we need a Router? 
+* L126: Setting up and loading Routers
+* L127: Navigating with router links
 
 ## Development server
 
