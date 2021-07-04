@@ -1,5 +1,5 @@
 # fe-samples
-The repository contains examples of Angular apps.
+The repository contains examples of Angular apps provided in [Angular - The Complete Guide](https://www.udemy.com/course/the-complete-guide-to-angular-2/).
 
 ### TOC
 * Section 5: [Components & Databinding: Deep Dive](cmp-databinding)
