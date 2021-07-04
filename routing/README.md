@@ -4,6 +4,7 @@
 * L124: Why do we need a Router? 
 * L126: Setting up and loading Routers
 * L127: Navigating with router links
+* L128: Understanging navigation path
 
 ## Development server
 
