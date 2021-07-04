@@ -6,6 +6,7 @@
 * L127: Navigating with router links
 * L128: Understanging navigation path
 * L129: Styling Active Router links
+* L130: Navigating Programmatically
 
 ## Development server
 
