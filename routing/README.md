@@ -8,6 +8,7 @@
 * L129: Styling Active Router links
 * L130: Navigating Programmatically
 * L131: Using relative path in Programmatic Navigation
+* L132: Passing patemeters to routes
 
 ## Development server
 
