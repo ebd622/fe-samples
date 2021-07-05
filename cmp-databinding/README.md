@@ -18,6 +18,10 @@ This is an example of how components can communicate to each other using custom 
 * L78: Component livecycle
 
 
+### L66: Property & Event binding Overview
+- By default all properties of components are only accessible inside the components
+- 
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
