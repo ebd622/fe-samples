@@ -4,6 +4,7 @@ This is an example of how components can communicate to each other using custom 
 
 ## Key points
 
+* L64: Splitting Apps into Components
 * L65: Splitting Apps into components
 * L66: Property & Event binding
 * L67: Binding to custom properties
