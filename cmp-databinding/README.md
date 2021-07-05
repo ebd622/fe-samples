@@ -20,8 +20,12 @@ This is an example of how components can communicate to each other using custom 
 
 #### L66: Property & Event binding Overview
 - By default all properties of components are only accessible inside the components
-- If you want to allow a parent component to bind a property of a child component you need to add a decorator `@Input` to a property
+- If you want to allow a parent component to bind a property of a child component you need to add a decorator `@Input` to a property:
 
+```
+@Input() element: ...
+```
+With this decorator a property is exposed to world  
 
 ## Code scaffolding
 
