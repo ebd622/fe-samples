@@ -15,7 +15,7 @@ This is an example of how components can communicate to each other using custom 
 * L74: Using local references in templates
 * L75 -76: @ViewChild
 * L76: Projecting content into components with ng-content
-* L77: 
+* L77: Understanding the component lifecycle
 * L78: Component livecycle
 
 
