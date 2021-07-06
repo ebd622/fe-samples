@@ -14,7 +14,8 @@ This is an example of how components can communicate to each other using custom 
 * L71: Custom property and event binding summary
 * L74: Using local references in templates
 * L75 -76: @ViewChild
-* L77: Projecting content into components with ng-content
+* L76: Projecting content into components with ng-content
+* L77: 
 * L78: Component livecycle
 
 
