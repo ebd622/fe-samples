@@ -16,7 +16,7 @@ This is an example of how components can communicate to each other using custom 
 * L75 -76: @ViewChild
 * L76: Projecting content into components with ng-content
 * L77: Understanding the component lifecycle
-* L78: Component livecycle
+* L78: Seeing livecycle hooks in action
 
 
 #### L66: Property & Event binding Overview
