@@ -8,7 +8,8 @@
 * L289: Handling Form input
 * L290: Preparing the Backend
 
-
+#### Section 21: Dynamic Components
+* L309: Adding an alert modal component
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
 
