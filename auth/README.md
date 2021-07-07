@@ -1,6 +1,7 @@
 # Section 20-21: [Authentication and Route Protection in Angular] and [Dynamic Components]
 
 ## Key points
+#### Section 20: Authentication and Route Protection in Angular
 * L286: How authentication works
 * L287: Adding the Auth Page
 * L288: Switching between Auth Modes
