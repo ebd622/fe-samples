@@ -10,6 +10,7 @@
 
 #### Section 21: Dynamic Components
 * L309: Adding an alert modal component
+* L310: Understanding the different approaches
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
 
