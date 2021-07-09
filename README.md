@@ -18,3 +18,4 @@ The repository contains examples of Angular apps provided in [Angular - The Comp
 
 ### References:
 * [Angular - The Complete Guide](https://www.udemy.com/course/the-complete-guide-to-angular-2/)
+* [Angular API](https://angular.io/api)
