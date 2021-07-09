@@ -34,6 +34,7 @@ With this decorator a property is exposed to world.
 ```
 @Input('myElement') element: ...
 ```
+- In this case `myElemnt` should be used in other components because `elemnt` will not longer work
 
 ## Code scaffolding
 
