@@ -29,7 +29,7 @@ This is an example of how components can communicate to each other using custom 
 With this decorator a property is exposed to world.
 
 #### L67: Assigning an alias to custom properties
-- If you want to allow a parent component to bind a property of a child component you need to add a decorator `@Input` to a property:
+- It is also possible to use alias instead of a property name:
 
 ```
 @Input('myElement') element: ...
