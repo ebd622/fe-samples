@@ -39,7 +39,10 @@ With this decorator a property is exposed to world.
 #### L68: Binding to custom properties
 - A child component may inform a parent component on some changes happened in a child;
 - Component communictation is very important (a key building block)!
-- A child component [cookpit.component.ts](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/cookpit/cookpit.component.ts):
+
+Example:
+
+- In a **child** component [cookpit.component.ts](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/cookpit/cookpit.component.ts):
 
 ```
 export class CookpitComponent implements OnInit {
@@ -58,7 +61,7 @@ export class CookpitComponent implements OnInit {
 }
 ```
 
-- In a *parent* component [app.component.html](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/app.component.html)
+- In a **parent** component [app.component.html](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/app.component.html)
 
 ```
   <app-cookpit
