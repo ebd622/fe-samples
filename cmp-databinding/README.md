@@ -58,5 +58,13 @@ export class CookpitComponent implements OnInit {
 }
 ```
 
+- In a *parent* component [app.component.html](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/app.component.html)
+
+```
+  <app-cookpit
+    (serverCreated)="onServerAdded($event)"
+  </app-cookpit>
+```
+
 
 
