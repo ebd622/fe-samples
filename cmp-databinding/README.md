@@ -68,7 +68,7 @@ export class CookpitComponent implements OnInit {
     (serverCreated)="onServerAdded($event)"
   </app-cookpit>
 ```
-Here we bind an event `serverCreated` of the **child** to a method `onServerAdded($event)` in the **paren**.
+Here we bind an event `@Output() serverCreated ...` of the **child** to a method `onServerAdded($event)` in the **paren**.
 
 
 
