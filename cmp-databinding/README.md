@@ -37,6 +37,25 @@ With this decorator a property is exposed to world.
 - In this case `myElemnt` should be used in other components because `elemnt` will not longer work
 
 #### L68: Binding to custom properties
-- A child component may inform a parent component on some changes happened in a child
+- A child component may inform a parent component on some changes happened in a child;
+- A child component [cookpit.component.ts](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/cookpit/cookpit.component.ts):
+
+```
+export class CookpitComponent implements OnInit {
+  @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
+  
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+  onAddServer(nameInput: HTMLInputElement) {
+    this.serverCreated.emit({
+      serverName: nameInput.value,
+      serverContent: this.serverContentInp.nativeElement.value
+    });
+  }
+}
+```
+
 
 
