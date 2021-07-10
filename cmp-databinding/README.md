@@ -98,6 +98,7 @@ export class AppComponent {
   }
 }
 ```
-
+#### L74: Using local references in templates
+- A local reference can be put to any HTML-element in a template
 
 
