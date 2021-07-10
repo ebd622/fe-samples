@@ -45,6 +45,10 @@ Example:
 - In a **child** component [cookpit.component.ts](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/cookpit/cookpit.component.ts):
 
 ```
+@Component({
+  selector: 'app-cookpit',
+  ...
+})
 export class CookpitComponent implements OnInit {
   @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
   ...
