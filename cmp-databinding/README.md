@@ -47,11 +47,8 @@ Example:
 ```
 export class CookpitComponent implements OnInit {
   @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
+  ...
   
-  constructor() { }
-
-  ngOnInit(): void {
-  }
   onAddServer(nameInput: HTMLInputElement) {
     this.serverCreated.emit({
       serverName: nameInput.value,
