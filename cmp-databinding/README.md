@@ -99,6 +99,23 @@ export class AppComponent {
 }
 ```
 #### L74: Using local references in templates
-- A local reference can be put to any HTML-element in a template
+- A local reference can be put to any HTML-element in a template.
+
+Example:
+- The **child** template [cookpit.component.html](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/cookpit/cookpit.component.html)
+```
+    <input
+      type="text"
+      class="form-control"
+      #serverNameInput>
+      
+    ...  
+    <button
+      class="btn btn-primary"
+      (click)="onAddServer(serverNameInput)">Add Server</button>
+    <button
+```
+
+
 
 
