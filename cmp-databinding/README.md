@@ -69,7 +69,7 @@ The **child** template [cookpit.component.html](https://github.com/ebd622/fe-sam
   ...
   <button
     class="btn btn-primary"
-    (click)="onAddServer(serverNameInput)">Add Server</button>
+    (click)="onAddServer()">Add Server</button>
   <button
   ...
 ```
