@@ -124,7 +124,7 @@ Example:
   onAddServer(nameInput: HTMLInputElement) {
     this.serverCreated.emit({
       serverName: nameInput.value,
-      serverContent: this.serverContentInp.nativeElement.value
+      ...
     });
   }
 ```
