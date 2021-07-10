@@ -115,6 +115,8 @@ Example:
       (click)="onAddServer(serverNameInput)">Add Server</button>
     <button
 ```
+**#serverNameInput** is a local reference
+
 
 
 
