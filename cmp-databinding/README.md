@@ -117,6 +117,19 @@ Example:
 ```
 **#serverNameInput** is a local reference
 
+- A local reference can be used everywhere in a template but not in typescript
+- A local reference can be pass to typescipt ([cookpit.component.ts](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/cookpit/cookpit.component.ts)):
+
+```
+  onAddServer(nameInput: HTMLInputElement) {
+    this.serverCreated.emit({
+      serverName: nameInput.value,
+      serverContent: this.serverContentInp.nativeElement.value
+    });
+  }
+```
+
+
 
 
 
