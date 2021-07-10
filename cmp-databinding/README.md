@@ -51,12 +51,14 @@ Example:
 })
 export class CookpitComponent implements OnInit {
   @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
+  newServerName='';
+  newServerContent='';
   ...
   
-  onAddServer(nameInput: HTMLInputElement) {
+  onAddServer() {
     this.serverCreated.emit({
-      serverName: nameInput.value,
-      serverContent: this.serverContentInp.nativeElement.value
+      serverName: this.serverName,
+      serverContent: this.serverContent
     });
   }
 }
