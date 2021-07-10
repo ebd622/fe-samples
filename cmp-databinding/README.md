@@ -64,6 +64,16 @@ export class CookpitComponent implements OnInit {
 }
 ```
 
+The **child** template [cookpit.component.html](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/cookpit/cookpit.component.html)
+```
+  ...
+  <button
+    class="btn btn-primary"
+    (click)="onAddServer(serverNameInput)">Add Server</button>
+  <button
+  ...
+```
+
 - In a **parent** component [app.component.html](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/app.component.html)
 
 ```
