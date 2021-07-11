@@ -132,6 +132,7 @@ Example:
 - There is another way to get an access to local references (and any element) using @ViewChild;
 - [cookpit.component.ts](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/cookpit/cookpit.component.ts):
 
+Example:
 ```
 export class CookpitComponent implements OnInit {
   ...
