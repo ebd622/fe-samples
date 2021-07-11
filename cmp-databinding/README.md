@@ -165,6 +165,10 @@ export class CookpitComponent implements OnInit {
     ...
   }
 ```
+But it is strongly recommended not doing this - **you should not access DOM like this**!
+
+Angular offers a better way of accessing the DOM (see the Directives section)
+Generally you should use other tools like string-interpolation and property binding if you want to output somthing in the DOM.
 
 
 
