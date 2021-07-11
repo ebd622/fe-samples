@@ -130,6 +130,23 @@ Example:
 ```
 #### L75: Getting access to the Template & DOM with @ViewChild
 
+```
+export class CookpitComponent implements OnInit {
+  ...
+  @ViewChild('serverContentInput', {static: true}) serverContentInp: ElementRef;
+  ...
+  
+  }
+```
+
+```
+  <input
+      type="text"
+      class="form-control"
+      #serverContentInput>
+```
+
+
 
 
 
