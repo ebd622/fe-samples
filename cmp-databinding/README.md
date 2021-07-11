@@ -145,7 +145,7 @@ export class CookpitComponent implements OnInit {
     });  
   }
 ```
-
+- [cookpit.component.html](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/cookpit/cookpit.component.html)
 ```
   <input
       type="text"
