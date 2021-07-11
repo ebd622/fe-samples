@@ -161,7 +161,7 @@ export class CookpitComponent implements OnInit {
   ...
   
   onAddServer(nameInput: HTMLInputElement) {
-    serverContent: this.serverContentInp.nativeElement.value
+    this.serverContentInp.nativeElement.value = 'Something';
     ...
   }
 ```
