@@ -153,6 +153,20 @@ export class CookpitComponent implements OnInit {
       class="form-control"
       #serverContentInput>
 ```
+- It is possible to change a value of `ElementRef` in ts ,for example, like this:
+```
+export class CookpitComponent implements OnInit {
+  ...
+  @ViewChild('serverContentInput', {static: true}) serverContentInp: ElementRef;
+  ...
+  
+  onAddServer(nameInput: HTMLInputElement) {
+    serverContent: this.serverContentInp.nativeElement.value
+    ...
+  }
+```
+
+
 
 
 
