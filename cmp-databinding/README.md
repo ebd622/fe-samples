@@ -138,6 +138,11 @@ export class CookpitComponent implements OnInit {
   @ViewChild('serverContentInput', {static: true}) serverContentInp: ElementRef;
   ...
   
+  onAddServer(nameInput: HTMLInputElement) {
+    this.serverCreated.emit({
+      ...
+      serverContent: this.serverContentInp.nativeElement.value
+    });  
   }
 ```
 
