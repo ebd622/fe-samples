@@ -12,7 +12,7 @@ This is an example of how components can communicate to each other using custom 
 * L69: Binding to custom events
 * L70: Assigning an alias to custom events
 * L71: Custom property and event binding summary
-* L74: Using local references in templates
+* L74: [Using local references in templates](#L74-Using-local-references-in-templates)
 * L75 -76: @ViewChild
 * L76: Projecting content into components with ng-content
 * L77: Understanding the component lifecycle
