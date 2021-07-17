@@ -175,7 +175,7 @@ Generally you should use other tools like string-interpolation and property bind
 #### L76: Projecting content into components with ng-content
 Another way to pass data around is to use `ng-content`. With this we can pass (complex) HTML code into a component from outside.
 
-[server-element.component.html](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/server-element/server-element.component.html)
+For example, we can move HTML code from [server-element.component.html](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/server-element/server-element.component.html) into app.component.html. Then we can use `ng-content` in server-element.component.htm:
 ```
 <div
   class="panel panel-default">
