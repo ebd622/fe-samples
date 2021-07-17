@@ -208,7 +208,7 @@ An application can use the following lifecycle hook methods:
 * ngAfterViewChecked() - called every time the view (and chilf views) has beed checked
 * ngOnDestroy() - called onve the component is about to be destroyed
 
-`ngOnChanges()`
+*`ngOnChanges()`*
 This hook gets called after a data-bound input property is set or reset. It detects the changes in data-bound automatically and sets the variable with updated data.
 
 `ngOnInit()`
