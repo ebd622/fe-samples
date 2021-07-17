@@ -208,28 +208,28 @@ An application can use the following lifecycle hook methods:
 * ngAfterViewChecked() - called every time the view (and chilf views) has beed checked
 * ngOnDestroy() - called onve the component is about to be destroyed
 
-*`ngOnChanges()`*
+**`ngOnChanges()`**
 This hook gets called after a data-bound input property is set or reset. It detects the changes in data-bound automatically and sets the variable with updated data.
 
-`ngOnInit()`
+**`ngOnInit()`**
 This hook initializes the component. In this function, we usually write the method that we want to get executed before our data renders on the screen, and it gets called after the ngOnChanges() method.
 
-`ngDoCheck()`
+**`ngDoCheck()`**
 This hook detects and acts upon every change that Angular can't find automatically. It gets called before ngOnChanges() and ngOnInit() methods.
 
-`ngAfterContentInit()`
+**`ngAfterContentInit()`**
 This hook initializes the external component and projects it into the current component. It gets called after ngDoCheck() method. It is called once for the first time.
 
-`ngAfterContentChecked()`
+**`ngAfterContentChecked()`**
 This hook gets called after the external component is projected into the current component and whenever there is a change in the external component. It is called after ngDoCheck() and ngAfterContentInit().
 
-`ngAfterViewInit()`
+**`ngAfterViewInit()`**
 This hook initializes the view of the component and is called once for the first time. It gets called after ngAfterContentChecked().
 
-`ngAfterViewChecked()`
+**`ngAfterViewChecked()`**
 This hook gets called after the content and the child component view gets in and is called after ngAfterViewInit() and ngAfterContentChecked() whenever the content is being changed.
 
-`ngOnDestroy()`
+**`ngOnDestroy()`**
 This hook gets called before the component is getting off the DOM. Unsubscribe every subscription and clear every interval to prevent memory leaks.
 
 
