@@ -186,5 +186,14 @@ Another way to pass data around is to use `ng-content`. With this we can pass (c
 </div>
 ```
 
-
+[app.component.html](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/app.component.html)
+```
+      <app-server-element
+      ...
+        <p>
+          <strong *ngIf="oneServeElement.type === 'server'" style="color: red">{{ oneServeElement.content }}</strong>
+          <em *ngIf="oneServeElement.type === 'blueprint'">{{ oneServeElement.content }}</em>
+        </p>
+      </app-server-element>
+```
 
