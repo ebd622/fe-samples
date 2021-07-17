@@ -201,7 +201,7 @@ In [app.component.html](https://github.com/ebd622/fe-samples/blob/master/cmp-dat
 An application can use the following lifecycle hook methods:
 * ngOnChanges() - called after input property changes
 * ngOnInit() - called once the component is initialized (after constructor)
-* ngDoCheck() - called during every change detetion run
+* ngDoCheck() - called during every change detection run
 * ngAfterContentInit() - called after content (ng-content) has been projected into view
 * ngAfterContentChecked() - called every time the projected content has been checked
 * ngAfterViewInit() - called after thecompnent's view (and chilf views) has beed initialaized
