@@ -197,3 +197,15 @@ In [app.component.html](https://github.com/ebd622/fe-samples/blob/master/cmp-dat
 </app-server-element>
 ```
 
+#### L77: Understanding the component lifecycle
+An application can use the following lifecycle hook methods:
+* ngOnChanges()
+* ngOnInit()
+* ngDoCheck()
+* ngAfterContentInit()
+* ngAfterContentChecked()
+* ngAfterViewInit()
+* ngAfterViewChecked()
+* ngOnDestroy()
+
+
