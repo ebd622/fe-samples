@@ -172,7 +172,7 @@ Angular offers a better way of accessing the DOM (see the Directives section) .
 Generally you should use other tools like string-interpolation and property binding if you want to output somthing in the DOM.
 
 
-#### Projecting content into components with ng-content
+#### L76: Projecting content into components with ng-content
 
 [server-element.component.html](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/server-element/server-element.component.html)
 ```
