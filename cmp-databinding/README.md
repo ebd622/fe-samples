@@ -172,10 +172,18 @@ Angular offers a better way of accessing the DOM (see the Directives section) .
 Generally you should use other tools like string-interpolation and property binding if you want to output somthing in the DOM.
 
 
+#### Projecting content into components with ng-content
 
-
-
-
+[server-element.component.html](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/server-element/server-element.component.html)
+```
+<div
+  class="panel panel-default">
+  <div class="panel-heading">{{ element.name }}</div>
+  <div class="panel-body">
+    <ng-content></ng-content>
+  </div>
+</div>
+```
 
 
 
