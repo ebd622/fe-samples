@@ -204,8 +204,8 @@ An application can use the following lifecycle hook methods:
 * ngDoCheck() - called during every change detetion run
 * ngAfterContentInit() - called after content (ng-content) has been projected into view
 * ngAfterContentChecked() - called every time the projected content has been checked
-* ngAfterViewInit()
-* ngAfterViewChecked()
-* ngOnDestroy()
+* ngAfterViewInit() - called after thecompnent's view (and chilf views) has beed initialaized
+* ngAfterViewChecked() - called every time the view (and chilf views) has beed checked
+* ngOnDestroy() - called onve the component is about to be destroyed
 
 
