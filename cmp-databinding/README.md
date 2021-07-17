@@ -186,7 +186,7 @@ For example, we can move HTML code from [server-element.component.html](https://
 </div>
 ```
 
-[app.component.html](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/app.component.html)
+In [app.component.html](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/app.component.html) we paste HTML-code (`<p>...</p>`) into the component `app-server-element`:
 ```
 <app-server-element>
    ...
