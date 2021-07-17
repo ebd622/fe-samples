@@ -208,4 +208,4 @@ An application can use the following lifecycle hook methods:
 * ngAfterViewChecked() - called every time the view (and chilf views) has beed checked
 * ngOnDestroy() - called onve the component is about to be destroyed
 
-
+More about [lifecycle-hooks](https://angular.io/guide/lifecycle-hooks)
