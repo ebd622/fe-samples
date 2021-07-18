@@ -11,7 +11,7 @@ There are pipes for different types of output and also for synch- and asynch dat
 
 #### L240: Using pipes
 
-[app.component.html](https://github.com/ebd622/fe-samples/blob/master/pipes/src/app/app.component.html)
+In [app.component.html](https://github.com/ebd622/fe-samples/blob/master/pipes/src/app/app.component.html) you can see two build-in pipes: `uppercase` and `date`:
 
 ```
 ...
