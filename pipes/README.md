@@ -27,7 +27,7 @@ It is possible to perametrize pipes, for example, use a parameter `fullDate`:
 {{ server.started | date:'fullDate'}}
 ```
 
-You can also use multiple parameters (if any) and compbine different pipes:
+You can also use multiple parameters (if any) and **chain** (or combine) different pipes:
 
 ```
 {{ server.started | date:'fullDate':'otherParam1':'otherParam2' | uppercase}}
