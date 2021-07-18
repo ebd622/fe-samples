@@ -30,8 +30,10 @@ It is possible to perametrize pipes, for example, use a parameter `fullDate`:
 You can also use multiple parameters (if any) and **chain** (or combine) different pipes:
 
 ```
-{{ server.started | date:'fullDate':'otherParam1':'otherParam2' | uppercase}}
+{{ server.started | date:'fullDate':'otherParam1':'otherParam2' | uppercase}}2
 ```
+An order in a **chain** is important, because it is evaluated from left to right
+
 
 ## References
 * More about pipes: https://angular.io/api?query=pipe
