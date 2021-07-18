@@ -9,6 +9,7 @@ There are pipes for different types of output and also for synch- and asynch dat
 * L244: Creating a custom pipe
 * L246: Creating a filter pipe
 * L247: Pure and Impure pipes
+* L248: Understanding `async` pipe
 
 
 #### L240: Using pipes
@@ -78,6 +79,20 @@ You can use 'pure' to configure a pipe to force pipe recalculation:
   pure: false // Be careful with this prop, it can cause a performance issue! It means a pipe will be always recalculated when data is changed (see L248).
 })
 ```
+
+#### L248: Understanding `async` pipe
+
+[app.component.ts](https://github.com/ebd622/fe-samples/blob/master/pipes/src/app/app.component.ts)
+
+```
+  appStatus = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('stable');
+    },2000);
+    });
+```
+
+
 
 ## References
 * More about pipes: https://angular.io/api?query=pipe
