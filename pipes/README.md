@@ -8,6 +8,7 @@ There are pipes for different types of output and also for synch- and asynch dat
 * L241: Parametrizing Pipes
 * L244: Creating a custom pipe
 * L246: Creating a filter pipe
+* L247: Pure and Impure pipes
 
 
 #### L240: Using pipes
@@ -63,12 +64,20 @@ You can also create a [filter.pipe.ts](https://github.com/ebd622/fe-samples/blob
 </div>
 ```
 
-#### f
+#### L247: Pure and Impure pipes
 Two points here:
 * Changing the input of the pipe will trigger a recalculation - the pipe will be applied to the data agian.
 * But **updating** arrays or objects doesn't trigger a reclculation.
 
 This is a good behaviour, otherwise Angular will need to trigger a pipe with any data change on a page. It can be a performance issue.
+
+You can use 'pure' to configure you pipe to force pipe recalculation:
+```
+@Pipe({
+  name: 'filter',
+  pure: false // Be careful with this prop, it can cause a performance issue! It means a pipe will be always recalculated when data is changed (see L248).
+})
+```
 
 ## References
 * More about pipes: https://angular.io/api?query=pipe
