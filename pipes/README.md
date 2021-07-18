@@ -47,9 +47,9 @@ You can create a custom pipe [shorten.pipe.ts](https://github.com/ebd622/fe-samp
 You can also create a [filter.pipe.ts](https://github.com/ebd622/fe-samples/blob/master/pipes/src/app/filter.pipe.ts) to filter an output. Then use the filter in a template [app.component.html](https://github.com/ebd622/fe-samples/blob/master/pipes/src/app/app.component.html):
 
 ```
-    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-      <input type="text" [(ngModel)]="filteredStaus">
-      ...
+<div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+  <input type="text" [(ngModel)]="filteredStaus">
+  ...
 
 </div>
 
