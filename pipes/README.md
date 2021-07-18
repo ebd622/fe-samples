@@ -33,3 +33,5 @@ You can also use multiple parameters (if any) and compbine different pipes:
 {{ server.started | date:'fullDate':'otherParam1':'otherParam2' | uppercase}}
 ```
 
+## References
+* More about pipes: https://angular.io/api?query=pipe
