@@ -7,6 +7,7 @@ There are pipes for different types of output and also for synch- and asynch dat
 * L240: Using pipes
 * L241: Parametrizing Pipes
 * L244: Creating a custom pipe
+* L246: Creating a filter pipe
 
 
 #### L240: Using pipes
@@ -40,6 +41,9 @@ You can create a custom pipe [filter.pipe.ts](https://github.com/ebd622/fe-sampl
 ```
 <strong>{{ server.name | shorten:10 }}</strong> |
 ```
+
+#### L246: Creating a filter pipe
+
 
 
 ## References
