@@ -93,8 +93,13 @@ To replicate this let's create a `Promise` (in [app.component.ts](https://github
     },2000);
     });
 ```
+This will set `appStatus` to value `stable` but only after 2 sec.
 
+Now we can output this in [app.component.html](https://github.com/ebd622/fe-samples/blob/master/pipes/src/app/app.component.html) with a pipe `async`:
 
+```
+<h2>AppStatus: {{appStatus | async}}</h2>
+```
 
 ## References
 * More about pipes: https://angular.io/api?query=pipe
