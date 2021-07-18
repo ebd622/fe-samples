@@ -51,6 +51,15 @@ You can also create a [filter.pipe.ts](https://github.com/ebd622/fe-samples/blob
   <input type="text" [(ngModel)]="filteredStaus">
   ...
 
+   <ul class="list-group">
+     <li
+       class="list-group-item"
+       *ngFor="let server of servers | filter:filteredStaus:'status'"
+       [ngClass]="getStatusClasses(server)">
+       ...
+     </li>
+   </ul>
+  ...
 </div>
 ```
 
