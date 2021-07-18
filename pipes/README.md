@@ -63,6 +63,12 @@ You can also create a [filter.pipe.ts](https://github.com/ebd622/fe-samples/blob
 </div>
 ```
 
+#### f
+Two points here:
+* Changing the input of the pipe will trigger a recalculation - the pipe will be applied to the data agian.
+* But **updating** arrays or objects doesn't trigger a reclculation.
+
+This is a good behaviour, otherwise Angular will need to trigger a pipe with any data change on a page. It can be a performance issue.
 
 ## References
 * More about pipes: https://angular.io/api?query=pipe
