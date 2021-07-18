@@ -82,7 +82,9 @@ You can use 'pure' to configure a pipe to force pipe recalculation:
 
 #### L248: Understanding `async` pipe
 
-[app.component.ts](https://github.com/ebd622/fe-samples/blob/master/pipes/src/app/app.component.ts)
+Let's imagine that we have a property `appStatus` which will be updated in 2 sec. 
+
+To replicate this let's create a `Promise` (in [app.component.ts](https://github.com/ebd622/fesamples/blob/master/pipes/src/app/app.component.ts)). For example, data can be returned from HTTP call, from a server and so on.
 
 ```
   appStatus = new Promise((resolve, reject) => {
