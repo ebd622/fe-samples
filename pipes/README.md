@@ -71,7 +71,7 @@ Two points here:
 
 This is a good behaviour, otherwise Angular will need to trigger a pipe with any data change on a page. It can be a performance issue.
 
-You can use 'pure' to configure you pipe to force pipe recalculation:
+You can use 'pure' to configure a pipe to force pipe recalculation:
 ```
 @Pipe({
   name: 'filter',
