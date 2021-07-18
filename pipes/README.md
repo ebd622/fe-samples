@@ -30,11 +30,16 @@ It is possible to perametrize pipes, for example, use a parameter `fullDate`:
 You can also use multiple parameters (if any) and **chain** (or combine) different pipes:
 
 ```
-{{ server.started | date:'fullDate':'otherParam1':'otherParam2' | uppercase}}2
+{{ server.started | date:'fullDate':'otherParam1':'otherParam2' | uppercase}}
 ```
 An order in a **chain** is important, because it is evaluated from left to right
 
 #### L244: Creating a custom pipe
+
+You can create a custom pipe [filter.pipe.ts](https://github.com/ebd622/fe-samples/blob/master/pipes/src/app/filter.pipe.ts) and use it in a template:
+```
+<strong>{{ server.name | shorten:10 }}</strong> |
+```
 
 
 ## References
