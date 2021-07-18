@@ -100,6 +100,10 @@ Now we can output this in [app.component.html](https://github.com/ebd622/fe-samp
 ```
 <h2>AppStatus: {{appStatus | async}}</h2>
 ```
+This will print out `stable` on a page after 2 sec.
+
+What `async` does - it recognise that `appStatus` is a Promise (btw, it will also work with Observable). It would subscribe automatically and after 2 sec. 
+it will recognise, that something is changed, that the Promise is resolved and it will print data.
 
 ## References
 * More about pipes: https://angular.io/api?query=pipe
