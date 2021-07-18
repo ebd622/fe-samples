@@ -52,7 +52,6 @@ You can also create a [filter.pipe.ts](https://github.com/ebd622/fe-samples/blob
   ...
 
 </div>
-
 ```
 
 
