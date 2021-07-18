@@ -6,7 +6,7 @@ There are pipes for different types of output and also for synch- and asynch dat
 ## Key points
 * L240: Using pipes
 * L241: Parametrizing Pipes
-* L242: 
+* L244: Creating a custom pipe
 
 
 #### L240: Using pipes
@@ -33,6 +33,8 @@ You can also use multiple parameters (if any) and **chain** (or combine) differe
 {{ server.started | date:'fullDate':'otherParam1':'otherParam2' | uppercase}}2
 ```
 An order in a **chain** is important, because it is evaluated from left to right
+
+#### L244: Creating a custom pipe
 
 
 ## References
