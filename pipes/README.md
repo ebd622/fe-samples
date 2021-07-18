@@ -20,5 +20,16 @@ In [app.component.html](https://github.com/ebd622/fe-samples/blob/master/pipes/s
 {{ server.started | date:'fullDate' | uppercase}}
 ...
 ```
+#### L241: Parametrizing Pipes
+It is possible to perametrize pipes, for example, use a parameter `fullDate`:
 
+```
+{{ server.started | date:'fullDate'}}
+```
+
+You can also use multiple parameters (if any) and compbine different pipes:
+
+```
+{{ server.started | date:'fullDate':'otherParam1':'otherParam2' | uppercase}}
+```
 
