@@ -37,13 +37,16 @@ An order in a **chain** is important, because it is evaluated from left to right
 
 #### L244: Creating a custom pipe
 
-You can create a custom pipe [filter.pipe.ts](https://github.com/ebd622/fe-samples/blob/master/pipes/src/app/filter.pipe.ts) and use it in a template:
+You can create a custom pipe [shorten.pipe.ts](https://github.com/ebd622/fe-samples/blob/master/pipes/src/app/shorten.pipe.ts) and use it in a template:
 ```
 <strong>{{ server.name | shorten:10 }}</strong> |
 ```
 
 #### L246: Creating a filter pipe
 
+
+
+[filter.pipe.ts](https://github.com/ebd622/fe-samples/blob/master/pipes/src/app/filter.pipe.ts)
 
 
 ## References
