@@ -1,7 +1,6 @@
 # Using Pipes to transform output
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
-
+Pipses are a feature build in Angular2 which allows to transform output in a template
 ## Key points
 * L241: Parametrizing Pipes
 * L242: 
