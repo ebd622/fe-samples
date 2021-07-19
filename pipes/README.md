@@ -7,7 +7,7 @@ There are pipes for different types of output and also for synch- and asynch dat
 * L240: Using pipes
 * L241: Parametrizing Pipes
 * L244: Creating a custom pipe
-* L246: (Creating a filter pipe)(#l246-creating-a-filter-pipe)
+* L246: [Creating a filter pipe](#l246-creating-a-filter-pipe)
 * L247: Pure and Impure pipes
 * L248: Understanding `async` pipe
 
