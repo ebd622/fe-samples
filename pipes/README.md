@@ -9,7 +9,7 @@ There are pipes for different types of output and also for synch- and asynch dat
 * L244: Creating a custom pipe
 * L246: [Creating a filter pipe](#l246-creating-a-filter-pipe)
 * L247: [Pure and Impure pipes](#l247-pure-and-impure-pipes)
-* L248: Understanding `async` pipe
+* L248: [Understanding `async` pipe]https://github.com/ebd622/fe-samples/tree/master/pipes#l248-understanding-async-pipe
 
 
 #### L240: Using pipes
