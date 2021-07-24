@@ -10,7 +10,8 @@ For example:
 * The Router and Forms modules use observables to listen for and respond to user-input events.
 
 ## Key Points
-* Observable and Observer
+* L169: Inroduction
+  * Observable and Observer
 * Operators
 * Subjects
 
