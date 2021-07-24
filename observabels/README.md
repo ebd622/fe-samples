@@ -11,7 +11,7 @@ For example:
 
 ## Key Points
 * L169: Inroduction
-  * Observable and Observer
+  * [Observable and Observer](#Observable-and-Observer)
 
 * L171: Getting closer to the core of Observables
 
