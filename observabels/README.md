@@ -35,7 +35,7 @@ Observable might emit data like:
 
 With an **observer** we handle async-tasks because all these data sources are *user events*, we don't know when they will happen and how long they will take. 
 
-## Operators
+### Operators
 **Operators** are the future of RxJS library, they turn Observable into awesome constructs. 
 
 <img src="../img/operators.png" width="80%">
@@ -44,10 +44,24 @@ Operators are used between Observable and Subscription to process data (transfor
 
 There are tons of built-in operators.
 
-## Subjects
+### Subjects
 Subject is a special kind of Observable, it is provided by RxJS.  
 
 Subject is similar to EventEmitter (provided be Angular) but Subject is recommended way. At the end using Subject is more efficient than EventEmitter.
+
+## L171: Getting closer to the core of Observables
+
+A simple example of observable [home.component.ts](https://github.com/ebd622/fe-samples/blob/master/observabels/src/app/home/home.component.ts):
+```
+  ngOnInit() {
+    this.firstObsSubscriprion = interval(1000).subscribe(count => {
+    console.log(count);
+    })
+    ...
+}    
+```
+
+
 
 ## Resourcse
 * RxJS: https://rxjs-dev.firebaseapp.com/
