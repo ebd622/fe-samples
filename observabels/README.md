@@ -16,9 +16,8 @@ For example:
 * L171: Getting closer to the core of Observables
 * L172: Building a custom observable
 * L173: Errors & Completion
-
-
-* Operators
+* L175: Understanding operators
+  * Operators
 * Subjects
 
 ## Observable and Observer
