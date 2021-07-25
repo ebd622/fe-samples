@@ -132,13 +132,28 @@ We can react to the completion by calling a function (see `// Completion handler
 If observable is canceled because of an error, the function `complete()` will not be called! Technically in both cases new values will not be emitted. 
 
 ## L175: Understanding operators
-**Operators** are the future of RxJS library, they turn Observable into awesome constructs. 
+#### Operators** are the future of RxJS library, they turn Observable into awesome constructs. 
 
 <img src="../img/operators.png" width="80%">
 
 Operators are used between Observable and Subscription to process data (transform them, filter out and so on). In this way you subscribe to the *result of the operator*. 
 
 There are tons of built-in operators.
+
+#### Example
+(see [home.component.ts](https://github.com/ebd622/fe-samples/blob/master/observabels/src/app/home/home.component.ts))
+Every observable has a method `pipe()`.
+
+```
+      // Use operators (filters and map) to process data
+      const observableWithOperator = customIntervalObservable.pipe(
+          filter((data: number) => {
+            return data > 0;
+      }),
+          map((data: number) => {
+        return 'Round ' + (data + 1);
+      }));
+```
 
 ## L176: Subjects
 Subject is a special kind of Observable, it is provided by RxJS.  
