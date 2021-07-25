@@ -14,6 +14,7 @@ For example:
   * [Observable and Observer](#Observable-and-Observer)
 
 * L171: Getting closer to the core of Observables
+* L172: Building a custom observable
 
 
 * Operators
@@ -98,6 +99,29 @@ A valid qustion: why there is no need to unsubscribe in this example [user.compo
 ```
 The answer is: Angular does it. </br> 
 Angula manages all the observales (including `unsubscribe`) provided by Angular.
+
+## L172: Building a custom observable
+A custom observable example [home.component.ts](https://github.com/ebd622/fe-samples/blob/master/observabels/src/app/home/home.component.ts):
+
+```
+      // Option 2: create a custom observable
+      const customIntervalObservable = Observable.create(observer => {
+        let count = 0;
+        setInterval(() => {
+          observer.next(count);
+          if(count === 2) {
+            // Complete a subscription
+            observer.complete();
+          };
+          if(count > 3){
+            // Generate an error
+            observer.error(new Error('Count is greater 3!'))
+          }
+          count++;
+        }, 1000);
+      });
+```
+It is the same logic like in `Option 1` but a custom implementation.
 
 
 ## Resourcse
