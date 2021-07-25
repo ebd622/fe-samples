@@ -96,7 +96,8 @@ A valid qustion: why there is no need to unsubscribe in this example [user.compo
     });
   }
 ```
-
+The answer is: Angular does it. </br> 
+Angula manages all the observales (including `unsubscribe`) provided by Angular.
 
 
 ## Resourcse
