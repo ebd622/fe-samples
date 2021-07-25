@@ -161,6 +161,11 @@ Subject is similar to EventEmitter (provided be Angular) but Subject is recommen
 
 <img src="../img/subjects.webp" width="80%">
 
+`Observable` wraps a callback or event or something like that.</br>
+`Subject` is active, we can call `next()` on it from outside. It is good to use when we DON'T have a passive event source like HTTP request or DOM events but we have something that needs to be triggered by us in our application (for example, clicking a button).
+
+
+
 ## Resourcse
 * RxJS: https://rxjs-dev.firebaseapp.com/
 * Observables in Angular: https://angular.io/guide/observables-in-angular
