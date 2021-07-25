@@ -60,6 +60,7 @@ A simple example of observable [home.component.ts](https://github.com/ebd622/fe-
     ...
 }    
 ```
+`interval` emits an event every second and this will give us `obserable`, we can subscribe to the observable and log a message.
 
 
 
