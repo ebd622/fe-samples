@@ -132,7 +132,7 @@ We can react to the completion by calling a function (see `// Completion handler
 If observable is canceled because of an error, the function `complete()` will not be called! Technically in both cases new values will not be emitted. 
 
 ## L175: Understanding operators
-#### Operators** are the future of RxJS library, they turn Observable into awesome constructs. 
+#### Operators are the future of RxJS library, they turn Observable into awesome constructs. 
 
 <img src="../img/operators.png" width="80%">
 
