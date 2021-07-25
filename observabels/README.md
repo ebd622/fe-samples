@@ -18,7 +18,7 @@ For example:
 * L173: Errors & Completion
 * L175: Understanding operators
   * Operators
-* Subjects
+* L176: Subjects
 
 ## Observable and Observer
 
@@ -36,19 +36,6 @@ Observable might emit data like:
 
 With an **observer** we handle async-tasks because all these data sources are *user events*, we don't know when they will happen and how long they will take. 
 
-### Operators
-**Operators** are the future of RxJS library, they turn Observable into awesome constructs. 
-
-<img src="../img/operators.png" width="80%">
-
-Operators are used between Observable and Subscription to process data (transform them, filter out and so on). In this way you subscribe to the *result of the operator*. 
-
-There are tons of built-in operators.
-
-### Subjects
-Subject is a special kind of Observable, it is provided by RxJS.  
-
-Subject is similar to EventEmitter (provided be Angular) but Subject is recommended way. At the end using Subject is more efficient than EventEmitter.
 
 ## L171: Getting closer to the core of Observables
 
@@ -144,6 +131,19 @@ In a custom observable we can manually complete it calling `observe.complete()` 
 We can react to the completion by calling a function (see `// Completion handler (no need to unsubscribe in a case of completion)`) in the above code.</br></br>
 If observable is canceled because of an error, the function `complete()` will not be called! Technically in both cases new values will not be emitted. 
 
+## L175: Understanding operators
+**Operators** are the future of RxJS library, they turn Observable into awesome constructs. 
+
+<img src="../img/operators.png" width="80%">
+
+Operators are used between Observable and Subscription to process data (transform them, filter out and so on). In this way you subscribe to the *result of the operator*. 
+
+There are tons of built-in operators.
+
+## L176: Subjects
+Subject is a special kind of Observable, it is provided by RxJS.  
+
+Subject is similar to EventEmitter (provided be Angular) but Subject is recommended way. At the end using Subject is more efficient than EventEmitter.
 
 
 
