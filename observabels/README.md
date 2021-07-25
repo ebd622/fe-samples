@@ -164,6 +164,7 @@ Subject is similar to EventEmitter (provided be Angular) but Subject is recommen
 ## Resourcse
 * RxJS: https://rxjs-dev.firebaseapp.com/
 * Observables in Angular: https://angular.io/guide/observables-in-angular
+* Angular Observable: https://dinhanhthi.com/angular-3-observable/
 
 
 
