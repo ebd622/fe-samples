@@ -140,6 +140,9 @@ When observable thwrows an error it dies (it will not emit events any more). But
       })
   }
 ```
+Completing can be a normal process in the an observable. The `interval` function by default does't complete, it will emits values until end of time (or until error happens). But, for instance,  HTTP request will complete when a response by a server is there. </br>
+In a custom observable we can manually complete calling `complete()`.
+
 
 ## Resourcse
 * RxJS: https://rxjs-dev.firebaseapp.com/
