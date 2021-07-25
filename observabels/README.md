@@ -15,6 +15,7 @@ For example:
 
 * L171: Getting closer to the core of Observables
 * L172: Building a custom observable
+* L173: Errors & Completion
 
 
 * Operators
@@ -123,6 +124,22 @@ A custom observable example [home.component.ts](https://github.com/ebd622/fe-sam
 ```
 It is the same logic like in `Option 1` but a custom implementation.
 
+## L173: Errors & Completion
+When observable thwrows an error it dies (it will not emit events any more). But it is important to handle errors and also completions ([home.component.ts](https://github.com/ebd622/fe-samples/blob/master/observabels/src/app/home/home.component.ts)):
+
+```
+      this.firstObsSubscriprion = observableWithOperator.subscribe(data => {
+        console.log(data);
+      }, error => {
+        // Error handler: This is a plase where you can process an error: send something to back-end and so on
+        console.log(error);
+        alert(error.message);
+      }, () => {
+        // Completion handler (no need to unsubscribe in a case of completion)
+          console.log('Completed!')
+      })
+  }
+```
 
 ## Resourcse
 * RxJS: https://rxjs-dev.firebaseapp.com/
