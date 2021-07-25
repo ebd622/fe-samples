@@ -82,9 +82,8 @@ export class HomeComponent implements OnInit, OnDestroy {
   this.firstObsSubscriprion.unsubscribe();
   }
 }    
-
 ```
-
+It means whenever we leave the component we clear the subscription and prvent memory leaks because we are not keeping old subscriprion.
 
 
 
