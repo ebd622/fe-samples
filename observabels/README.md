@@ -60,7 +60,7 @@ A simple example of observable [home.component.ts](https://github.com/ebd622/fe-
     ...
 }    
 ```
-`interval` emits an event every second and this will give us `obserable`, we can subscribe to the observable and log a message. So, a new value will be got every second and will be logged.
+`interval` function emits an event every second and this will give us `obserable`, we can subscribe to the observable and log a message. So, a new value will be got every second and will be logged.
 
 
 
