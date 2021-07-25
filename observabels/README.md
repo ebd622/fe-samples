@@ -141,8 +141,8 @@ Operators are used between Observable and Subscription to process data (transfor
 There are tons of built-in operators.
 
 #### Example
-(see [home.component.ts](https://github.com/ebd622/fe-samples/blob/master/observabels/src/app/home/home.component.ts))
-Every observable has a method `pipe()`.
+(see [home.component.ts](https://github.com/ebd622/fe-samples/blob/master/observabels/src/app/home/home.component.ts))</br>
+Every observable has a method `pipe()` which may have one or more parameters.
 
 ```
       // Use operators (filters and map) to process data
