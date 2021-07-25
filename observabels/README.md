@@ -142,7 +142,10 @@ When observable thwrows an error it dies (it will not emit events any more). But
 ```
 Completing can be a normal process in the an observable. The `interval` function by default does't complete, it will emits values until end of time (or until error happens). But, for instance,  HTTP request will complete when a response by a server is there. </br></br>
 In a custom observable we can manually complete it calling `observe.complete()` (see [home.component.ts](https://github.com/ebd622/fe-samples/blob/master/observabels/src/app/home/home.component.ts)).</br>
-We can react to the completion by calling a function (see `// Completion handler (no need to unsubscribe in a case of completion)`) in the above code.
+We can react to the completion by calling a function (see `// Completion handler (no need to unsubscribe in a case of completion)`) in the above code.</br></br>
+If observable is canceled because of an error, the function `complete()` will not be called! Technically in both cases new values will not be emitted. 
+
+
 
 
 ## Resourcse
