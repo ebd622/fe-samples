@@ -51,16 +51,41 @@ Subject is similar to EventEmitter (provided be Angular) but Subject is recommen
 
 ## L171: Getting closer to the core of Observables
 
+### Subscribe
 A simple example of observable [home.component.ts](https://github.com/ebd622/fe-samples/blob/master/observabels/src/app/home/home.component.ts):
 ```
   ngOnInit() {
-    this.firstObsSubscriprion = interval(1000).subscribe(count => {
+    interval(1000).subscribe(count => {
     console.log(count);
     })
     ...
 }    
 ```
 `interval` function emits an event every second and this will give us `obserable`, we can subscribe to the observable and log a message. So, a new value will be got every second and will be logged.
+
+### Unubscribe
+To prevent a memory leak you need to unsubscribe (not for all observables, but for some of them). For this we need to keep a `subscription` (not observable) in a local variable:
+
+```
+export class HomeComponent implements OnInit, OnDestroy {
+  private firstObsSubscriprion: Subscription;
+
+  constructor() { }
+
+  ngOnInit() {
+    this.firstObsSubscriprion = interval(1000).subscribe(count => {
+    console.log(count);
+    })
+  }
+    ...
+  ngOnDestroy(): void {
+  this.firstObsSubscriprion.unsubscribe();
+  }
+}    
+
+```
+
+
 
 
 
