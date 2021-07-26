@@ -13,7 +13,7 @@ For example:
 * L169: Inroduction
   * [Observable and Observer](#Observable-and-Observer)
 
-* L171: Getting closer to the core of Observables
+* L171: [Getting closer to the core of Observables](#Getting-closer-to-the-core-of-Observables)
 * L172: Building a custom observable
 * L173: Errors & Completion
 * L175: Understanding operators
