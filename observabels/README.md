@@ -14,7 +14,7 @@ For example:
 
 * L171: [Getting closer to the core of Observables](#l171-getting-closer-to-the-core-of-observables)
 * L172: [Building a custom observable](#l172-building-a-custom-observable)
-* L173: [Errors & Completion]()
+* L173: [Errors & Completion](#l173-errors--completion)
 * L175: Understanding operators
   * Operators
 * L176: Subjects
