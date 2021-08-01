@@ -21,4 +21,4 @@ In [app.component.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/
       );
   }
 ```
-`post` returns an Observable, we need to subscribe to it.
+The method `post` returns an Observable, we need to subscribe to it.
