@@ -1,6 +1,7 @@
 # Marking HTTP requests
 
 ## Key points
+* L254: Sending a POST request
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
