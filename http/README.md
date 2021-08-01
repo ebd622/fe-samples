@@ -13,7 +13,9 @@ In [app.component.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/
 
   onCreatePost(postData: { title: string; content: string }) {
     // Send Http request
-    this.postService.createAndStorePost(postData);
+    this.http.post('http://....', postData).subscribe(
+      responseData => {
+      });
   }
 ```
-
+`post` returns an Observable, we need to subscribe to it.
