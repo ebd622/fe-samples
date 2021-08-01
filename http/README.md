@@ -9,13 +9,16 @@
 In [app.component.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/app.component.ts):
 
 ```
-  constructor(private http: HttpClient, private postService: PostsService) {}
+  constructor(private http: HttpClient, ...) {}
 
   onCreatePost(postData: { title: string; content: string }) {
     // Send Http request
-    this.http.post('http://....', postData).subscribe(
-      responseData => {
-      });
+    this.http.post('http://....', postData)
+      .subscribe(
+        responseData => {
+          console.log(responseData);
+        }
+      );
   }
 ```
 `post` returns an Observable, we need to subscribe to it.
