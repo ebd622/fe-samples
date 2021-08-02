@@ -2,7 +2,8 @@
 
 ## Key points
 * L254: Sending a POST request
-* L255: 
+* L255: Getting data
+* 
 
 
 ### L254: Sending a POST request
