@@ -4,7 +4,7 @@
 * L254: Sending a POST request
 * L255: Getting data
 * L256: Using RxJS Operators to transform data
-* L257: 
+* L257: Using Types with the HttpClient
 
 
 ### L254: Sending a POST request
