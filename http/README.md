@@ -1,7 +1,7 @@
 # Marking HTTP requests
 
 ## Key points
-* L254: [Sending a POST request](https://github.com/ebd622/fe-samples/tree/master/http#l254-sending-a-post-request)
+* L254: [Sending a POST request](#l254-sending-a-post-request)
 * L255: Getting data
 * L256: Using RxJS Operators to transform data
 * L257: Using Types with the HttpClient
