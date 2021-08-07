@@ -59,6 +59,7 @@ private fetchPosts(){
         const postArray = [];
         for(const key in responseData){
           if(responseData.hasOwnProperty(key)){
+            // This will pull out all the key-values pairs from the nested object
             postArray.push({...responseData[key], id: key});
           }
         }
