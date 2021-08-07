@@ -25,3 +25,6 @@ In [app.component.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/
   }
 ```
 The method `post` returns an Observable, we need to subscribe to it.
+
+### L255: Getting data
+
