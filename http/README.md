@@ -27,4 +27,24 @@ In [app.component.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/
 The method `post` returns an Observable, we need to subscribe to it.
 
 ### L255: Getting data
+We can use a dedicated method `fetchPosts()` and call this method in two different plcases:
+
+```
+ngOnInit() {
+    this.fetchPosts();
+}
+  
+onFetchPosts() {
+    // Send Http request
+    this.fetchPosts();
+}
+
+private fetchPosts(){
+  this.http
+    .get('http://...')
+    .subscribe(posts => {
+      console.log(posts);
+    });
+}
+```
 
