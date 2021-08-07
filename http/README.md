@@ -48,4 +48,27 @@ private fetchPosts(){
 }
 ```
 ### L257: Using RxJS Operators to transform data
-After fetching data we may need to transform them. A good practice is to use `operators` for this.
+After fetching data we may need to transform them. A good practice is to use `operators` for this. Let's use the operator `map` two transform our post-reponse into an array
+
+```
+private fetchPosts(){
+  this.http
+    .get('http://...')
+    .pipe(
+      .map(responseData => {
+        const postArray = [];
+        for(const key in responseData){
+          if(responseData.hasOwnProperty(key)){
+            postArray.push({...responseData[key], id: key});
+          }
+        }
+        return postArray;
+      });
+    )
+    .subscribe(posts => {
+      // Here posts is an array (a content of postArray)
+      console.log(posts);
+    });
+}
+
+```
