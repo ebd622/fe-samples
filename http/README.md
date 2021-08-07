@@ -27,7 +27,7 @@ In [app.component.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/
 The method `post` returns an Observable, we need to subscribe to it.
 
 ### L255: Getting data
-We can use a dedicated method `fetchPosts()` and call this method in two different plcases:
+To fetch data we can use a dedicated method `fetchPosts()` and call it in different places ([app.component.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/app.component.ts)):
 
 ```
 ngOnInit() {
