@@ -2,7 +2,7 @@
 
 ## Key points
 * L254: [Sending a POST request](#l254-sending-a-post-request)
-* L255: [Getting data]()
+* L255: [Getting data](#l255-Ggetting-data)
 * L256: Using RxJS Operators to transform data
 * L257: Using Types with the HttpClient
 * L258: Outputting Posts
