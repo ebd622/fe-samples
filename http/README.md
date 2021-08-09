@@ -6,7 +6,7 @@
 * L256: Using RxJS Operators to transform data
 * L257: Using Types with the HttpClient
 * L258: Outputting Posts
-* L259: 
+* L259: Showing a loading indicator
 
 
 ### L254: Sending a POST request
