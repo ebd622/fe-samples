@@ -4,7 +4,7 @@
 * L254: [Sending a POST request](#l254-sending-a-post-request)
 * L255: [Getting data](#l255-getting-data)
 * L256: Using RxJS Operators to transform data
-* L257: [Using Types with the HttpClient](#l257-using-rxjs-operators-to-transform-data)
+* L256: [Using Types with the HttpClient](#l257-using-rxjs-operators-to-transform-data)
 * L258: Outputting Posts
 * L259: Showing a loading indicator
 * L260: Using Using a service for Http Request
