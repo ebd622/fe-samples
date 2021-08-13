@@ -10,6 +10,7 @@
 * L260: Using Using a service for Http Request
 * L261: Services & Components working together
 * L262: Sending s DELETE request
+* L262: Handling errors
 
 
 ### L254: Sending a POST request
