@@ -103,6 +103,7 @@ private fetchPosts(){
     .subscribe(posts => {
       // Here posts is an array (a content of postArray)
       console.log(posts);
+      this.loadedPosts = posts;
     });
 }
 
