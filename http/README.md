@@ -107,8 +107,8 @@ private fetchPosts(){
 }
 
 ```
-It means that `get` will return a `Post` type as a result. <br/>
-The same can be done for a `post` method.
+It means that `get` will return a `Post` type as a result. The same can be done for a `post` method. <br/>
+A full example you can see in [posts.service.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/posts.service.ts)
 
 
 
