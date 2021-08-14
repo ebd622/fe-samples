@@ -134,7 +134,7 @@ Let's use a property `ifFetching` to show a loading indicator. <br/>
 ```
 export class AppComponent implements OnInit {
   loadedPosts: Post[] = [];
-  isFatching = false;
+  isFetching = false;
   ...
   
    
@@ -149,9 +149,27 @@ private fetchPosts(){
       this.isFetching = false;
     });
 }
+
+
 ...
+
 }
 ```
+Then the property can be used in a template to print a message `Loading...`:
 
+```
+  <div class="row">
+    <div class="col-xs-12 col-md-6 col-md-offset-3">
+      <p *ngIf="loadedPosts.length < 1 && !isFetching">No posts available!</p>
+      <ul class="list-group" *ngIf="loadedPosts.length >= 1 && !isFatching">
+        <li class="list-group-item" *ngFor="let post of loadedPosts">
+          <h3>{{post.title}}</h3>
+          <p>{{post.content}}</p>
+        </li>
+      </ul>
+      <p *ngIf="isFetching>Loading...</p>
+    </div>
+  </div>
+```
 
 
