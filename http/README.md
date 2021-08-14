@@ -125,4 +125,45 @@ When `Post` is retrieved it can be printed in a template ([app.component.html](h
     </div>
 ```
 
+### L259: Showing a loading indicator
+Let's use a property `ifFetching` to show a loading indicator. <br/>
+
+
+
+
+```
+
+export class AppComponent implements OnInit {
+  loadedPosts: Post[] = [];
+  isFatching = false;
+  ...
+  
+  
+  
+private fetchPosts(){
+  this.http
+    .get<Post>('http://...')
+    .pipe(
+      .map(responseData => {
+        const postArray: Post[] = [];
+        for(const key in responseData){
+          if(responseData.hasOwnProperty(key)){
+            // This will pull out all the key-values pairs from the nested object
+            postArray.push({...responseData[key]});
+          }
+        }
+        return postArray;
+      });
+    )
+    .subscribe(posts => {
+      // Here posts is an array (a content of postArray)
+      console.log(posts);
+      this.loadedPosts = posts;
+    });
+}
+...
+}
+```
+
+
 
