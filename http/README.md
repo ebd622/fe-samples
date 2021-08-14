@@ -85,8 +85,29 @@ See also [RxJS Operators](https://rxjs.dev/guide/operators)
 Angular supports **generics**, in the example above the methods `post` and `get` support generics. For instance, let's use the interface [Post](https://github.com/ebd622/fe-samples/blob/master/http/src/app/post.model.ts) in the previous example:
 
 ```
+private fetchPosts(){
+  this.http
+    .get<{[key: string]: Post}>('http://...')
+    .pipe(
+      .map(responseData => {
+        const postArray: Post[] = [];
+        for(const key in responseData){
+          if(responseData.hasOwnProperty(key)){
+            // This will pull out all the key-values pairs from the nested object
+            postArray.push({...responseData[key], id: key});
+          }
+        }
+        return postArray;
+      });
+    )
+    .subscribe(posts => {
+      // Here posts is an array (a content of postArray)
+      console.log(posts);
+    });
+}
 
 ```
+It means that `get` will return a `Post` type as a result. 
 
 
 
