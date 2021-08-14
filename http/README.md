@@ -82,7 +82,11 @@ private fetchPosts(){
 See also [RxJS Operators](https://rxjs.dev/guide/operators)
 
 ### L257: Using Types with the HttpClient
-Angular supports **generics**, in the example above the methods `post` and `get` support generics.
+Angular supports **generics**, in the example above the methods `post` and `get` support generics. For instance, let's use the interface [Post](https://github.com/ebd622/fe-samples/blob/master/http/src/app/post.model.ts) in the previous example:
+
+```
+
+```
 
 
 
