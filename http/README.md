@@ -126,10 +126,7 @@ When `Post` is retrieved it can be printed in a template ([app.component.html](h
 ```
 
 ### L259: Showing a loading indicator
-Let's use a property `ifFetching` to show a loading indicator. <br/>
-
-
-
+Let's add a property `ifFetching` to show a loading indicator. <br/>
 
 ```
 export class AppComponent implements OnInit {
