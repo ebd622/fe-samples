@@ -66,7 +66,7 @@ private fetchPosts(){
         for(const key in responseData){
           if(responseData.hasOwnProperty(key)){
             // This will pull out all the key-values pairs from the nested object
-            postArray.push({...responseData[key], id: key});
+            postArray.push({...responseData[key]});
           }
         }
         return postArray;
@@ -87,14 +87,14 @@ Angular supports **generics**, in the example above the methods `post` and `get`
 ```
 private fetchPosts(){
   this.http
-    .get<{[key: string]: Post}>('http://...')
+    .get<Post>('http://...')
     .pipe(
       .map(responseData => {
         const postArray: Post[] = [];
         for(const key in responseData){
           if(responseData.hasOwnProperty(key)){
             // This will pull out all the key-values pairs from the nested object
-            postArray.push({...responseData[key], id: key});
+            postArray.push({...responseData[key]});
           }
         }
         return postArray;
