@@ -110,9 +110,18 @@ private fetchPosts(){
 It means that `get` will return a `Post` type as a result. The same can be done for a `post` method. <br/>
 A full example you can see in [posts.service.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/posts.service.ts)
 
-### L258: L258: Outputting Posts
+### L258: Outputting Posts
 When `Post` is retrieved it can be printed in a template ([app.component.html](https://github.com/ebd622/fe-samples/blob/master/http/src/app/app.component.html)):
 ```
+    <div class="col-xs-12 col-md-6 col-md-offset-3">
+      <p *ngIf="loadedPosts.length < 1> No posts available!</p>
+      <ul class="list-group" *ngIf="loadedPosts.length >= 1>
+        <li class="list-group-item" *ngFor="let post of loadedPosts">
+          <h3>{{post.title}}</h3>
+          <p>{{post.content}}</p>
+        </li>
+      </ul>
+    </div>
 ```
 
 
