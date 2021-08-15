@@ -219,4 +219,5 @@ Then in the [app.component.ts](https://github.com/ebd622/fe-samples/blob/master/
     });
   }  
 ```
+This way we detach a service and UI.
 
