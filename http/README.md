@@ -170,7 +170,7 @@ Then the property can be used in a template to print a message `Loading...`:
 ```
 
 ### L260: Using Using a service for Http Request
-It always makes sense to separate a component and service. <br/?
+It always makes sense to separate a component and service. <br/>
 We can create [posts.service.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/posts.service.ts) to make `post` and `get` requests.
 
 
