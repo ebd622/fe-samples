@@ -185,13 +185,7 @@ In the [posts.service.ts](https://github.com/ebd622/fe-samples/blob/master/http/
       .pipe(
         map(responseData => {
           const postArray: Post[] = [];
-          for (const key in responseData) {
-            console.log(responseData[key]);
-            if (responseData.hasOwnProperty(key)){
-              //postArray.push({...responseData[key], id: responseData[key]._id.$oid});
-              postArray.push({title: responseData[key].title, content: responseData[key].content, id: responseData[key]._id.$oid});
-            }
-          }
+          ...
           return postArray;
         })
       );
@@ -200,6 +194,12 @@ In the [posts.service.ts](https://github.com/ebd622/fe-samples/blob/master/http/
 Then in the [app.component.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/app.component.ts)  we will subscribe to it:
 
 ```
+  ngOnInit() {
+    this.fetchPosts();
+  }
+  
+  ...
+  
   onFetchPosts() {
     // Send Http request
     this.fetchPosts();
