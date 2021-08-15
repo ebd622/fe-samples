@@ -212,10 +212,6 @@ Then in the [app.component.ts](https://github.com/ebd622/fe-samples/blob/master/
     this.postService.fetchPosts().subscribe(posts => {
       this.isFatching = false;
       this.loadedPosts = posts;
-    }, error => {
-      this.isFatching = false;
-      this.error = error.message;
-      console.log(error);
     });
   }  
 ```
