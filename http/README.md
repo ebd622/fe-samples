@@ -176,4 +176,47 @@ We can create [posts.service.ts](https://github.com/ebd622/fe-samples/blob/maste
 ### L261: Services & Components working together
 A best practice, when working with http-requests, is to move details related to a template to a component. In our example we create http-subject in a service, but subscribe to it - in the compoment. A request will sent only when we subsctibe to an observable.
 
+In the [posts.service.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/posts.service.ts) we only prepare an Observable:
+
+```
+  fetchPosts(){
+    return this.http
+      .get<Post>('http://localhost:8080/collection1', this.authService.getAuthHeaders())
+      .pipe(
+        map(responseData => {
+          const postArray: Post[] = [];
+          for (const key in responseData) {
+            console.log(responseData[key]);
+            if (responseData.hasOwnProperty(key)){
+              //postArray.push({...responseData[key], id: responseData[key]._id.$oid});
+              postArray.push({title: responseData[key].title, content: responseData[key].content, id: responseData[key]._id.$oid});
+            }
+          }
+          return postArray;
+        })
+      );
+  }
+```
+Then in the component we will subscribe to it:
+
+```
+  onFetchPosts() {
+    // Send Http request
+    this.fetchPosts();
+  }
+  
+  ...
+  
+  private fetchPosts(){
+    this.isFatching = true;
+    this.postService.fetchPosts().subscribe(posts => {
+      this.isFatching = false;
+      this.loadedPosts = posts;
+    }, error => {
+      this.isFatching = false;
+      this.error = error.message;
+      console.log(error);
+    });
+  }  
+```
 
