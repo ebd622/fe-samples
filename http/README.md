@@ -7,7 +7,7 @@
 * L257: Using Types with the HttpClient
 * L258: Outputting Posts
 * L259: Showing a loading indicator
-* L260: Using Using a service for Http Request
+* L260: [Using Using a service for Http Request](l260-using-using-a-service-for-http-request)
 * L261: Services & Components working together
 * L262: Sending s DELETE request
 * L263: Handling errors
