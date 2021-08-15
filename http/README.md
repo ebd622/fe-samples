@@ -235,4 +235,6 @@ In a similar way we can send a delete request:
     });
   }
 ```
+In the component we subscribe to observable to clean up all the posts: `this.loadedPosts = []`. We know that the method in observable (`() => {
+this.loadedPosts = [];`) will be only calles when observable succeed.
 
