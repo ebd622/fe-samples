@@ -217,3 +217,22 @@ Then in the [app.component.ts](https://github.com/ebd622/fe-samples/blob/master/
 ```
 This way we detach a service and UI.
 
+### L262: Sending s DELETE request
+In a similar way we can send a delete request:
+
+[posts.service.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/posts.service.ts) 
+
+```
+  deletePosts(){
+    return this.http.delete('http://localhost:8080/collection1', this.authService.getAuthHeaders());
+  }
+```
+[app.component.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/app.component.ts) 
+```
+  onClearPosts() {
+    this.postService.deletePosts().subscribe(() => {
+      this.loadedPosts = [];
+    });
+  }
+```
+
