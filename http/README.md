@@ -8,7 +8,7 @@
 * L258: Outputting Posts
 * L259: Showing a loading indicator
 * L260: [Using Using a service for Http Request](#l260-using-using-a-service-for-http-request)
-* L261: [Services & Components working together](https://github.com/ebd622/fe-samples/blob/master/http/README.md#l261-services--components-working-together)
+* L261: [Services & Components working together](#l261-services--components-working-together)
 * L262: Sending s DELETE request
 * L263: Handling errors
 * L264:
