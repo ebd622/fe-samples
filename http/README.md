@@ -9,7 +9,7 @@
 * L259: Showing a loading indicator
 * L260: [Using Using a service for Http Request](#l260-using-using-a-service-for-http-request)
 * L261: [Services & Components working together](#l261-services--components-working-together)
-* L262: [Sending s DELETE request](https://github.com/ebd622/fe-samples/tree/master/http#l262-sending-s-delete-request)
+* L262: [Sending s DELETE request](#l262-sending-s-delete-request)
 * L263: Handling errors
 * L264:
 
