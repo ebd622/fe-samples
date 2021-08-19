@@ -11,7 +11,7 @@
 * L261: [Services & Components working together](#l261-services--components-working-together)
 * L262: [Sending s DELETE request](#l262-sending-s-delete-request)
 * L263: Handling errors
-* L264:
+* L264: Using subjects for error handling
 
 
 ### L254: Sending a POST request
