@@ -12,6 +12,7 @@
 * L262: [Sending s DELETE request](#l262-sending-s-delete-request)
 * L263: Handling errors
 * L264: Using subjects for error handling
+* 265: Using the catchError operator
 
 
 ### L254: Sending a POST request
