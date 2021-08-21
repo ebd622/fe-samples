@@ -298,3 +298,4 @@ import {throwError} from 'rxjs';
       );
   }
 ```
+After hanling an error (sending it to analytic server, for example) you still need to return observable.
