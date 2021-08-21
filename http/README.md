@@ -267,3 +267,33 @@ Observable supports a few arguments, the second argument is a function that trig
      <button class="btn btn-danger" (click)="onHandleError()">Ok</button>
    </div>
  ```
+ 
+### L265: Using the catchError operator
+
+```
+import {map,catchError} from 'rxjs/internal/operators';
+import {throwError} from 'rxjs';
+...
+
+  fetchPosts(){
+    return this.http
+      .get<Post>('http://localhost:8080/collection1', this.authService.getAuthHeaders())
+      .pipe(
+        map(responseData => {
+          const postArray: Post[] = [];
+          for (const key in responseData) {
+            console.log(responseData[key]);
+            if (responseData.hasOwnProperty(key)){
+              //postArray.push({...responseData[key], id: responseData[key]._id.$oid});
+              postArray.push({title: responseData[key].title, content: responseData[key].content, id: responseData[key]._id.$oid});
+            }
+          }
+          return postArray;
+        }),
+        catchError(errorRes => {
+          //Send to analytics server
+          return throwError(errorRes);
+        })
+      );
+  }
+```
