@@ -240,3 +240,5 @@ In a similar way we can send a delete request:
 In the component we subscribe to observable to clean up all the posts: `this.loadedPosts = []`. We know that the method in observable (`() => {
 this.loadedPosts = [];`) will be only calles when observable succeed.
 
+### L263: Handling errors
+Observable supports a few arguments, the second argument is a function that triggers whenever an error is thrown
