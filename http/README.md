@@ -298,4 +298,4 @@ import {throwError} from 'rxjs';
       );
   }
 ```
-After hanling an error (sending it to analytic server, for example) you still need to return observable.
+After hanling an error (sending it to analytic server, for example) you still need to return observable. This can be done with `throwError` - it will yield a new observable by wrapping an error.
