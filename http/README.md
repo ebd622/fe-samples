@@ -269,6 +269,7 @@ Observable supports a few arguments, the second argument is a function that trig
  ```
  
 ### L265: Using the catchError operator
+A special opetator `catchError` can help to handle errors:
 
 ```
 import {map,catchError} from 'rxjs/internal/operators';
