@@ -292,7 +292,7 @@ import {throwError} from 'rxjs';
           return postArray;
         }),
         catchError(errorRes => {
-          //Send to analytics server
+          //Send to analytics server or do whatever you need
           return throwError(errorRes);
         })
       );
