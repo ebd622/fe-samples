@@ -258,3 +258,12 @@ Observable supports a few arguments, the second argument is a function that trig
     });
   }
 ```
+
+[app.component.html](https://github.com/ebd622/fe-samples/blob/master/http/src/app/app.component.html) 
+```
+   <div class="alert alert-danger" *ngIf="error">
+     <h1>An Error occured!</h1>
+     <p> {{ error }}</p>
+     <button class="btn btn-danger" (click)="onHandleError()">Ok</button>
+   </div>
+ ```
