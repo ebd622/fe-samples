@@ -241,4 +241,20 @@ In the component we subscribe to observable to clean up all the posts: `this.loa
 this.loadedPosts = [];`) will be only calles when observable succeed.
 
 ### L263: Handling errors
-Observable supports a few arguments, the second argument is a function that triggers whenever an error is thrown
+Observable supports a few arguments, the second argument is a function that triggers whenever an error is thrown.
+
+[app.component.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/app.component.ts) 
+
+```
+  private fetchPosts(){
+    this.isFatching = true;
+    this.postService.fetchPosts().subscribe(posts => {
+      this.isFatching = false;
+      this.loadedPosts = posts;
+    }, error => {
+      this.isFatching = false;
+      this.error = error.message;
+      console.log(error);
+    });
+  }
+```
