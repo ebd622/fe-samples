@@ -14,6 +14,7 @@
 * L264: Using subjects for error handling
 * L265: Using the catchError operator
 * L266: Error handling & UX
+* L267: Setting headers
 
 
 ### L254: Sending a POST request
