@@ -319,3 +319,4 @@ When clicking the button it will call the method `onHandleError()`:
     this.error = null;
  }
 ```
+This will reset `this.error` to null, after this an error message box will be removed on UI.
