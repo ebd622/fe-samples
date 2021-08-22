@@ -375,7 +375,7 @@ private fetchPosts(){
       'http://...',
       {
         headers: new HttpRequest({'Custom-Header' : 'Hello'}),
-        params: new HttpParams().set('print', 'pretty')
+        params: searchParams
       }
     )
     .pipe(
