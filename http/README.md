@@ -264,7 +264,6 @@ Observable supports a few arguments, the second argument is a function that trig
    <div class="alert alert-danger" *ngIf="error">
      <h1>An Error occured!</h1>
      <p> {{ error }}</p>
-     <button class="btn btn-danger" (click)="onHandleError()">Ok</button>
    </div>
  ```
  
@@ -299,3 +298,16 @@ import {throwError} from 'rxjs';
   }
 ```
 After hanling an error (sending it to analytic server, for example) you still need to return observable. This can be done with `throwError` - it will yield a new observable by wrapping an error.
+
+### L266: Error handling & UX
+Let's add a button on UI to get rid of error message box when error happened:
+
+[app.component.html](https://github.com/ebd622/fe-samples/blob/master/http/src/app/app.component.html) 
+```
+   <div class="alert alert-danger" *ngIf="error">
+     <h1>An Error occured!</h1>
+     <p> {{ error }}</p>
+     <button class="btn btn-danger" (click)="onHandleError()">Ok</button>
+   </div>
+ ```
+
