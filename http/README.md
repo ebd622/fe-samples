@@ -15,7 +15,7 @@
 * L265: Using the catchError operator
 * L266: Error handling & UX
 * L267: Setting headers
-
+* L268: Adding query params
 
 ### L254: Sending a POST request
 In [app.component.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/app.component.ts):
@@ -332,6 +332,28 @@ private fetchPosts(){
       'http://...',
       {
         headers: new HttpRequest({'Custom-Header' : 'Hello'})    
+      }
+    )
+    .pipe(
+      ...
+    )
+    .subscribe(posts => {
+      ...
+    });
+}
+```
+
+### L268: Adding query params
+Use `HttpParams` to add query params:
+
+```
+private fetchPosts(){
+  this.http
+    .get<Post>(
+      'http://...',
+      {
+        headers: new HttpRequest({'Custom-Header' : 'Hello'}),
+        params: new HttpParams().
       }
     )
     .pipe(
