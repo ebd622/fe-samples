@@ -325,4 +325,21 @@ This will reset `this.error` to null, after this an error message box will be re
 ### L267: Setting headers
 Every methon of the http-client (POST, GET, ...) supports providing headers in a request:
 
+```
+private fetchPosts(){
+  this.http
+    .get<Post>(
+      'http://...',
+      {
+        headers: new HttpRequest({'Custom-Header' : 'Hello'})    
+      }
+    )
+    .pipe(
+      ...
+    )
+    .subscribe(posts => {
+      ...
+    });
+}
+```
 
