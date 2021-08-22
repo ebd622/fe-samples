@@ -353,7 +353,29 @@ private fetchPosts(){
       'http://...',
       {
         headers: new HttpRequest({'Custom-Header' : 'Hello'}),
-        params: new HttpParams().
+        params: new HttpParams().set('print', 'pretty')
+      }
+    )
+    .pipe(
+      ...
+    )
+    .subscribe(posts => {
+      ...
+    });
+}
+```
+When you need to add multiple params you can do it using a variable:
+```
+private fetchPosts(){
+  let searchParams = new HttpParams();
+  searchParams = searchParams.append('print','pretty');
+  searchParams = searchParams.append('custom','key');
+  this.http
+    .get<Post>(
+      'http://...',
+      {
+        headers: new HttpRequest({'Custom-Header' : 'Hello'}),
+        params: new HttpParams().set('print', 'pretty')
       }
     )
     .pipe(
