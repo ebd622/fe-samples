@@ -309,5 +309,13 @@ Let's add a button on UI to get rid of error message box when error happened:
      <p> {{ error }}</p>
      <button class="btn btn-danger" (click)="onHandleError()">Ok</button>
    </div>
- ```
+```
+When clicking the button it will call the method `onHandleError()`:
 
+[app.component.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/app.component.ts) 
+
+```
+ onHandleError(){
+    this.error = null;
+ }
+```
