@@ -321,3 +321,8 @@ When clicking the button it will call the method `onHandleError()`:
  }
 ```
 This will reset `this.error` to null, after this an error message box will be removed on UI.
+
+### L267: Setting headers
+Every methon of the http-client (POST, GET, ...) supports providing headers in a request:
+
+
