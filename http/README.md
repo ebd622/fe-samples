@@ -10,7 +10,7 @@
 * L260: [Using Using a service for Http Request](#l260-using-using-a-service-for-http-request)
 * L261: [Services & Components working together](#l261-services--components-working-together)
 * L262: [Sending s DELETE request](#l262-sending-s-delete-request)
-* L263: Handling errors
+* L263: Handling errors(https://github.com/ebd622/fe-samples/tree/master/http#l263-handling-errors)
 * L264: Using subjects for error handling
 * L265: Using the catchError operator
 * L266: Error handling & UX
