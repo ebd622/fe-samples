@@ -12,7 +12,7 @@
 * L262: [Sending s DELETE request](#l262-sending-s-delete-request)
 * L263: [Handling errors](#l263-handling-errors)
 * L264: Using subjects for error handling
-* L265: [Using the catchError operator](https://github.com/ebd622/fe-samples/tree/master/http#l265-using-the-catcherror-operator)
+* L265: [Using the catchError operator](#l265-using-the-catcherror-operator)
 * L266: Error handling & UX
 * L267: Setting headers
 * L268: Adding query params
