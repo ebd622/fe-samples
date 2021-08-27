@@ -14,7 +14,7 @@
 * L264: Using subjects for error handling
 * L265: [Using the catchError operator](#l265-using-the-catcherror-operator)
 * L266: [Error handling & UX](#l266-error-handling--ux)
-* L267: Setting headers(https://github.com/ebd622/fe-samples/tree/master/http#l267-setting-headers)
+* L267: [Setting headers](https://github.com/ebd622/fe-samples/tree/master/http#l267-setting-headers)
 * L268: Adding query params
 
 ### L254: Sending a POST request
