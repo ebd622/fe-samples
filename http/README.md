@@ -422,12 +422,13 @@ We can also use `observe` with http.delete :
   deletePosts(){
     return this.http
       .delete('http://localhost:8080/collection1', this.authService.getAuthHeaders(),{
-        observe: 'event'
+        observe: 'events'
       })
       .pipe(
         tap(event => {
-          console.log(event);
+          console.log(events);
         })
       );
   }
 ```
+This way we observe `events` which may be not only response-event but also other events.
