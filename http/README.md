@@ -16,6 +16,7 @@
 * L266: [Error handling & UX](#l266-error-handling--ux)
 * L267: [Setting headers](#l267-setting-headers)
 * L268: Adding query params
+* L269: Observing different type of responses
 
 ### L254: Sending a POST request
 In [app.component.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/app.component.ts):
