@@ -388,3 +388,6 @@ private fetchPosts(){
 }
 ```
 It is possible to add query-patams in URL but using `HttpRequest` is more convinient way, especially when you have to provide many query-params.
+
+### L269: Observing different type of responses
+
