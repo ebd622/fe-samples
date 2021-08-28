@@ -390,13 +390,13 @@ private fetchPosts(){
 It is possible to add query-patams in URL but using `HttpRequest` is more convinient way, especially when you have to provide many query-params.
 
 ### L269: Observing different type of responses
-
+We may need to have an access to an entire response (with a status code, headers and so on), not only body data. It can be done providing an exra parameter to an http-request:
 ```
 {
   observe: 'response'
 }
-
 ```
+For example, this is a post request:
 
 ```
   createAndStorePost(postData: Post){
