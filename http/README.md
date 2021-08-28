@@ -454,7 +454,7 @@ It is also possible to improve logging depending on an event-type:
 This is how we can use the events if we need very granual control over how we updtate UI and in which phase a request currenly is.
 
 ### 270: Changing a resonse body type
-We can also configure a response type. A default `responseType` is json
+We can also configure a response type. A default `responseType` is json, but it is possible to overwrite it:
 
 ```
   deletePosts(){
