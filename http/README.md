@@ -464,9 +464,7 @@ We can also configure a response type. A default `responseType` is json
         responseType: 'text'
       })
       .pipe(
-        tap(event => {
-          console.log(event);
-        })
+        ...
       );
   }
 ```
