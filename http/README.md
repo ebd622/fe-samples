@@ -391,3 +391,24 @@ It is possible to add query-patams in URL but using `HttpRequest` is more convin
 
 ### L269: Observing different type of responses
 
+```
+{
+  observe: 'response'
+}
+
+```
+
+```
+  createAndStorePost(postData: Post){
+    this.http.post<Post>(
+      'http://localhost:8080/collection1',
+      postData,
+      {
+        observe: 'response' // It's requre to get a full response (i.e. headers, status code and so on)
+      }
+      // this.authService.getAuthHeaders()
+    ).subscribe(resposeData => {
+      console.log(resposeData);
+    });
+  }
+```
