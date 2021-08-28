@@ -412,3 +412,5 @@ For example, this is a post request:
     });
   }
 ```
+In this way `resonseData` will include a whole http-response object.
+ 
