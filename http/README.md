@@ -415,4 +415,19 @@ For example, this is a post request where we will use `observe: 'response'`:
   }
 ```
 In this way `resonseData` will include a whole http-response object.
- 
+
+We can also use `observe` with http.delete :
+
+```
+  deletePosts(){
+    return this.http
+      .delete('http://localhost:8080/collection1', this.authService.getAuthHeaders(),{
+        observe: 'event'
+      })
+      .pipe(
+        tap(event => {
+          console.log(event);
+        })
+      );
+  }
+```
