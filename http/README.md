@@ -396,7 +396,9 @@ We may need to have an access to an entire response (with a status code, headers
   observe: 'response'
 }
 ```
-For example, this is a post request:
+(A default value for `observe` is `body`)
+
+For example, this is a post request where we will use `observe: 'response'`:
 
 ```
   createAndStorePost(postData: Post){
