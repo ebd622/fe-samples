@@ -452,3 +452,22 @@ It is also possible to improve logging depending on an event-type:
       ...
 ```
 This is how we can use the events if we need very granual control over how we updtate UI and in which phase a request currenly is.
+
+### 270: Changing a resonse body type
+We can also configure a response type. A default `responseType` is json
+
+```
+  deletePosts(){
+    return this.http
+      .delete('http://localhost:8080/collection1', this.authService.getAuthHeaders(),{
+        observe: 'events',
+        responseType: 'text'
+      })
+      .pipe(
+        tap(event => {
+          console.log(event);
+        })
+      );
+  }
+```
+In this way a response will be a `text`. It is also possible to use `blob` as a responseType.
