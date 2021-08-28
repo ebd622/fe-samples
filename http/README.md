@@ -436,16 +436,18 @@ This way we observe `events` which may be not only response-event but also other
 It is also possible to improve logging depending on an event-type:
 
 ```
-...
-tap(event => {
-  console.log(event);
-  if(event.type === HttpEventType.Sent){
-  //Do something
-  }
-  if(event.type === HttpEventType.Response){
-  console.log(event.body);
-  }
-  
-})
-...
+      ...
+      .pipe(
+        tap(event => {
+          console.log(event);
+          if(event.type === HttpEventType.Sent){
+          //Do something
+          }
+          if(event.type === HttpEventType.Response){
+          console.log(event.body);
+          }
+        })
+      );
+
+      ...
 ```
