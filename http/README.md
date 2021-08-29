@@ -18,6 +18,9 @@
 * L268: Adding query params
 * L269: Observing different type of responses
 * L270: Changing a resonse body type
+* L271: Introducing interceptors
+
+
 
 ### L254: Sending a POST request
 In [app.component.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/app.component.ts):
