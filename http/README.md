@@ -484,28 +484,12 @@ For this scenario we could use interceptors.
 ```
 export class AuthInterceptorService implements HttpInterceptor{
   intercept(req: HttpRequest<any>, next: HttpHandler){
-    console.log('Request on its way')
-
-    // ******************************************************************
-    // Here we can modify an original request. We can not change it, because it is imputable. We need to clone it.
-    // This is a better way how to implement Authentication!!!
-    // const modifiedRequest = req.clone({
-    //   headers: req.headers
-    //      .append('Content-Type',  'application/json')
-    //      .append('Authorization', 'Basic ' + btoa('admin:secret'))
-    // });
-    // return next.handle(modifiedRequest);
-    // ******************************************************************
-
-    return next.handle(req).pipe(
-      tap(event => {
-        console.log(event);
-        console.log('Response arrivied!');
-      })
-    );
+    console.log('Request on its way');
+    return next.handle(req);
   }
 }
 ```
+(This is hust a simle example which intercepts a request and log into a console)
 
 An interceptors need to be configured in [app.module.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/app.module.ts):
 ```
