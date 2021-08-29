@@ -473,3 +473,7 @@ We can also configure a response type. A default `responseType` is json, but it 
   }
 ```
 In this way a response will be a `text`. It is also possible to use `blob` as a responseType.
+
+### L271: Introducing interceptors
+
+
