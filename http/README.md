@@ -19,6 +19,7 @@
 * L269: Observing different type of responses
 * L270: Changing a resonse body type
 * L271: Introducing interceptors
+* L272: Manipulating interceptors
 
 
 
@@ -501,3 +502,24 @@ An interceptors need to be configured in [app.module.ts](https://github.com/ebd6
   ],
   ...
 ```
+### L272: Manipulating interceptors
+Inside interceptors we can play with a request object. But we can not modify a request, because it is imutable. We need to clode it.
+
+[auth-interceptor.service.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/auth-interceptor.service.ts) 
+
+```
+export class AuthInterceptorService implements HttpInterceptor{
+  intercept(req: HttpRequest<any>, next: HttpHandler){
+    console.log('Request on its way');
+ 
+    // Here we can modify an original request. We can not change it, because it is imputable. We need to clone it.
+    const modifiedRequest = req.clone({
+      headers: req.headers
+         .append('Content-Type',  'application/json')
+         .append('Authorization', 'Basic ' + btoa('admin:secret'))
+    });
+    return next.handle(modifiedRequest);
+  }
+}
+```
+Here we intercept a request and add some extra headers to it.
