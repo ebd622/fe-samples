@@ -477,3 +477,43 @@ In this way a response will be a `text`. It is also possible to use `blob` as a 
 ### L271: Introducing interceptors
 Let's imaging a scenario when we want to attach custom headers to all our outgoing requests: for instance, we need to authenticate a user to add some requst headers or params. We don't need to configure them in every request because that would be very combersome.
 
+For this scenario we could use interceptors.
+
+[auth-interceptor.service.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/auth-interceptor.service.ts) 
+
+```
+export class AuthInterceptorService implements HttpInterceptor{
+  intercept(req: HttpRequest<any>, next: HttpHandler){
+    console.log('Request on its way')
+
+    // ******************************************************************
+    // Here we can modify an original request. We can not change it, because it is imputable. We need to clone it.
+    // This is a better way how to implement Authentication!!!
+    // const modifiedRequest = req.clone({
+    //   headers: req.headers
+    //      .append('Content-Type',  'application/json')
+    //      .append('Authorization', 'Basic ' + btoa('admin:secret'))
+    // });
+    // return next.handle(modifiedRequest);
+    // ******************************************************************
+
+    return next.handle(req).pipe(
+      tap(event => {
+        console.log(event);
+        console.log('Response arrivied!');
+      })
+    );
+  }
+}
+```
+
+An interceptors need to be configured in [app.module.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/app.module.ts):
+```
+  ...
+  providers: [
+    // Provided order DOES matter!
+    {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true},
+    {provide: HTTP_INTERCEPTORS, useClass: LoggingInterceprotService, multi: true}
+  ],
+  ...
+```
