@@ -475,5 +475,5 @@ We can also configure a response type. A default `responseType` is json, but it 
 In this way a response will be a `text`. It is also possible to use `blob` as a responseType.
 
 ### L271: Introducing interceptors
-
+Let's imaging a scenario when we want to attach custom headers to all our outgoing requests: for instance, we need to authenticate a user to add some requst headers or params. We don't need to configure them in every request because that would be very combersome.
 
