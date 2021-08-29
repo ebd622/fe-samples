@@ -489,7 +489,7 @@ export class AuthInterceptorService implements HttpInterceptor{
   }
 }
 ```
-(This is hust a simle example which intercepts a request and log into a console)
+(This is hust a simle example which intercepts a request and logs it into a console)
 
 An interceptors need to be configured in [app.module.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/app.module.ts):
 ```
