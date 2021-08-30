@@ -15,7 +15,7 @@
 * L265: [Using the catchError operator](#l265-using-the-catcherror-operator)
 * L266: [Error handling & UX](#l266-error-handling--ux)
 * L267: [Setting headers](#l267-setting-headers)
-* L268: Adding query params
+* L268: Adding query params(L268: Adding query params)
 * L269: Observing different type of responses
 * L270: Changing a resonse body type
 * L271: Introducing interceptors
