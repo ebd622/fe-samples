@@ -16,7 +16,7 @@
 * L266: [Error handling & UX](#l266-error-handling--ux)
 * L267: [Setting headers](#l267-setting-headers)
 * L268: [Adding query params](#L268-Adding-query-params)
-* L269: Observing different type of responses(https://github.com/ebd622/fe-samples/tree/master/http#l269-observing-different-type-of-responses)
+* L269: [Observing different type of responses](https://github.com/ebd622/fe-samples/tree/master/http#l269-observing-different-type-of-responses)
 * L270: Changing a resonse body type
 * L271: Introducing interceptors
 * L272: Manipulating interceptors
