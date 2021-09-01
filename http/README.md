@@ -17,7 +17,7 @@
 * L267: [Setting headers](#l267-setting-headers)
 * L268: [Adding query params](#L268-Adding-query-params)
 * L269: [Observing different type of responses](#l269-observing-different-type-of-responses)
-* L270: Changing a resonse body type
+* L270: [Changing a resonse body type]()
 * L271: Introducing interceptors
 * L272: Manipulating interceptors
 
