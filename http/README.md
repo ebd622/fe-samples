@@ -18,7 +18,7 @@
 * L268: [Adding query params](#L268-Adding-query-params)
 * L269: [Observing different type of responses](#l269-observing-different-type-of-responses)
 * L270: [Changing a resonse body type](#l270-changing-a-resonse-body-type)
-* L271: Introducing interceptors(https://github.com/ebd622/fe-samples/tree/master/http#l271-introducing-interceptors)
+* L271: [Introducing interceptors] (#l271-introducing-interceptors)
 * L272: Manipulating interceptors
 
 
