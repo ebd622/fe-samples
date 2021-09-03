@@ -19,7 +19,7 @@
 * L269: [Observing different type of responses](#l269-observing-different-type-of-responses)
 * L270: [Changing a resonse body type](#l270-changing-a-resonse-body-type)
 * L271: [Introducing interceptors](#l271-introducing-interceptors)
-* L272: Manipulating interceptors
+* L272: Manipulating interceptors (https://github.com/ebd622/fe-samples/blob/master/http/README.md#l272-manipulating-interceptors)
 
 
 
