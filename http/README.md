@@ -551,4 +551,21 @@ export class AuthInterceptorService implements HttpInterceptor{
 Here we can also use `map` or anything else instead of `tap`.
 
 ### L274: Multiple interceptors
+We may have many interceptors, as many as we want
+
+[logging-interceprot.service.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/logging-interceprot.service.ts)
+
+```
+import {HttpHandler, HttpInterceptor, HttpRequest} from '@angular/common/http';
+import {logging} from 'selenium-webdriver';
+
+export class LoggingInterceprotService implements HttpInterceptor {
+  intercept(req: HttpRequest<any>, next: HttpHandler){
+    console.log(req);
+
+    return next.handle(req);
+  }
+}
+```
+
 
