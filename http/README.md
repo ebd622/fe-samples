@@ -527,3 +527,22 @@ Here we intercept a request and add some extra headers to it.
 
 ### L273: Response interceptors
 
+```
+export class AuthInterceptorService implements HttpInterceptor{
+  intercept(req: HttpRequest<any>, next: HttpHandler){
+    console.log('Request on its way');
+ 
+    ...
+    
+    return next.handle(modifiedRequest).pipe(
+      tap(event => {
+        console.log(event);
+        if(event.type === HttpEventType.Response){
+          console.log('Response arrivied, body data: ');
+          console.log(event.body);
+        }
+      })
+    );
+  }
+}
+```
