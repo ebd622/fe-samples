@@ -567,5 +567,15 @@ export class LoggingInterceprotService implements HttpInterceptor {
   }
 }
 ```
+An order interceptors provided in [app.module.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/app.module.ts) is very important:
+```
+  providers: [
+    // Provided order DOES matter!
+    {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true},
+    {provide: HTTP_INTERCEPTORS, useClass: LoggingInterceprotService, multi: true}
+    ]
+```
+
+
 
 
