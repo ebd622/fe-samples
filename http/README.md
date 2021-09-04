@@ -20,6 +20,7 @@
 * L270: [Changing a resonse body type](#l270-changing-a-resonse-body-type)
 * L271: [Introducing interceptors](#l271-introducing-interceptors)
 * L272: [Manipulating interceptors](#l272-manipulating-interceptors)
+* L273: Response interceptors
 
 
 
@@ -523,3 +524,6 @@ export class AuthInterceptorService implements HttpInterceptor{
 }
 ```
 Here we intercept a request and add some extra headers to it.
+
+### L273: Response interceptors
+
