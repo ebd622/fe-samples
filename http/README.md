@@ -561,8 +561,8 @@ import {logging} from 'selenium-webdriver';
 
 export class LoggingInterceprotService implements HttpInterceptor {
   intercept(req: HttpRequest<any>, next: HttpHandler){
-    console.log(req);
-
+    console.log(req.url);
+    console.log(req.headers);
     return next.handle(req);
   }
 }
