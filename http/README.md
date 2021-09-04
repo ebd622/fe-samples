@@ -503,7 +503,7 @@ An interceptors need to be configured in [app.module.ts](https://github.com/ebd6
   ...
 ```
 ### L272: Manipulating interceptors
-Inside interceptors we can play with a request object. But we can not modify a request, because it is imutable. We need to clode it.
+Inside interceptors we can play with a request object. But we can not modify a request, because it is imutable. We need to clone it.
 
 [auth-interceptor.service.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/auth-interceptor.service.ts) 
 
