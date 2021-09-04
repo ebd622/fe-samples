@@ -526,6 +526,7 @@ export class AuthInterceptorService implements HttpInterceptor{
 Here we intercept a request and add some extra headers to it.
 
 ### L273: Response interceptors
+We can also interact with the response:
 
 ```
 export class AuthInterceptorService implements HttpInterceptor{
