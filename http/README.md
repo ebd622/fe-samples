@@ -546,3 +546,4 @@ export class AuthInterceptorService implements HttpInterceptor{
   }
 }
 ```
+Here we can also use `map` or anything else instead of `tap`.
