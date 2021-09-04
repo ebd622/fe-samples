@@ -551,7 +551,7 @@ export class AuthInterceptorService implements HttpInterceptor{
 Here we can also use `map` or anything else instead of `tap`.
 
 ### L274: Multiple interceptors
-We may have many interceptors, as many as we want
+We may have many interceptors, as many as we want. Let's add logging interceptor.
 
 [logging-interceprot.service.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/logging-interceprot.service.ts)
 
