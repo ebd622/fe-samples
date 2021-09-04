@@ -21,6 +21,7 @@
 * L271: [Introducing interceptors](#l271-introducing-interceptors)
 * L272: [Manipulating interceptors](#l272-manipulating-interceptors)
 * L273: Response interceptors
+* L274: Multiple interceptors
 
 
 
@@ -548,3 +549,6 @@ export class AuthInterceptorService implements HttpInterceptor{
 }
 ```
 Here we can also use `map` or anything else instead of `tap`.
+
+### L274: Multiple interceptors
+
