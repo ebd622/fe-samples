@@ -20,6 +20,7 @@ In the example app.componemt we are using three components:
 For not we can see all three components on a screen at the same time, but it would be nice to see just one component at a time clicking a corresponding tab.
 
 We would like to dynamically load the components by clicking the links:
+[app.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app.component.html)
 ```
       <ul class="nav nav-tabs">
         <li role="presentation" class="active"<a href=#>Home</a></li>
