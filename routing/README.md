@@ -45,4 +45,13 @@ Next we need to register a router module in [app.module.ts](https://github.com/e
     RouterModule.forRoot(appRoutes)
   ],
 ```
+Next in [app.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app.component.html) we need to inform a component where to load the route:
+
+```
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+```
 
