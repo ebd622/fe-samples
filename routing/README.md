@@ -28,4 +28,6 @@ We would like to dynamically load the components by clicking the links:
         <li role="presentation" class="active"<a href=#>Users</a></li>       
       </ul>
 ```
-
+We configure routes in [app.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app.module.ts):
+```
+```
