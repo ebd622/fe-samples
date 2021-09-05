@@ -36,9 +36,8 @@ const appRoutes: Routes = [
   { path: 'servers', component: ServersComponent},
 ];
 ```
-Next we need to register a router module
+Next we need to register a router module in [app.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app.module.ts):
 ```
-
   imports: [
     BrowserModule,
     FormsModule,
