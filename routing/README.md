@@ -36,4 +36,14 @@ const appRoutes: Routes = [
   { path: 'servers', component: ServersComponent},
 ];
 ```
+Next we need to register a router module
+```
+
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    RouterModule.forRoot(appRoutes)
+  ],
+```
 
