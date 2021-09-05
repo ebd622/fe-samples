@@ -10,5 +10,11 @@
 * L131: Using relative path in Programmatic Navigation
 * L132: Passing patemeters to routes
 
+In the example app.componemt we are using three components:
+- [home](https://github.com/ebd622/fe-samples/tree/master/routing/src/app/home)
+- users
+- servers
+
+
 ### L126: Setting up and loading Routers
 
