@@ -54,4 +54,4 @@ Next in [app.component.html](https://github.com/ebd622/fe-samples/blob/master/ro
     </div>
   </div>
 ```
-
+`<router-outlet></router-outlet>` is a special directive shippint with Angular
