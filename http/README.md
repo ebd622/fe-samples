@@ -20,7 +20,7 @@
 * L270: [Changing a resonse body type](#l270-changing-a-resonse-body-type)
 * L271: [Introducing interceptors](#l271-introducing-interceptors)
 * L272: [Manipulating interceptors](#l272-manipulating-interceptors)
-* L273: Response interceptors
+* L273: Response interceptors(https://github.com/ebd622/fe-samples/tree/master/http#l273-response-interceptors)
 * L274: Multiple interceptors
 
 
