@@ -2,7 +2,7 @@
 
 ## Key points
 * L124: Why do we need a Router? 
-* L126: Setting up and loading Routers
+* L126: [Setting up and loading Router]s()
 * L127: Navigating with router links
 * L128: Understanging navigation path
 * L129: Styling Active Router links
