@@ -2,7 +2,7 @@
 
 ## Key points
 * L124: Why do we need a Router? 
-* L126: [Setting up and loading Routers](https://github.com/ebd622/fe-samples/blob/master/routing/README.md#l126-setting-up-and-loading-routers)
+* L126: [Setting up and loading Routers](#l126-setting-up-and-loading-routers)
 * L127: Navigating with router links
 * L128: Understanging navigation path
 * L129: Styling Active Router links
