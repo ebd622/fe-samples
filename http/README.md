@@ -22,6 +22,7 @@
 * L272: [Manipulating interceptors](#l272-manipulating-interceptors)
 * L273: [Response interceptors](#l273-response-interceptors)
 * L274: [Multiple interceptors](#l274-multiple-interceptors)
+* L276: Resources(https://github.com/ebd622/fe-samples/blob/master/http/README.md#l276-resources)
 
 
 
