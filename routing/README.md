@@ -93,4 +93,22 @@ A record like this
 it an another way of using 'routerLink' - property binding to some not-string data. This allows to construct more complex paths very easily.
 
 ### L129 Styling Active Router links
+Let's add the directive `routerLinkActive`:
 
+```
+      <ul class="nav nav-tabs">
+        <li role="presentation"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">
+            <a routerLink="/">Home</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+            <a routerLink="/servers">Servers</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+            <a [routerLink]="['/users']">Users</a>
+        </li>
+      </ul>
+```
