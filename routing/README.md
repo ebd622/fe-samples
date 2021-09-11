@@ -112,3 +112,4 @@ Let's add the directive `routerLinkActive` to make our menu on UI acvive when th
         </li>
       </ul>
 ```
+A special propety `[routerLinkActiveOptions]="{exact: true}"` says that the menu 'Home' sould me markt as 'acvive' only when a whole path is exacly the same as specified (it this paeticular case a whole path is `/`). Without this the menu 'Home' will be always set as active.
