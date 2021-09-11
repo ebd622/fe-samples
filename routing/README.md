@@ -88,6 +88,6 @@ With this approach Angular reloads a component but it doesn't reload a page.
 
 A record like this
 ```
-<a [routerLink]="['/users', 'something1', something2, ...]">Users</a>
+<a [routerLink]="['/users', 'something']">Users</a>
 ```
 it an another way of using 'routerLink' - property binding to some not-string data. This allows to construct more complex paths very easily.
