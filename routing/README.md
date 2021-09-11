@@ -63,8 +63,8 @@ Let's add navigation via menu bar:
 ```
       <ul class="nav nav-tabs">
         <li role="presentation" class="active"<a href=/>Home</a></li>
-        <li role="presentation" class="active"<a href=/Servers>Servers</a></li>
-        <li role="presentation" class="active"<a href=/Users>Users</a></li>       
+        <li role="presentation" class="active"<a href=/servers>Servers</a></li>
+        <li role="presentation" class="active"<a href=/users>Users</a></li>       
       </ul>
 ```
 But this is not a best way to do, because it restarts our app on every navigation. It means our whole applications state will be lost.
@@ -74,15 +74,12 @@ Angular provides a better way to do it using `routeLink`:
       <ul class="nav nav-tabs">
         <li role="presentation"
             routerLinkActive="active"
-            [routerLinkActiveOptions]="{exact: true}">
             <a routerLink="/">Home</a>
         </li>
         <li role="presentation"
-            routerLinkActive="active">
             <a routerLink="/servers">Servers</a>
         </li>
         <li role="presentation"
-            routerLinkActive="active">
             <a [routerLink]="['/users']">Users</a>
         </li>
       </ul>
