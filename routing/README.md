@@ -84,4 +84,4 @@ Angular provides a better way to do it using `routeLink`:
         </li>
       </ul>
 ```
-
+With this approach Angular reloads a component but it doesn't reload a page.
