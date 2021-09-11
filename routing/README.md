@@ -69,3 +69,22 @@ Let's add navigation via menu bar:
 ```
 But this is not a best way to do, because it restarts our app on every navigation. It means our whole applications state will be lost.
 
+Angular provides a better way to do it using `routeLink`:
+```
+      <ul class="nav nav-tabs">
+        <li role="presentation"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">
+            <a routerLink="/">Home</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+            <a routerLink="/servers">Servers</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+            <a [routerLink]="['/users']">Users</a>
+        </li>
+      </ul>
+```
+
