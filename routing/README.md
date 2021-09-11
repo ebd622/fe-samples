@@ -91,3 +91,6 @@ A record like this
 <a [routerLink]="['/users', 'something']">Users</a>
 ```
 it an another way of using 'routerLink' - property binding to some not-string data. This allows to construct more complex paths very easily.
+
+### L129 Styling Active Router links
+
