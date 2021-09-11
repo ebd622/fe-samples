@@ -93,7 +93,7 @@ A record like this
 it an another way of using 'routerLink' - property binding to some not-string data. This allows to construct more complex paths very easily.
 
 ### L129 Styling Active Router links
-Let's add the directive `routerLinkActive`:
+Let's add the directive `routerLinkActive` to make our menu on UI acvive when they are selected:
 
 ```
       <ul class="nav nav-tabs">
