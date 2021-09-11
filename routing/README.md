@@ -67,4 +67,5 @@ Let's add navigation via menu bar:
         <li role="presentation" class="active"<a href=/Users>Users</a></li>       
       </ul>
 ```
+But this is not a best way to do, because it restarts our app on every navigation. It means our whole applications state will be lost.
 
