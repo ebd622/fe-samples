@@ -85,3 +85,9 @@ Angular provides a better way to do it using `routeLink`:
       </ul>
 ```
 With this approach Angular reloads a component but it doesn't reload a page.
+
+A record like this
+```
+<a [routerLink]="['/users']">Users</a>
+```
+it an another way of using 'routerLink' - property binding to some not-string data
