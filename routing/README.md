@@ -139,3 +139,4 @@ Let's add a button in the template, it will trigger some complex logic and then 
   }
   ...
 ```
+Not it does the same as we clicked a routerLink
