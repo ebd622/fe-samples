@@ -126,3 +126,14 @@ We may need to navigate automatically when some opetations are finished or a the
 <button class="btn btn-primary" (click)="onLoadServer(1)">Load Servers</button>
 ...
 ```
+[home.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/home/home.component.ts)
+```
+  ...
+  onLoadServer(id: number){
+    //Some complex logic here
+    
+    //Then we want to navigate
+    this.router.navigate(['/servers', id, 'edit'], {queryParams: {allowEdit: '1'}, fragment: 'loading'});
+  }
+  ...
+```
