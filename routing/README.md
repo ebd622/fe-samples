@@ -158,5 +158,5 @@ We can also use a relevant path
   }
   ...
 ```
-Here we use a relative patch (like `'servers'` but not `'/servers'`) and also indicate to which path it should be relative (`relativeTo: this.route`)
+Here we use a relative patch (like `'servers'` but not `'/servers'`) and also indicate to which path/route it should be relative (`relativeTo: this.route`)
 
