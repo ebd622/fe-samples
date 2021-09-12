@@ -154,9 +154,11 @@ We can also use a relevant path
 ```
   ...
   onReload(){
-    this.router.navigate(['servers'], {relativeTo: this.route});
+    this.router.navigate(['myservers'], {relativeTo: this.route});
   }
   ...
 ```
-Here we use a relative patch (like `'servers'` but not `'/servers'`) and also indicate to which path/route it should be relative (`relativeTo: this.route`)
+Here we use a relative patch (like `'myservers'` but not `'/myservers'`) and also indicate to which path/route it should be relative (`relativeTo: this.route`)
+
+This will redirect us to `/servers/myservers`
 
