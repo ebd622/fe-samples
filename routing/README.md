@@ -146,8 +146,8 @@ We can also use a relevant path
 
 [servers.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/servers.component.html)
 ```
+<button class="btn btn-primary" (click)="onReload()">Reload page</button>
 ```
-
 
 [servers.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/servers.component.ts)
 
