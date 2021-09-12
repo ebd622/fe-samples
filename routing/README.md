@@ -133,7 +133,7 @@ We may need to navigate automatically when some opetations are finished or a the
     //Some complex logic here
     
     //Then we want to navigate
-    this.router.navigate(['/servers', id, 'edit'], {queryParams: {allowEdit: '1'}, fragment: 'loading'});
+    this.router.navigate(['/servers']);
   }
   ...
 ```
