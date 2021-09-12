@@ -144,6 +144,11 @@ Not it does the same as we clicked a routerLink
 ### L131 Using relative path in Programmatic Navigation
 We can also use a relevant path
 
+[servers.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/servers.component.html)
+```
+```
+
+
 [servers.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/servers.component.ts)
 
 ```
