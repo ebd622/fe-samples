@@ -118,4 +118,4 @@ Let's add the directive `routerLinkActive` to make our menu on UI acvive when th
 A special propety `[routerLinkActiveOptions]="{exact: true}"` says that the menu 'Home' sould me markt as 'acvive' only when a whole path is exacly the same as specified (it this paeticular case a whole path is `/`). Without this the menu 'Home' will be always set as active.
 
 ### L130 Navigating Programmatically
-We may need to navigate automatically when some opetations are finished or a the user clickes some button and then we wany to trigger the naviation.
+We may need to navigate automatically when some opetations are finished or a the user clickes some button and then we wany to trigger the naviation from a typescript code.
