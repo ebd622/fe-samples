@@ -160,5 +160,5 @@ We can also use a relevant path
 ```
 Here we use a relative patch (like `'myservers'` but not `'/myservers'`) and also indicate to which path/route it should be relative (`relativeTo: this.route`)
 
-This will redirect us to `/servers/myservers`
+This will redirect us to `/servers/myservers` (this will break our app because this path doesn't exist, but this is just an example).
 
