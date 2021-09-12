@@ -142,4 +142,15 @@ Let's add a button in the template, it will trigger some complex logic and then 
 Not it does the same as we clicked a routerLink
 
 ### L131 Using relative path in Programmatic Navigation
+We can also use a relevant path
+
+[servers.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/servers.component.ts)
+
+```
+  ...
+  onReload(){
+    this.router.navigate(['servers'], {relativeTo: this.route});
+  }
+  ...
+```
 
