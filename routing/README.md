@@ -119,3 +119,10 @@ A special propety `[routerLinkActiveOptions]="{exact: true}"` says that the menu
 
 ### L130 Navigating Programmatically
 We may need to navigate automatically when some opetations are finished or a the user clickes some button and then we wany to trigger the naviation from a typescript code.
+
+[home.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/home/home.component.html)
+```
+...
+<button class="btn btn-primary" (click)="onLoadServer(1)">Load Servers</button>
+...
+```
