@@ -164,3 +164,11 @@ This will redirect us to `/servers/myservers` (this will break our app because t
 
 ### L132 Passing patemeters to routes
 
+Let's add a paremeter to out router
+[app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts)
+
+```
+...
+{path: 'user/:id', component: UsersComponent },
+...
+```
