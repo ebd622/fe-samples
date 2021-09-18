@@ -185,3 +185,17 @@ First we need to inject a router in a component:
 constructor(private route: ActivatedRoute) { }
 ```
 By injecting this we have an access to a currently loaded route.
+
+Then we can initiate `user` with values from the route:
+```
+  user: {id: number, name: string};
+
+  constructor(private route: ActivatedRoute) { }
+
+  ngOnInit() {
+    this.user = {
+      id: this.route.snapshot.params['id'],
+      name: this.route.snapshot.params['name']
+    };
+
+```
