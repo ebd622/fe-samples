@@ -172,3 +172,4 @@ Let's add a paremeter to out router
 {path: 'user/:id', component: UsersComponent },
 ...
 ```
+With this we can path a user id in URL like `user/1`, `user/2` and so on.
