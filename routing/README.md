@@ -201,11 +201,12 @@ Then we can initiate `user` with values from the route:
 
 ```
 Here we fetch two parameters `id` and `name`. We assume that both parameters are specified in a router:
+
 ```
 {path: 'user/:id/:name', component: UsersComponent },
 ```
 
-Now let's output the data in our template using string interpolation
+Now let's output the data in our template using string interpolation:
 
 [user.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/users/user/user.component.html)
 ```
