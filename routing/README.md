@@ -211,3 +211,4 @@ Now let's output the data in our template using string interpolation:
 <p>User with ID {{user.id}} loaded.</p>
 <p>User name is {{user.name}}</p>
 ```
+With this we will be able to see parameters passed in a router.
