@@ -162,3 +162,5 @@ Here we use a relative patch (like `'myservers'` but not `'/myservers'`) and als
 
 This will redirect us to `/servers/myservers` (this will break our app because this path doesn't exist, but this is just an example).
 
+### L132 Passing patemeters to routes
+
