@@ -197,5 +197,10 @@ Then we can initiate `user` with values from the route:
       id: this.route.snapshot.params['id'],
       name: this.route.snapshot.params['name']
     };
+  }  
 
+```
+Here we fetch two parameters `id` and `name`. We assume that both parameters are specified in a router:
+```
+{path: 'user/:id/:name', component: UsersComponent },
 ```
