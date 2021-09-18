@@ -176,3 +176,12 @@ Let's add a paremeter to out router
 With this we can path a user id in URL like `user/1`, `user/2` and so on. This path will be interpreted as dynamic, otherwise we would get an error that `user/1` is an unknown route.
 
 ### L133 Fetching route parematers
+Let's fetch a parameter in our app
+
+First we need to inject a router in a component:
+[user.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/users/user/user.component.ts)
+
+```
+constructor(private route: ActivatedRoute) { }
+```
+By injecting this we have an access to a currently loaded route.
