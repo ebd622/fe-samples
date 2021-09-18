@@ -165,7 +165,8 @@ This will redirect us to `/servers/myservers` (this will break our app because t
 
 ### L132 Passing patemeters to routes
 
-Let's add a paremeter to out router
+Let's add a paremeter to out router:
+
 [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts)
 
 ```
@@ -179,6 +180,7 @@ With this we can pass a user id in URL like `user/1`, `user/2` and so on. This p
 Let's fetch a parameter in our app
 
 First we need to inject a router in a component:
+
 [user.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/users/user/user.component.ts)
 
 ```
