@@ -172,4 +172,5 @@ Let's add a paremeter to out router
 {path: 'user/:id', component: UsersComponent },
 ...
 ```
-With this we can path a user id in URL like `user/1`, `user/2` and so on.
+With this we can path a user id in URL like `user/1`, `user/2` and so on. This path will be interpreted as dynamic, otherwise we would get an error that `user/1` is an unknown route.
+
