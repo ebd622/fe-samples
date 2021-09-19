@@ -219,4 +219,11 @@ Now let's output the data in our template using string interpolation:
 With this we will be able to see parameters passed in a router.
 
 ### L134 Fetching route parameters reactively
+Let's add a routing-link to the template:
+
+[user.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/users/user/user.component.html)
+
+```
+<a [routerLink]="['/users', 10, 'Anna']">Anna (10)</a>
+```
 
