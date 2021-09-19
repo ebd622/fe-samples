@@ -245,4 +245,4 @@ This can be solved with using `observable`:
       );
     ...
 ```
-Here we subscribe to an event which may happen in a future.
+Here we subscribe to an event which may happen in a future. With this Angular will update a `user` object whenever a `params` is changed (Super!).
