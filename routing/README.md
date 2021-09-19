@@ -230,5 +230,18 @@ Thiis will construct a route like `/users/10/Anna`, but this route will not work
 
 This is not a bug. Angular creates routes when creating a component. In this case an angular-component has already beed created and Angular will not reinstanciate the component (watch vide for more details).
 
+This can be solved with using `observable`:
 
+[user.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/users/user/user.component.ts)
 
+```
+    ...
+    this.paramSubscription = this.route.params
+      .subscribe(
+        (params: Params) => {
+          this.user.id = params['id'];
+          this.user.name = params['name'];
+        }
+      );
+    ...
+```
