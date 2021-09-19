@@ -245,3 +245,4 @@ This can be solved with using `observable`:
       );
     ...
 ```
+Here we subscribe to an event which may happen in a future.
