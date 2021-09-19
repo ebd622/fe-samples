@@ -10,6 +10,7 @@
 * L131: Using relative path in Programmatic Navigation
 * L132: Passing patemeters to routes
 * L133: Fetching route parematers
+* L134: Fetching route parameters reactively
 
 
 ### L126: Setting up and loading Routers
@@ -216,3 +217,6 @@ Now let's output the data in our template using string interpolation:
 <p>User name is {{user.name}}</p>
 ```
 With this we will be able to see parameters passed in a router.
+
+### L134 Fetching route parameters reactively
+
