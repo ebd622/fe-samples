@@ -247,4 +247,5 @@ This can be solved with using `observable`:
 ```
 Here we subscribe to an event which may happen in a future. With this Angular will update a `user` object whenever a `params` is changed (Super!).
 
-If you know that the component your are on may never be relaoaded from whithin that component, than you may not need `observable`, using `snapshot` will be enough.
+If you know that the component your are on may never be relaoaded *from whithin that component*, than you may not need `observable`, using `snapshot` will be enough. Otherwise, you need to use an aproach with `observable`.
+
