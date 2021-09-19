@@ -226,7 +226,7 @@ Let's add a routing-link to the template:
 ```
 <a [routerLink]="['/users', 10, 'Anna']">Anna (10)</a>
 ```
-Thiis will construct a route like `/users/10/Anna`, but this route will not work.
+Thiis will construct a route like `/users/10/Anna`, but this route will not work. The URL will be updated in a brawser but we will stay on the same page.
 
 
 
