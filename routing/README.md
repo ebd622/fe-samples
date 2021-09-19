@@ -253,3 +253,35 @@ If you know that the component your are on may never be relaoaded *from whithin 
 ### L135 An important note about route observable
 When you subsribe to a `observable` your subscription will leave in a memory, eveny when a component is destroyed. This is because a subscriprion is not closely tied to your component.
 
+You will beed to unsubscribe when a component is destroyed:
+
+[user.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/users/user/user.component.ts)
+
+```
+export class UserComponent implements OnInit, OnDestroy{
+  user: {id: number, name: string};
+  paramSubscription: Subscription;
+
+  constructor(private route: ActivatedRoute) { }
+
+  ngOnInit() {
+    this.user = {
+      id: this.route.snapshot.params['id'],
+      name: this.route.snapshot.params['name']
+    };
+    // Create obsevable: user will be changes when parameters (id, name) are changed
+    this.paramSubscription = this.route.params
+      .subscribe(
+        (params: Params) => {
+          this.user.id = params['id'];
+          this.user.name = params['name'];
+        }
+      );
+  }
+  ngOnDestroy(): void {
+    // unsubscribe from the observabale when a component is destroyed
+    this.paramSubscription.unsubscribe();
+  }
+}
+```
+
