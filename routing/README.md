@@ -237,7 +237,7 @@ This can be solved with using `observable`:
 
 ```
     ...
-    this.paramSubscription = this.route.params
+    this.route.params
       .subscribe(
         (params: Params) => {
           this.user.id = params['id'];
@@ -251,6 +251,5 @@ Here we subscribe to an event which may happen in a future. With this Angular wi
 If you know that the component your are on may never be relaoaded *from whithin that component*, than you may not need `observable`, using `snapshot` will be enough. Otherwise, you need to use an aproach with `observable`.
 
 ### L135 An important note about route observable
-
-
+When you subsribe to a `observable` your subscription will leave in a memory, eveny when a component is destroyed. This is because a subscriprion is not closely tied to your component.
 
