@@ -11,6 +11,7 @@
 * L132: Passing patemeters to routes
 * L133: Fetching route parematers
 * L134: Fetching route parameters reactively
+* L135: An important note about route observable
 
 
 ### L126: Setting up and loading Routers
@@ -248,4 +249,8 @@ This can be solved with using `observable`:
 Here we subscribe to an event which may happen in a future. With this Angular will update a `user` object whenever a `params` is changed (Super!).
 
 If you know that the component your are on may never be relaoaded *from whithin that component*, than you may not need `observable`, using `snapshot` will be enough. Otherwise, you need to use an aproach with `observable`.
+
+### L135 An important note about route observable
+
+
 
