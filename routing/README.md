@@ -6,7 +6,7 @@
 * L127: [Navigating with router links](#l127-navigating-with-router-links)
 * L128: [Understanging navigation path](#l128-understanging-navigation-path)
 * L129: [Styling Active Router links](#l129-styling-active-router-links)
-* L130: Navigating Programmatically
+* L130: Navigating Programmatically https://github.com/ebd622/fe-samples/tree/master/routing#l130-navigating-programmatically
 * L131: Using relative path in Programmatic Navigation
 * L132: Passing patemeters to routes
 * L133: Fetching route parematers
