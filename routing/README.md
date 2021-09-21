@@ -7,7 +7,7 @@
 * L128: [Understanging navigation path](#l128-understanging-navigation-path)
 * L129: [Styling Active Router links](#l129-styling-active-router-links)
 * L130: [Navigating Programmatically](#l130-navigating-programmatically)
-* L131: [Using relative path in Programmatic Navigation] (#l131-using-relative-path-in-programmatic-navigation)
+* L131: [Using relative path in Programmatic Navigation](#l131-using-relative-path-in-programmatic-navigation)
 * L132: Passing patemeters to routes
 * L133: Fetching route parematers
 * L134: Fetching route parameters reactively
