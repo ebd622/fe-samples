@@ -8,7 +8,7 @@
 * L129: [Styling Active Router links](#l129-styling-active-router-links)
 * L130: [Navigating Programmatically](#l130-navigating-programmatically)
 * L131: [Using relative path in Programmatic Navigation](#l131-using-relative-path-in-programmatic-navigation)
-* L132: Passing patemeters to routes
+* L132: Passing patemeters to routes (https://github.com/ebd622/fe-samples/tree/master/routing#l132-passing-patemeters-to-routes)
 * L133: Fetching route parematers
 * L134: Fetching route parameters reactively
 * L135: An important note about route observable
