@@ -12,7 +12,7 @@
 * L133: [Fetching route parematers](#l133-fetching-route-parematers)
 * L134: [Fetching route parameters reactively](https://github.com/ebd622/fe-samples/tree/master/routing#l134-fetching-route-parameters-reactively)
 * L135: [An important note about route observable](#l135-an-important-note-about-route-observable)
-* L136: 
+* L136: Passing query parameters and fragments
 
 
 ### L126: Setting up and loading Routers
