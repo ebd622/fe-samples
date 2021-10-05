@@ -14,7 +14,7 @@
 * L135: [An important note about route observable](#l135-an-important-note-about-route-observable)
 * L136: Passing query parameters and fragments
 * L137: Retrieving query parameters and fragments
-* L138: 
+* L139: Setting up child (nested) routes
 
 
 ### L126: Setting up and loading Routers
