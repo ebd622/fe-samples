@@ -24,7 +24,7 @@ In the example app.componemt we are using three components:
 - [users](https://github.com/ebd622/fe-samples/tree/master/routing/src/app/users)
 - [servers](https://github.com/ebd622/fe-samples/tree/master/routing/src/app/servers)
 
-For not we can see all three components on a screen at the same time, but it would be nice to see just one component at a time clicking a corresponding tab.
+For now we can see all three components on a screen at the same time, but it would be nice to see just one component at a time clicking a corresponding tab.
 
 We would like to dynamically load the components by clicking the links:
 [app.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app.component.html)
