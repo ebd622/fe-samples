@@ -64,7 +64,7 @@ Next in [app.component.html](https://github.com/ebd622/fe-samples/blob/master/ro
 `router-outlet` is a special directive shipping with Angular. With this directive we mark the place in our document where we want the Anular router to load the component in the currently selected route.
 
 ### L127 Navigating with router links
-Let's add navigation via menu bar:
+Let's add a navigation via the menu bar:
 
 [app.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app.component.html)
 ```
