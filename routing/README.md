@@ -300,7 +300,7 @@ Next let's add the routing to the template (servers.component.html)[https://gith
 ```
       <a
         [routerLink]="['/servers',server.id]"
-        [queryParams]="{allowEdit: server.id === 3 ? '1' : '0'}"
+        [queryParams]="{allowEdit: '1'}"
         fragment="loading"
         ...
       </a>
