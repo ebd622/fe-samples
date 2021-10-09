@@ -316,7 +316,7 @@ Now let's do the same proramatically:
 ```
 <button class="btn btn-primary" (click)="onLoadServer(1)">Load Server 1</button>
 ```
-[home.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/home/home.component.ts):
+[home.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/home/home.component.ts)
 ```
 onLoadServer(id: number){
     //do something
