@@ -298,5 +298,13 @@ Let's add one more routing to app.module.ts (via [app-routing.module.ts](https:/
 ```
 Next let's add the routing to the template (servers.component.html)[https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/servers.component.html]:
 ```
+      <a
+        [routerLink]="['/servers',server.id]"
+        [queryParams]="{allowEdit: server.id === 3 ? '1' : '0'}"
+        fragment="loading"
+        ...
+      </a>
 ```
+This will create a URL like this:
+
 
