@@ -307,5 +307,7 @@ Next let's add the routing to the template (servers.component.html)[https://gith
 ```
 This will create a URL like this: `http://.../servers/5/edit?allowEdit=1#loading`
 
+Now let's do the same proramatically
+
 
 
