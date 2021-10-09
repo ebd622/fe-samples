@@ -291,8 +291,9 @@ export class UserComponent implements OnInit, OnDestroy{
 Normally Angular will do it behind the scene, but it doesn't hurt to do it manualy. It is important to understand what happens here.
 
 ### L136 Passing query parameters and fragments
+URLs may have query parameters and fragments (followed by `#` (hash sign)). Fragments are used to jump to a specific place in the app. Let's see how we can add them. 
 
-Let's add one more routing to app.module.ts (via [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts)):
+First add one more routing to app.module.ts (via [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts)):
 ```
 {path: 'servers/:id/edit', component: EditServerComponent}
 ```
