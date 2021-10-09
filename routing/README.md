@@ -291,3 +291,6 @@ export class UserComponent implements OnInit, OnDestroy{
 Normally Angular will do it behind the scene, but it doesn't hurt to do it manualy. It is important to understand what happens here.
 
 ### L136 Passing query parameters and fragments
+
+Let's add one more routing to app.module.ts (via app-routing.module.ts[]):
+
