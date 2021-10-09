@@ -297,8 +297,9 @@ First add one more routing to app.module.ts (via [app-routing.module.ts](https:/
 ```
 {path: 'servers/:id/edit', component: EditServerComponent}
 ```
-Then let's add the routing to the template 
-[servers.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/servers.component.html):
+Then let's add the routing to the template
+
+[servers.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/servers.component.html)
 ```
       <a
         [routerLink]="['/servers',server.id]"
@@ -310,6 +311,7 @@ Then let's add the routing to the template
 This will create a URL like this: `http://.../servers/5/edit?allowEdit=1#loading`
 
 Now let's do the same proramatically:
+
 [home.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/home/home.component.html)
 ```
 <button class="btn btn-primary" (click)="onLoadServer(1)">Load Server 1</button>
