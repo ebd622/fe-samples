@@ -293,4 +293,7 @@ Normally Angular will do it behind the scene, but it doesn't hurt to do it manua
 ### L136 Passing query parameters and fragments
 
 Let's add one more routing to app.module.ts (via [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts)):
+```
+{path: 'servers/:id/edit', component: EditServerComponent}
+```
 
