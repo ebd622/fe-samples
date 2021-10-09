@@ -296,4 +296,7 @@ Let's add one more routing to app.module.ts (via [app-routing.module.ts](https:/
 ```
 {path: 'servers/:id/edit', component: EditServerComponent}
 ```
+Next let's add the routing to the template (servers.component.html)[https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/servers.component.html]:
+```
+```
 
