@@ -309,5 +309,8 @@ This will create a URL like this: `http://.../servers/5/edit?allowEdit=1#loading
 
 Now let's do the same proramatically
 
-
+[home.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/home/home.component.html)
+```
+<button class="btn btn-primary" (click)="onLoadServer(1)">Load Server 1</button>
+```
 
