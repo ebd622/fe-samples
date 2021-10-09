@@ -307,10 +307,16 @@ Next let's add the routing to the template (servers.component.html)[https://gith
 ```
 This will create a URL like this: `http://.../servers/5/edit?allowEdit=1#loading`
 
-Now let's do the same proramatically
+Now let's do the same proramatically:
 
 [home.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/home/home.component.html)
 ```
 <button class="btn btn-primary" (click)="onLoadServer(1)">Load Server 1</button>
 ```
-
+(home.component.ts)[https://github.com/ebd622/fe-samples/blob/master/routing/src/app/home/home.component.ts]
+```
+onLoadServer(id: number){
+    //do something
+    this.router.navigate(['/servers', id, 'edit'], {queryParams: {allowEdit: '1'}, fragment: 'loading'});
+  }
+```
