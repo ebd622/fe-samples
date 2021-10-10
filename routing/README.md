@@ -329,6 +329,9 @@ There are two ways to rettrieve params:
 * Using snapshots
 * Using observable
 
+Let's see both ways.
+#### Using snapshots
+
 [edit-server.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/edit-server/edit-server.component.ts)
 ```
   constructor(private serversService: ServersService,
@@ -341,3 +344,5 @@ There are two ways to rettrieve params:
     ...
   }
 ```
+
+#### Using observable
