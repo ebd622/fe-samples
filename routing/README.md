@@ -325,8 +325,11 @@ onLoadServer(id: number){
 ```
 ### L137 Retrieving query parameters and fragments
 To retrieve params and a fragment. For this we need to ingect our `ActivatedRoute`
+There are two ways to rettrieve params:
+* Using snapshots
+* Using observable
 
-(edit-server.component.ts)[https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/edit-server/edit-server.component.ts]
+[edit-server.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/edit-server/edit-server.component.ts)
 ```
   constructor(private serversService: ServersService,
               private route: ActivatedRoute) { }
