@@ -324,7 +324,8 @@ onLoadServer(id: number){
   }
 ```
 ### L137 Retrieving query parameters and fragments
-Let's see how to retrieve query params.
+To retrieve params and a fragment. For this we need to ingect our `ActivatedRoute`
+
 (edit-server.component.ts)[https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/edit-server/edit-server.component.ts]
 ```
   constructor(private serversService: ServersService,
