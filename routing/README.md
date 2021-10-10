@@ -331,15 +331,8 @@ Let's see how to retrieve query params.
               private route: ActivatedRoute) { }
   ...
     ngOnInit() {
-    this.route.queryParams.subscribe(
-      (queryParams: Params) => {
-        this.allowEdit = queryParams['allowEdit'] === '1' ? true : false;
-      }
-    );
-    this.route.fragment.subscribe();
-    const id: number = +this.route.snapshot.params['id'];
-    this.server = this.serversService.getServer(id);
-    this.serverName = this.server.name;
-    this.serverStatus = this.server.status;
+    console.log.(this.route.snapshot.queryParams);
+    console.log.(this.route.snapshot.fragment);
+    ...
   }
 ```
