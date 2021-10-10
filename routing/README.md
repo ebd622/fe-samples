@@ -330,9 +330,10 @@ Let's see how to retrieve query params.
   constructor(private serversService: ServersService,
               private route: ActivatedRoute) { }
   ...
-    ngOnInit() {
-    console.log.(this.route.snapshot.queryParams);
-    console.log.(this.route.snapshot.fragment);
+  
+  ngOnInit() {
+  console.log.(this.route.snapshot.queryParams);
+  console.log.(this.route.snapshot.fragment);
     ...
   }
 ```
