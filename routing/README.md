@@ -333,8 +333,8 @@ To retrieve params and a fragment. For this we need to ingect our `ActivatedRout
   ...
   
   ngOnInit() {
-  console.log.(this.route.snapshot.queryParams);
-  console.log.(this.route.snapshot.fragment);
+    console.log.(this.route.snapshot.queryParams);
+    console.log.(this.route.snapshot.fragment);
     ...
   }
 ```
