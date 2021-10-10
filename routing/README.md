@@ -344,5 +344,6 @@ Let's see both ways.
     ...
   }
 ```
+This is only run or updated at the time this comopnent is created.
 
 #### Using observable
