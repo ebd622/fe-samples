@@ -347,3 +347,11 @@ Let's see both ways.
 This is only run or updated at the time this comopnent is created. So, if your change query params from the page you are currently on, you might not want to use this approach because it won't be reactive. It won't display or allow you to react to any changes which happen after this component has been loaded.
 
 #### Using observable
+An alternative is to use observable:
+```
+  ngOnInit() {
+    this.route.queryParams.subscribe();
+    this.route.fragment.subscribe();    
+    ...
+  }
+```
