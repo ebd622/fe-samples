@@ -355,3 +355,4 @@ An alternative is to use observable:
     ...
   }
 ```
+This approach allows you to react to any change of query params.
