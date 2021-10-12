@@ -10,7 +10,7 @@
 * L131: [Using relative path in Programmatic Navigation](#l131-using-relative-path-in-programmatic-navigation)
 * L132: [Passing patemeters to routes](#l132-passing-patemeters-to-routes)
 * L133: [Fetching route parematers](#l133-fetching-route-parematers)
-* L134: [Fetching route parameters reactively](https://github.com/ebd622/fe-samples/tree/master/routing#l134-fetching-route-parameters-reactively)
+* L134: [Fetching route parameters reactively](#l134-fetching-route-parameters-reactively)
 * L135: [An important note about route observable](#l135-an-important-note-about-route-observable)
 * L136: [Passing query parameters and fragments](#l136-passing-query-parameters-and-fragments)
 * L137: Retrieving query parameters and fragments
