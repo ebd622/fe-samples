@@ -13,7 +13,7 @@
 * L134: [Fetching route parameters reactively](#l134-fetching-route-parameters-reactively)
 * L135: [An important note about route observable](#l135-an-important-note-about-route-observable)
 * L136: [Passing query parameters and fragments](#l136-passing-query-parameters-and-fragments)
-* L137: [Retrieving query parameters and fragments](https://github.com/ebd622/fe-samples/blob/master/routing/README.md#l137-retrieving-query-parameters-and-fragments)
+* L137: [Retrieving query parameters and fragments](l137-retrieving-query-parameters-and-fragments)
 * L139: Setting up child (nested) routes
 * L140: Using Query Parameters - Practice
 
