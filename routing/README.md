@@ -357,3 +357,5 @@ An alternative is to use observable:
 ```
 This approach allows you to react to any change of query params.
 You don't need to unsubscribe here, Angular will handle it for you.
+
+### L139 Setting up child (nested) routes
