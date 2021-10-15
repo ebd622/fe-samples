@@ -231,7 +231,7 @@ Let's add a routing-link to the template:
 ```
 <a [routerLink]="['/users', 10, 'Anna']">Anna (10)</a>
 ```
-Thiis will construct a route like `/users/10/Anna`, but this route will not work. The URL will be updated in a brawser but we will see the a previous data on a page. 
+This will construct a route like `/users/10/Anna`, but this route will not work. The URL will be updated in a brawser but we will see the a previous data on a page. 
 
 This is not a bug. Angular creates routes when creating a component. In this case an angular-component has already beed created and Angular will not reinstanciate the component (watch vide for more details).
 
