@@ -386,7 +386,7 @@ const appRoutes: Routes = [
 ];
 ```
 
-We also need to modify the template to add `router-outlet` there:
+We also need to modify the template to add `<router-outlet>` there:
 
 [servers.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/servers.component.html)
 
@@ -412,7 +412,7 @@ const appRoutes: Routes = [
 ];
 ```
 
-In the template we also need to replace the element `<app-user>` with `router-outlet`:
+In the template we also need to replace the element `<app-user>` with `<router-outlet>`:
 
 [users.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/users/users.component.html)
 ```
