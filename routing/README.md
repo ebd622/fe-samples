@@ -371,6 +371,19 @@ const appRoutes: Routes = [
   { path: 'servers/:id/edit', component: EditServersComponent},    
 ];
 ```
-It would be nice to neste them and have some child routes. Let's add such child routes:
+
+It would be nice to neste them and have some child routes. Let's add such child routes for `servers`:
+```
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent},
+  { path: 'users', component: UsersComponent},
+  { path: 'users/:id/:name', component: UsersComponent},
+  { path: 'servers', component: ServersComponent, children: [
+      { path: ':id', component: ServersComponent},  
+      { path: ':id/edit', component: EditServersComponent},    
+      ]
+   }
+];
+```
 
 
