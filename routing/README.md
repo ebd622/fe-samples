@@ -415,6 +415,9 @@ const appRoutes: Routes = [
 In the template we also need to replace `app-user` with `router-outlet`:
 
 [users.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/users/users.component.html)
-
 ```
+  <div class="col-xs-12 col-sm-4">
+    <!--<app-user></app-user>-->
+    <router-outlet></router-outlet>
+  </div>
 ```
