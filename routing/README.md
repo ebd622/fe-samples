@@ -359,7 +359,7 @@ This approach allows you to react to any change of query params.
 You don't need to unsubscribe here, Angular will handle it for you.
 
 ### L139 Setting up child (nested) routes
-in the current implementation we have a kind of duplications
+in the current `Routes` implementation we have a kind of duplications for `users` and `servers`:
 
 ```
 const appRoutes: Routes = [
