@@ -386,4 +386,9 @@ const appRoutes: Routes = [
 ];
 ```
 
+We also need to modify the template to add `router-outlet` there:
+[servers.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/servers.component.html)
+
+```
+```
 
