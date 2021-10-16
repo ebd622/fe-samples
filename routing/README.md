@@ -421,4 +421,4 @@ In the template we also need to replace `app-user` with `router-outlet`:
     <router-outlet></router-outlet>
   </div>
 ```
-This is how we can implement child routing nested routes with `children` property
+This is how we can implement child routing nested routes with `children` property which holds all the nested routes.
