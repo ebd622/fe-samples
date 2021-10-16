@@ -371,4 +371,6 @@ const appRoutes: Routes = [
   { path: 'servers/:id/edit', component: EditServersComponent},    
 ];
 ```
-It would be nice to neste them and have some child routes.
+It would be nice to neste them and have some child routes. Let's add such child routes:
+
+
