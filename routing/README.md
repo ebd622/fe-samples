@@ -395,3 +395,18 @@ We also need to modify the template to add `router-outlet` there:
   </div>
 ```
 
+Let's do the same for `users`:
+```
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent},
+  { path: 'users', component: UsersComponent, children: [
+      { path: 'users/:id/:name', component: UsersComponent}
+    ]
+  },
+  { path: 'servers', component: ServersComponent, children: [
+      { path: ':id', component: ServersComponent},  
+      { path: ':id/edit', component: EditServersComponent},    
+     ]
+  }
+];
+```
