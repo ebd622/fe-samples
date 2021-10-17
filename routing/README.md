@@ -445,4 +445,4 @@ In the typescript we inject a `router` and add `onEdit()`:
     this.router.navigate(['edit'], {relativeTo: this.route, queryParamsHandling: 'preserve'});
   }
 ```
-In `onEdit()` method we use a relative path `edit` in the `navigate` method. 
+In `onEdit()` method we use a relative path `edit` in the `navigate` method. We also need to specify `relativeTo:` to let Angular know to which path it is relative.
