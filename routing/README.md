@@ -443,7 +443,7 @@ In the typescript we inject a `router` and add `onEdit()`:
               
   ...            
   onEdit(){
-    this.router.navigate(['edit'], {relativeTo: this.route, queryParamsHandling: 'preserve'});
+    this.router.navigate(['edit'], {relativeTo: this.route});
   }
 ```
 In `onEdit()` method we use a relative path `edit` in the `navigate` method. We also need to specify `relativeTo:` to let Angular know to which path it is relative.
@@ -487,6 +487,13 @@ Now we can use `allowEdit` in the tempate:
 ### L141 Configure the handling of query params
 In the previous example we 
 
+
+[server.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/server/server.component.ts)
+```
+  onEdit(){
+    this.router.navigate(['edit'], {relativeTo: this.route, queryParamsHandling: 'preserve'});
+  }
+```
 
 
 
