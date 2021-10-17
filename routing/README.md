@@ -449,4 +449,11 @@ In `onEdit()` method we use a relative path `edit` in the `navigate` method. We 
 
 Let's also modify the servers component to decide whether we want to allow the editing depending ob the server ID:
 
+[servers.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/servers.component.html)
+```
+  ...
+  [queryParams]="{allowEdit: server.id === 3 ? '1' : '0'}"
+  ...
+```
+
 
