@@ -474,6 +474,18 @@ allowEdit = false;
   }
 
 ```
+Now we can use `allowEdit` in the tempate:
+
+[edit-server.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/edit-server/edit-server.component.html)
+```
+<h4 *ngIf="!allowEdit">You are not allowed to edit!</h4>
+<div *ngIf="allowEdit">
+  // Logic to edit a edit a server
+</div>
+```
+
+
+
 
 
 
