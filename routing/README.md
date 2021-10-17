@@ -455,5 +455,6 @@ Let's also modify the servers component to decide whether we want to allow the e
   [queryParams]="{allowEdit: server.id === 3 ? '1' : '0'}"
   ...
 ```
+With this we will allow edit only when a server.id is 3.
 
 
