@@ -461,6 +461,20 @@ Next we need to retrieve the query params:
 
 [edit-server.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/edit-server/edit-server.component.ts)
 ```
+...
+allowEdit = false;
+...
+
+  ngOnInit() {
+    this.route.queryParams.subscribe(
+      (queryParams: Params) => {
+        this.allowEdit = queryParams['allowEdit'] === '1' ? true : false;
+      }
+    );
+
+    ...
+  }
+
 ```
 
 
