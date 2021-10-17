@@ -432,8 +432,15 @@ Let's add a button 'Edit Server' to server component:
 <button class="btn btn-primary" (click)="onEdit()">Edit Server</button>
 ```
 
+In the typescript we inject a `router` and add `onEdit()`:
+
 [server.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/server/server.component.ts)
 ```
+  constructor(private serversService: ServersService,
+              private route: ActivatedRoute,
+              private router: Router) { }
+              
+  ...            
   onEdit(){
     this.router.navigate(['edit'], {relativeTo: this.route, queryParamsHandling: 'preserve'});
   }
