@@ -485,7 +485,9 @@ Now we can use `allowEdit` in the tempate:
 ```
 
 ### L141 Configure the handling of query params
-In the previous example we 
+In the previous example our query params are gone whenever we naviagate away from our single server component to the edit server component, for example. So we want to preserve them.
+
+There is a simple wat of doing so using the propery `queryParamsHandling`:
 
 
 [server.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/server/server.component.ts)
