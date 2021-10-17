@@ -457,4 +457,11 @@ Let's also modify the servers component to decide whether we want to allow the e
 ```
 With this we will allow edit only when a server.id is 3.
 
+Next we need to retrieve the query params:
+
+[edit-server.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/edit-server/edit-server.component.ts)
+```
+```
+
+
 
