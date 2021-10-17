@@ -472,7 +472,6 @@ allowEdit = false;
 
     ...
   }
-
 ```
 Now we can use `allowEdit` in the tempate:
 
