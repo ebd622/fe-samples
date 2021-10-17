@@ -422,3 +422,6 @@ In the template we also need to replace the element `<app-user>` with `<router-o
   </div>
 ```
 This is how we can implement child routing nested routes with `children` property which holds all the nested routes.
+
+### L140 Using Query Parameters - Practice
+
