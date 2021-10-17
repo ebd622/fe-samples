@@ -446,3 +446,7 @@ In the typescript we inject a `router` and add `onEdit()`:
   }
 ```
 In `onEdit()` method we use a relative path `edit` in the `navigate` method. We also need to specify `relativeTo:` to let Angular know to which path it is relative.
+
+Let's also modify the servers component to decide whether we want to allow the editing depending ob the server ID:
+
+
