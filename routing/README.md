@@ -424,4 +424,11 @@ In the template we also need to replace the element `<app-user>` with `<router-o
 This is how we can implement child routing nested routes with `children` property which holds all the nested routes.
 
 ### L140 Using Query Parameters - Practice
-Let's improve the app a bit.
+Let's add a button 'Edit Server' to server component:
+
+[server.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/server/server.component.html)
+
+```
+<button class="btn btn-primary" (click)="onEdit()">Edit Server</button>
+```
+
