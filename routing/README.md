@@ -496,6 +496,7 @@ There is a simple wat of doing so using the propery `queryParamsHandling`:
     this.router.navigate(['edit'], {relativeTo: this.route, queryParamsHandling: 'preserve'});
   }
 ```
+The propery `queryParamsHandling` may oter values, like `merge` for instace (look into docs for details).
 
 
 
