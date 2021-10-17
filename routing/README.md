@@ -16,6 +16,7 @@
 * L137: [Retrieving query parameters and fragments](#l137-retrieving-query-parameters-and-fragments)
 * L139: Setting up child (nested) routes
 * L140: Using Query Parameters - Practice
+* L141: Configure the handling of query params
 
 
 ### L126: Setting up and loading Routers
