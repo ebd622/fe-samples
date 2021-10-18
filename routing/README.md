@@ -14,7 +14,7 @@
 * L135: [An important note about route observable](#l135-an-important-note-about-route-observable)
 * L136: [Passing query parameters and fragments](#l136-passing-query-parameters-and-fragments)
 * L137: [Retrieving query parameters and fragments](#l137-retrieving-query-parameters-and-fragments)
-* L139: [Setting up child (nested) routes] (https://github.com/ebd622/fe-samples/tree/master/routing#l139-setting-up-child-nested-routes)
+* L139: [Setting up child (nested) routes](https://github.com/ebd622/fe-samples/tree/master/routing#l139-setting-up-child-nested-routes)
 * L140: Using Query Parameters - Practice
 * L141: Configure the handling of query params
 
