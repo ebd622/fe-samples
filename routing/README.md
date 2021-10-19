@@ -16,7 +16,7 @@
 * L137: [Retrieving query parameters and fragments](#l137-retrieving-query-parameters-and-fragments)
 * L139: [Setting up child (nested) routes](#l139-setting-up-child-nested-routes)
 * L140: Using Query Parameters - Practice
-* L141: Configure the handling of query params
+* L141: [Configure the handling of query params] (https://github.com/ebd622/fe-samples/blob/master/routing/README.md#l141-configure-the-handling-of-query-params)
 
 
 ### L126: Setting up and loading Routers
