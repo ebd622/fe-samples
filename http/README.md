@@ -66,7 +66,7 @@ private fetchPosts(){
 }
 ```
 ### L256: Using RxJS Operators to transform data
-After fetching data we may need to transform them. A good practice is to use `operators` for this. Let's use the operator `map` two transform our post-reponse into an array:
+After fetching data we may need to transform them. A good practice is to use `operators` for this. Let's use the operator `map` to transform our post-reponse into an array:
 
 ```
 private fetchPosts(){
