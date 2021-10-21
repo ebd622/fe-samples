@@ -186,7 +186,7 @@ It always makes sense to separate a component and service. <br/>
 We can create [posts.service.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/posts.service.ts) to make `post` and `get` requests.
 
 ### L261: Services & Components working together
-A best practice, when working with http-requests, is to move details related to a template to a component. In our example we create http-subject in a service, but subscribe to it - in the compoment. A request will sent only when we subsctibe to an observable.
+A best practice, when working with http-requests, is to move details related to a template to a component. In our example we create http-subject in a service, but subscribe to it - in the compoment. A request will be sent only when we subsctibe to an observable.
 
 In the [posts.service.ts](https://github.com/ebd622/fe-samples/blob/master/http/src/app/posts.service.ts) we only prepare an Observable:
 
