@@ -81,7 +81,7 @@ The **child** template [cookpit.component.html](https://github.com/ebd622/fe-sam
     (serverCreated)="onServerAdded($event)"
   </app-cookpit>
 ```
-Here we bind a custom event `@Output() serverCreated ...` of the **child** to a method `onServerAdded($event)` in the **paren**.
+Here we bind a custom event `@Output() serverCreated ...` of the **child** to a method `onServerAdded($event)` in the **parent**.
 
 - Then in the parent component [app.component.ts](https://github.com/ebd622/fe-samples/blob/master/cmp-databinding/src/app/app.component.ts) we get a custom event in `onServerAdded(...)`: 
 
