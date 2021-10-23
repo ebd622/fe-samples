@@ -17,7 +17,7 @@
 * L139: [Setting up child (nested) routes](#l139-setting-up-child-nested-routes)
 * L140: Using Query Parameters - Practice
 * L142: [Configure the handling of query params](#l142-configure-the-handling-of-query-params)
-
+* L143: Redirecting and wildcard routes
 
 ### L126: Setting up and loading Routers
 In the example app.componemt we are using three components:
