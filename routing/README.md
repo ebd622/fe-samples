@@ -498,5 +498,6 @@ There is a simple wat of doing so using the propery `queryParamsHandling`:
 ```
 The propery `queryParamsHandling` may oter values, like `merge` for instace (look into docs for details).
 
+### L143 Redirecting and wildcard routes
 
 
