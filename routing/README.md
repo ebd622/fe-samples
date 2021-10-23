@@ -514,7 +514,7 @@ Then we can add a new route:
   {path: 'not-found', component: ErrorPageComponent, data: {message: 'Page not found'}},
   {path: '**', redirectTo: '/not-found'}
 ```
-
+`**` means catch all routes you don't know. The order is very important here!
 
 
 
