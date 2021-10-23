@@ -16,7 +16,7 @@
 * L137: [Retrieving query parameters and fragments](#l137-retrieving-query-parameters-and-fragments)
 * L139: [Setting up child (nested) routes](#l139-setting-up-child-nested-routes)
 * L140: Using Query Parameters - Practice
-* L141: [Configure the handling of query params](#l141-configure-the-handling-of-query-params)
+* L142: [Configure the handling of query params](#l142-configure-the-handling-of-query-params)
 
 
 ### L126: Setting up and loading Routers
@@ -484,7 +484,7 @@ Now we can use `allowEdit` in the tempate:
 </div>
 ```
 
-### L141 Configure the handling of query params
+### L142 Configure the handling of query params
 In the previous example our query params are gone whenever we naviagate away from our single server component to the edit server component, for example. So we want to preserve them.
 
 There is a simple wat of doing so using the propery `queryParamsHandling`:
