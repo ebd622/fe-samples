@@ -516,5 +516,7 @@ Then we can add a new route:
 ```
 `**` means catch all routes you don't know. The order is very important here! The 'generic' route should be the last one in the array of routes because your routes get parsed from top to bottom.
 
+With this the user will be always redirected to the `page-not-found` when he provides a wrong route.
+
 
 
