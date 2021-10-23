@@ -507,5 +507,10 @@ First we can create a new component `page-not-found`:
 ```
 <h3>This page was not found!</h3>
 ```
+Then we can add a new route
+
+[app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts)
+
+
 
 
