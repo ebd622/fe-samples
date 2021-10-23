@@ -499,5 +499,6 @@ There is a simple wat of doing so using the propery `queryParamsHandling`:
 The propery `queryParamsHandling` may oter values, like `merge` for instace (look into docs for details).
 
 ### L143 Redirecting and wildcard routes
+We may need to redirect the user to a specific page whenever he tries to visit a page we don't have.
 
 
