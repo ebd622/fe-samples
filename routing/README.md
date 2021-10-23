@@ -501,4 +501,11 @@ The propery `queryParamsHandling` may oter values, like `merge` for instace (loo
 ### L143 Redirecting and wildcard routes
 We may need to redirect the user to a specific page whenever he tries to visit a page we don't have.
 
+First we can create a new component `page-not-found`:
+
+[page-not-found.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/page-not-found/page-not-found.component.html)
+```
+<h3>This page was not found!</h3>
+```
+
 
