@@ -520,5 +520,5 @@ Then we can add a new route:
 With this the user will be always redirected to the `page-not-found` when he provides a wrong route (i.e. routes unkonown to Angular).
 
 ### L145 Outsourcing the route configuration
-Normally when you have 2 or 3 routes it makes to move them out of the `app.module.ts`. We can add a new file which is for the applications as a whole, typically it is called `app-routing.module.ts`
+Normally when you have 2 or 3 routes it makes to move them out of the `app.module.ts`. We can add a new file which is for the applications as a whole, typically it is called [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts).
 
