@@ -529,4 +529,5 @@ imports: [
     AppRoutingModule
   ],
 ```
+With this we have the same setup as before but with a bit of a leaner app module and our routing logic is outsourced into a separate module.
 
