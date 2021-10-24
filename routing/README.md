@@ -519,5 +519,5 @@ Then we can add a new route:
 
 With this the user will be always redirected to the `page-not-found` when he provides a wrong route (i.e. routes unkonown to Angular).
 
-
+### L145 Outsourcing the route configuration
 
