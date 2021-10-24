@@ -522,7 +522,7 @@ With this the user will be always redirected to the `page-not-found` when he pro
 ### L145 Outsourcing the route configuration
 Normally when you have 2 or 3 routes it makes to move them out of the `app.module.ts`. We can add a new file which is for the applications as a whole, typically it is called [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts).
 
-Then in the app.module.ts we need add `app-routing.module.ts`:
+Then in the [app.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app.module.ts) we need add `app-routing.module.ts`:
 ```
 imports: [
     ...
