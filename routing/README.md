@@ -524,5 +524,9 @@ Normally when you have 2 or 3 routes it makes to move them out of the `app.modul
 
 Then in the app.module.ts we need add `app-routing.module.ts`:
 ```
+imports: [
+    ...
+    AppRoutingModule
+  ],
 ```
 
