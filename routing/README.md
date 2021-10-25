@@ -17,7 +17,7 @@
 * L139: [Setting up child (nested) routes](#l139-setting-up-child-nested-routes)
 * L140: Using Query Parameters - Practice
 * L142: [Configure the handling of query params](#l142-configure-the-handling-of-query-params)
-* L143: [Redirecting and wildcard routes](#l142-configure-the-handling-of-query-params)
+* L143: [Redirecting and wildcard routes](https://github.com/ebd622/fe-samples/blob/master/routing/README.md#l143-redirecting-and-wildcard-routes)
 * L145: Outsourcing the route configuration
 
 ### L126: Setting up and loading Routers
