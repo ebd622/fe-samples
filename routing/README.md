@@ -18,7 +18,7 @@
 * L140: Using Query Parameters - Practice
 * L142: [Configure the handling of query params](#l142-configure-the-handling-of-query-params)
 * L143: [Redirecting and wildcard routes](#l143-redirecting-and-wildcard-routes)
-* L145: Outsourcing the route configuration
+* L145: Outsourcing the route configuration (https://github.com/ebd622/fe-samples/tree/master/routing#l145-outsourcing-the-route-configuration)
 
 ### L126: Setting up and loading Routers
 In the example app.componemt we are using three components:
