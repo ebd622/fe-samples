@@ -538,5 +538,5 @@ With this we have the same setup as before but with a bit of a leaner app module
 Guard is a functionality which is executed before a route is loaded or once you want to leave a route. We can use *CanActivate* guard to define whether a route can be activated or not.
 
 ### L147 Protecting routes with canActivate
-Let's add [auth-guard.service.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/auth-guard.service.ts) which implements `CanActivate` interface.
+Let's add [auth-guard.service.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/auth-guard.service.ts) which implements `CanActivate` interface. The interface has a method `canActivate` which has to be implemented.
 
