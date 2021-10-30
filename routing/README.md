@@ -572,6 +572,7 @@ In [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/rout
       {path: ':id/edit', component: EditServerComponent}
     ]},
 ```
-Two new services need to be added also in [app.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app.module.ts):
+Two new services `AuthService` and `AuthGuard` need to be added also in [app.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app.module.ts):
 ```
+providers: [ServersService, AuthService, AuthGuard],
 ```
