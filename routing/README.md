@@ -563,3 +563,13 @@ In the example we use [auth.service.ts](https://github.com/ebd622/fe-samples/blo
 
 In [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts) we need to define which route should be protected by the guard. 
 
+```
+  {path: 'servers',
+    // canActivate: [AuthGuard],
+    canActivateChild: [AuthGuard],
+    component: ServersComponent,
+    children: [
+      {path: ':id', component: ServerComponent, resolve: {server: ServerResolver}},
+      {path: ':id/edit', component: EditServerComponent, canDeactivate: [CanDeactivateGuard]}
+    ]},
+```
