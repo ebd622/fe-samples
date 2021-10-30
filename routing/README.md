@@ -539,4 +539,19 @@ Guard is a functionality which is executed before a route is loaded or once you 
 
 ### L147 Protecting routes with canActivate
 Let's add [auth-guard.service.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/auth-guard.service.ts) which implements `CanActivate` interface. The interface has a method `canActivate` which has to be implemented.
+```
+  canActivate(route: ActivatedRouteSnapshot,
+              state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
 
+    return this.authService.isAuthenticated()
+      .then(
+        (authenticated: boolean) => {
+          if(authenticated) {
+            return true;
+          } else {
+            this.router.navigate(['/'])
+          }
+        }
+      );
+  }
+```
