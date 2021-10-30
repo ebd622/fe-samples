@@ -560,3 +560,6 @@ The arguments `ActivatedRouteSnapshot` and `RouterStateSnapshot` will be provied
 `canActivate` can run async (and return `Observable` or 'Promise') or sync (and return `boolean`).
 
 In the example we use [auth.service.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/auth.service.ts) to mocke an Authenctication service.
+
+In [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts) we need to define which route should be protected by the guard. 
+
