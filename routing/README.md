@@ -576,3 +576,4 @@ Two new services `AuthService` and `AuthGuard` need to be added also in [app.mod
 ```
 providers: [ServersService, AuthService, AuthGuard],
 ```
+With this setup, when we run the app the tab `Servers` will be not accessible, because it is now protected by the guard. If the user clicks `Servers` he will be always redirected to to home after 800 ms. This time out is mocked in `AuthService` and defines how long it takes to resolve information whether we are authencticated or not.
