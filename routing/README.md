@@ -537,3 +537,6 @@ With this we have the same setup as before but with a bit of a leaner app module
 
 Guard is a functionality which is executed before a route is loaded or once you want to leave a route. We can use *CanActivate* guard to define whether a route can be activated or not.
 
+### L147 Protecting routes with canActivate
+
+
