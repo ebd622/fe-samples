@@ -565,11 +565,10 @@ In [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/rout
 
 ```
   {path: 'servers',
-    // canActivate: [AuthGuard],
-    canActivateChild: [AuthGuard],
+    canActivate: [AuthGuard],
     component: ServersComponent,
     children: [
-      {path: ':id', component: ServerComponent, resolve: {server: ServerResolver}},
-      {path: ':id/edit', component: EditServerComponent, canDeactivate: [CanDeactivateGuard]}
+      {path: ':id', component: ServerComponent},
+      {path: ':id/edit', component: EditServerComponent}
     ]},
 ```
