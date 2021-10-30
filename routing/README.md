@@ -534,4 +534,5 @@ With this we have the same setup as before but with a bit of a leaner app module
 
 ### L146 An introduction to Guards
 
-Guard is a functionality which is executed before a route is loaded or once you want to leave a route.
+Guard is a functionality which is executed before a route is loaded or once you want to leave a route. We can use *CanActivate* guard to define whether a route can be activated or not.
+
