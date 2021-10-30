@@ -20,6 +20,7 @@
 * L143: [Redirecting and wildcard routes](#l143-redirecting-and-wildcard-routes)
 * L145: [Outsourcing the route configuration](#l145-outsourcing-the-route-configuration)
 * L146: An introduction to Guards
+* L147: Protecting routes with canActivate
 
 ### L126: Setting up and loading Routers
 In the example app.componemt we are using three components:
