@@ -613,4 +613,4 @@ Whit this we can use a different hook in our routes, insted of using only `canAc
     ]},
 
 ```
-This is a finegrained control we can implement to protect a whole route and its child routes or just child routes. 
+This is a finegrained control we can implement to protect a whole route and its child routes or just child routes. Depending on what kind of logic we need in our apps. 
