@@ -581,3 +581,4 @@ With this setup, when we run the app the tab `Servers` will be not accessible, b
 
 ### L148 Protecting child (nested) roites with canActivateChild
 
+In the previous example we added a guard for the whole `servrs` path.
