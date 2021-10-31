@@ -583,6 +583,24 @@ With this setup, when we run the app the tab `Servers` will be not accessible, b
 
 In the previous example we added a guard for the whole `servrs` path. We can also add a guard for a child using `CanActivateChild`:
 
-[auth.service.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/auth.service.ts)
+[auth-guard.service.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/auth-guard.service.ts)
 ```
+@Injectable()
+export class AuthGuard implements CanActivate, CanActivateChild {
+  constructor(private authService: AuthService, private router: Router){}
+
+  canActivate(route: ActivatedRouteSnapshot,
+              state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
+
+    return this.authService.isAuthenticated()
+      .then(
+        (authenticated: boolean) => {
+          if(authenticated) {
+            return true;
+          } else {
+            this.router.navigate(['/'])
+          }
+        }
+      );
+  }
 ```
