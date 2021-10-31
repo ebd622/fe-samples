@@ -597,7 +597,9 @@ The interface `CanActivateChild` requires to implement one method `canActivateCh
       return this.canActivate(route,state);
   }
 ```
+What is the advanage of using this this?
 
+Whit this we can use a different hook in our routes, insted of using only `canActivate` we can use a different one:
 
 [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts)
 ```
