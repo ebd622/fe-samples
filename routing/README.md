@@ -587,20 +587,13 @@ In the previous example we added a guard for the whole `servrs` path. We can als
 ```
 @Injectable()
 export class AuthGuard implements CanActivate, CanActivateChild {
-  constructor(private authService: AuthService, private router: Router){}
-
-  canActivate(route: ActivatedRouteSnapshot,
-              state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-
-    return this.authService.isAuthenticated()
-      .then(
-        (authenticated: boolean) => {
-          if(authenticated) {
-            return true;
-          } else {
-            this.router.navigate(['/'])
-          }
-        }
-      );
+  ...
+}
+```
+The interface `CanActivateChild` requires to implement one method `canActivateChild`:
+```
+  canActivateChild(route: ActivatedRouteSnapshot,
+                   state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
+      return this.canActivate(route,state);
   }
 ```
