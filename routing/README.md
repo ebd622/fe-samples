@@ -597,3 +597,17 @@ The interface `CanActivateChild` requires to implement one method `canActivateCh
       return this.canActivate(route,state);
   }
 ```
+
+
+[app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts)
+```
+  {path: 'servers',
+    // canActivate: [AuthGuard],
+    canActivateChild: [AuthGuard],
+    component: ServersComponent,
+    children: [
+      {path: ':id', component: ServerComponent, resolve: {server: ServerResolver}},
+      {path: ':id/edit', component: EditServerComponent, canDeactivate: [CanDeactivateGuard]}
+    ]},
+
+```
