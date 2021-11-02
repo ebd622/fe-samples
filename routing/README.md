@@ -556,7 +556,7 @@ Let's add [auth-guard.service.ts](https://github.com/ebd622/fe-samples/blob/mast
       );
   }
 ```
-The arguments `ActivatedRouteSnapshot` and `RouterStateSnapshot` will be proviede by Angular. Angular should execute the code before a route is loaded and it will proides the argumants. We only need to handle them.
+The arguments `ActivatedRouteSnapshot` and `RouterStateSnapshot` will be proviede by Angular. Angular should execute the code before a route is loaded and it will proide the argumants. We only need to handle them.
 
 `canActivate` can run async (and return `Observable` or 'Promise') or sync (and return `boolean`).
 
