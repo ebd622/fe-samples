@@ -20,7 +20,7 @@
 * L143: [Redirecting and wildcard routes](#l143-redirecting-and-wildcard-routes)
 * L145: [Outsourcing the route configuration](#l145-outsourcing-the-route-configuration)
 * L146: [An introduction to Guards](#l146-an-introduction-to-guards)
-* L147: [Protecting routes with canActivate](https://github.com/ebd622/fe-samples/blob/master/routing/README.md#l147-protecting-routes-with-canactivate)
+* L147: [Protecting routes with canActivate](#l147-protecting-routes-with-canactivate)
 * L148: Protecting child (nested) roites with canActivateChild
 
 ### L126: Setting up and loading Routers
