@@ -21,7 +21,7 @@
 * L145: [Outsourcing the route configuration](#l145-outsourcing-the-route-configuration)
 * L146: [An introduction to Guards](#l146-an-introduction-to-guards)
 * L147: [Protecting routes with canActivate](#l147-protecting-routes-with-canactivate)
-* L148: Protecting child (nested) roites with canActivateChild (https://github.com/ebd622/fe-samples/tree/master/routing#l148-protecting-child-nested-roites-with-canactivatechild)
+* L148: [Protecting child (nested) roites with canActivateChild](https://github.com/ebd622/fe-samples/tree/master/routing#l148-protecting-child-nested-roites-with-canactivatechild)
 
 ### L126: Setting up and loading Routers
 In the example app.componemt we are using three components:
