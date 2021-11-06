@@ -683,4 +683,4 @@ export class CanDeactivateGuard implements CanDeactivate<CanComponentDeactivate>
     return component.canDeactivate();
   }
 ```
-
+The `canDeactivate` method will be called by the Angular router once we try to leave a Route.
