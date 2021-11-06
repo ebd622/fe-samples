@@ -687,4 +687,8 @@ The `canDeactivate` method will be called by the Angular router once we try to l
 
 The new gard shold be also added to app [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts)
 ```
+    children: [
+      {path: ':id', component: ServerComponent, resolve: {server: ServerResolver}},
+      {path: ':id/edit', component: EditServerComponent, canDeactivate: [CanDeactivateGuard]}
+    ]},
 ```
