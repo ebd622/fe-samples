@@ -671,6 +671,10 @@ The method `onUpdateServer()` needs to be called somehow. For this let's add a n
 
 [can-deactivate-guard.service.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/edit-server/can-deactivate-guard.service.ts)
 ```
+export interface CanComponentDeactivate {
+  canDeactivate: () => Observable<boolean> | Promise<boolean> | boolean;
+}
+
 export class CanDeactivateGuard implements CanDeactivate<CanComponentDeactivate> {
   canDeactivate(component: CanComponentDeactivate,
                 currentRoute: ActivatedRouteSnapshot,
