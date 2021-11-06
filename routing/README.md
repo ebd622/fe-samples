@@ -650,7 +650,7 @@ Add `changesSaved` variable:
 
 [edit-server.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/edit-server/edit-server.component.ts)
 ```
-export class EditServerComponent implements OnInit, CanDeactivateGuard {
+export class EditServerComponent implements OnInit {
   ...
   changeSaved = false;
 
@@ -665,15 +665,5 @@ export class EditServerComponent implements OnInit, CanDeactivateGuard {
     this.router.navigate(['../'], {relativeTo: this.route});
   }
 
-  canDeactivate(): Observable<boolean> | Promise<boolean> | boolean {
-    if(!this.allowEdit) {
-      return true;
-    }
-    if((this.serverName !== this.server.name || this.serverStatus !== this.server.status) && !this.changeSaved) {
-      return confirm('Do yuo really want to discard your changes?');
-    } else {
-      return true;
-      }
-    }
 }
 ```
