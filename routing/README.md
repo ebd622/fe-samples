@@ -670,5 +670,13 @@ export class EditServerComponent implements OnInit {
 The method `onUpdateServer()` needs to be called somehow. For this let's add a new service `CanDeactivateGuard`:
 
 [can-deactivate-guard.service.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/edit-server/can-deactivate-guard.service.ts)
-
+```
+export class CanDeactivateGuard implements CanDeactivate<CanComponentDeactivate> {
+  canDeactivate(component: CanComponentDeactivate,
+                currentRoute: ActivatedRouteSnapshot,
+                currentState: RouterStateSnapshot,
+                nextState?: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
+    return component.canDeactivate();
+  }
+```
 
