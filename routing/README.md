@@ -615,3 +615,7 @@ Whit this we can use a different hook in our routes, insted of using only `canAc
 
 ```
 This is a finegrained control we can implement to protect a whole route and its child routes or just child routes. Depending on which behaviour we need in our apps. 
+
+### L149 Using a fake auth serivice
+
+
