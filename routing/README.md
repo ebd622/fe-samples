@@ -684,3 +684,7 @@ export class CanDeactivateGuard implements CanDeactivate<CanComponentDeactivate>
   }
 ```
 The `canDeactivate` method will be called by the Angular router once we try to leave a Route.
+
+The new gard shold be also added to app [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts)
+```
+```
