@@ -697,5 +697,32 @@ Now Angular will run this guard whenever we try to leave this path. To make this
 providers: [ServersService, AuthService, AuthGuard, CanDeactivateGuard, ServerResolver],
 ```
 
+Now we need to add a new interface to our [edit-server.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/edit-server/edit-server.component.ts)
+```
+export class EditServerComponent implements OnInit, CanDeactivateGuard {
+  server: {id: number, name: string, status: string};
+  serverName = '';
+  serverStatus = '';
+  allowEdit = false;
+  changeSaved = false;
+
+  constructor(private serversService: ServersService,
+              private route: ActivatedRoute,
+              private router: Router) { }
+
+  ...
+
+  canDeactivate(): Observable<boolean> | Promise<boolean> | boolean {
+    if(!this.allowEdit) {
+      return true;
+    }
+    if((this.serverName !== this.server.name || this.serverStatus !== this.server.status) && !this.changeSaved) {
+      return confirm('Do yuo really want to discard your changes?');
+    } else {
+      return true;
+      }
+    }
+}
+```
 
 
