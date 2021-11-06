@@ -694,6 +694,8 @@ The new gard `CanDeactivateGuard` shold be also added to app [app-routing.module
 ```
 Now Angular will run this guard whenever we try to leave this path. To make this work we alse need to add the guard to [app.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app.module.ts`):
 ```
-
+providers: [ServersService, AuthService, AuthGuard, CanDeactivateGuard, ServerResolver],
 ```
+
+
 
