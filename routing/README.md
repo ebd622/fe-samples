@@ -640,4 +640,5 @@ export class HomeComponent implements OnInit {
   }
 }
 ```
+With this simple improvement we can not see any visual indication but we can login and logout.
 
