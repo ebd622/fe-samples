@@ -624,5 +624,8 @@ Let's allow user to login. We will add two new buttons:
 <button class="btn btn-default" (click)="onLogin()">Login</button>
 <button class="btn btn-default" (click)="onLogout()">Logout</button>
 ```
+[home.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/home/home.component.ts)
+```
 
+```
 
