@@ -621,5 +621,8 @@ Let's allow user to login. We will add two new buttons:
 
 [home.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/home/home.component.html)
 ```
+<button class="btn btn-default" (click)="onLogin()">Login</button>
+<button class="btn btn-default" (click)="onLogout()">Logout</button>
 ```
+
 
