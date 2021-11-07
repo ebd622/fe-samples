@@ -765,4 +765,4 @@ The issue is that we need to fetch `data->message` in [error-page.component.ts](
     );
   }
 ```
-
+Both options will work fine, but in the second one we use Observable.
