@@ -735,7 +735,12 @@ For example, we want to have an 'generic' error page where we would like to pass
 
 [error-page.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/error-page/error-page.component.html)
 ```
+<h4>{{errorMessage}}</h4>
 ```
+
+The `erroMessage` needs to be also added in the component [error-page.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/error-page/error-page.component.ts).
+
+
 
 
 
