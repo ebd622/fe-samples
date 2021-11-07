@@ -740,7 +740,10 @@ For example, we want to create a reusable error page where we would like to pass
 
 The `erroMessage` needs to be also added in the component [error-page.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/error-page/error-page.component.ts).
 
-
-
+But we still need to pass `errorMessage` to the component from a route. For this let's make a change in [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts)
+```
+{path: 'not-found', component: ErrorPageComponent, data: {message: 'Page not found'}},
+```
+Here we pass a 'Page not found' via `data->message`. 
 
 
