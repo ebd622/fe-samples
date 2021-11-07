@@ -744,6 +744,27 @@ But we still need to pass `errorMessage` to the component from a route. For this
 ```
 {path: 'not-found', component: ErrorPageComponent, data: {message: 'Page not found'}},
 ```
-Here we pass a 'Page not found' via `data->message`. 
+With this we load the `ErrorPageComponent` when a page not found.
 
+The issue is that we need to fetch `data->message` in [error-page.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/error-page/error-page.component.ts). There are two options how to do it:
+```
+  ngOnInit(): void {
+    // Option 1:
+    this.errorMessage = this.route.snapshot.data['message'];
+  }
+```
+
+```
+  ngOnInit(): void {
+    // Option 1:
+    // this.errorMessage = this.route.snapshot.data['message'];
+
+    // Option 2: use subscribe
+    this.route.data.subscribe(
+      (data: Data) => {
+        this.errorMessage = data['message'];
+      }
+    );
+  }
+```
 
