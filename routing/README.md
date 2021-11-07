@@ -729,4 +729,13 @@ With this in place, if the user didn't save changes and wont to navigate to anot
 
 ### L151 Passing static data to a route
 Some routes depend of data thay receive, either staticlly each time they are loaded or they will resolve dinamically.
+First let's see how we can pass static data.
+
+For example, we want to have an 'generic' error page where we would like to pass an error message
+
+[error-page.component.html](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/error-page/error-page.component.html)
+```
+```
+
+
 
