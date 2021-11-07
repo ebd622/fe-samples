@@ -727,4 +727,6 @@ export class EditServerComponent implements OnInit, CanDeactivateGuard {
 ```
 With this in place, if the user didn't save changes and wont to navigate to another page, the user will be always get the notification message.
 
+### L151 Passing static data to a route
+
 
