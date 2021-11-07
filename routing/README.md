@@ -24,6 +24,7 @@
 * L148: [Protecting child (nested) roites with canActivateChild](https://github.com/ebd622/fe-samples/tree/master/routing#l148-protecting-child-nested-roites-with-canactivatechild)
 * L149: Using a fake auth serivice
 * L150: Controlling navigation with canDeactivate
+* L151: Passing static data to a route
 
 ### L126: Setting up and loading Routers
 In the example app.componemt we are using three components:
