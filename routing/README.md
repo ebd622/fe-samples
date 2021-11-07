@@ -744,7 +744,7 @@ But we still need to pass `errorMessage` to the component from a route. For this
 ```
 {path: 'not-found', component: ErrorPageComponent, data: {message: 'Page not found'}},
 ```
-With this we load the `ErrorPageComponent` when a page not found.
+With this we load the `ErrorPageComponent` when a page not found. Here we may have another route with another error message. But we will be using the same `ErrorPageComponent`.
 
 The issue is that we need to fetch `data->message` in [error-page.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/error-page/error-page.component.ts). There are two options how to do it:
 
