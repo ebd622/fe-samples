@@ -22,7 +22,7 @@
 * L146: [An introduction to Guards](#l146-an-introduction-to-guards)
 * L147: [Protecting routes with canActivate](#l147-protecting-routes-with-canactivate)
 * L148: [Protecting child (nested) roites with canActivateChild](https://github.com/ebd622/fe-samples/tree/master/routing#l148-protecting-child-nested-roites-with-canactivatechild)
-* L149: [Using a fake auth serivice](https://github.com/ebd622/fe-samples/tree/master/routing#l149-using-a-fake-auth-serivice)
+* L149: [Using a fake auth serivice](#l149-using-a-fake-auth-serivice)
 * L150: Controlling navigation with canDeactivate
 * L151: Passing static data to a route
 
