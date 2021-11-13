@@ -789,3 +789,4 @@ export class ServerResolver implements Resolve<Server> {
   }
 }
 ```
+The interface `Server` can be outsourced into a dedicated file.
