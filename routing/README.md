@@ -799,4 +799,8 @@ providers: [ServersService, AuthService, AuthGuard, CanDeactivateGuard, ServerRe
 ```
 Next add it to [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts):
 ```
+    children: [
+      {path: ':id', component: ServerComponent, resolve: {server: ServerResolver}},
+       ...
+    ]},
 ```
