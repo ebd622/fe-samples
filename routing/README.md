@@ -791,4 +791,6 @@ export class ServerResolver implements Resolve<Server> {
 ```
 (The interface `Server` can be outsourced into a dedicated file. `+route.params['id']` is custing to Integer)
 
-
+Then we need to add the resolver to [app.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app.module.ts):
+```
+```
