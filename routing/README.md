@@ -771,5 +771,5 @@ Both options will work fine, but in the second one we use Observable. Also in bo
 ### L152: Resolving dynamic data with the resolve guard
 Let's assume we have some dynamic data we have to fetch before a rount can be displayed or can be rendered.
 
-For this we need a resolver (service) which will allow us to run some code before a route is rendered. A resolver will not decide whether a component should be loaded, it will always render a component in the end bout it will do some pre-load. In other words, it will fetch data the component needs later on. 
+For this we need a resolver (service) which will allow us to run some code before a route is rendered. A resolver will not decide whether a component should be loaded, it will always render a component in the end but it will do some pre-load. In other words, it will fetch data the component needs later on. 
 
