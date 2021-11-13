@@ -789,4 +789,8 @@ export class ServerResolver implements Resolve<Server> {
   }
 }
 ```
-The interface `Server` can be outsourced into a dedicated file.
+(The interface `Server` can be outsourced into a dedicated file)
+
+`+route.params['id']` is custing to Integer.
+
+
