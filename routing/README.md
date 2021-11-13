@@ -767,3 +767,6 @@ The issue is that we need to fetch `data->message` in [error-page.component.ts](
   }
 ```
 Both options will work fine, but in the second one we use Observable. Also in bothe cases we use `data['message']` which we define in [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts)
+
+### L152: Resolving dynamic data with the resolve guard
+
