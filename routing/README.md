@@ -807,4 +807,12 @@ Next add it to [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob
 
 Next we need to modify [server.component.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/server/server.component.ts):
 ```
+  ngOnInit() {
+    // Option 2: use resolver
+    this.route.data.subscribe(
+      (data: Data) => {
+        this.server = data['server'];
+      }
+    )
+  }
 ```
