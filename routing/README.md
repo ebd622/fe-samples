@@ -775,5 +775,17 @@ For this we need a resolver (service) which will allow us to run some code befor
 
 Let's create [server-resolver.service.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/server/server-resolver.service.ts) which implements `Resolve`:
 ```
+interface Server {
+  id: number;
+  name: string;
+  status: string;
+}
+@Injectable()
+export class ServerResolver implements Resolve<Server> {
+  constructor(private serversService: ServersService){}
 
+  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Server> | Promise<Server> | Server {
+    return this.serversService.getServer(+route.params['id']);
+  }
+}
 ```
