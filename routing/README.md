@@ -816,3 +816,4 @@ Next we need to modify [server.component.ts](https://github.com/ebd622/fe-sample
     )
   }
 ```
+The name 'server' in `data['server']` has to mutch the name in [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts) `resolve: {server: ServerResolver}`
