@@ -773,3 +773,4 @@ Let's assume we have some dynamic data we have to fetch before a rount can be di
 
 For this we need a resolver (service) which will allow us to run some code before a route is rendered. A resolver will not decide whether a component should be loaded, it will always render a component in the end but it will do some pre-load. In other words, it will fetch data the component needs later on. 
 
+[server-resolver.service.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/servers/server/server-resolver.service.ts)
