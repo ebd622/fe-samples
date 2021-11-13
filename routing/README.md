@@ -793,4 +793,10 @@ export class ServerResolver implements Resolve<Server> {
 
 Then we need to add the resolver to [app.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app.module.ts):
 ```
+...
+providers: [ServersService, AuthService, AuthGuard, CanDeactivateGuard, ServerResolver],
+...
+```
+Next add it to [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts):
+```
 ```
