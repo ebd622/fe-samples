@@ -826,13 +826,17 @@ When necessary we can enable using a hash sign in routes (for instance, to suppo
 ```
 @NgModule({
   imports: [
-    RouterModule.forRoot(appRoutes, {useHash: true})
+    // Option 1:
+    //RouterModule.forRoot(appRoutes)
+    
+    Option2: use hash
+    // RouterModule.forRoot(appRoutes, {useHash: true})
   ],
   exports: [RouterModule]
 })
 ```
 Whar the hashtag will do - it informs your web server only care about a part in the URL before the hashtag (`localhost:4200/`#/users). Other part of the URL will be ignored by the web server. The part after the hashtag can be parsed by your client, by Abgular.
 
-This solution is more a workaround, if you can not get other approach to work. But a proper solution would be using more prettier routes, using HTML history mode as it is called with normal slash routes without the hashtag.
+This solution is more a workaround, if you can not get other approach to work. But a proper solution would be using more prettier routes (see Option 1), using HTML history mode as it is called with normal slash routes without the hashtag.
 
 
