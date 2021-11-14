@@ -824,7 +824,14 @@ With this in place it will work as before but now with using a resolver. This is
 ### L153: Understanding location stratagies
 When necessary we can enable using a hash sign in routes (for instance, to support some old brawsers). It can be enabled in [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts) where we register your routes
 ```
-
+@NgModule({
+  imports: [
+    RouterModule.forRoot(appRoutes)
+    // Option2: use hash (see L153)
+    // RouterModule.forRoot(appRoutes, {useHash: true})
+  ],
+  exports: [RouterModule]
+})
 ```
 
 
