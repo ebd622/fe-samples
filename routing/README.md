@@ -831,5 +831,5 @@ When necessary we can enable using a hash sign in routes (for instance, to suppo
   exports: [RouterModule]
 })
 ```
-
+Whar the hashtag will do - it informs your web server only care about a part in the URL before the hashtag (`localhost:4200/`#/users)
 
