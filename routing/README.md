@@ -820,3 +820,7 @@ Next we need to modify [server.component.ts](https://github.com/ebd622/fe-sample
 The name 'server' in `data['server']` has to mutch the name in [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts) `resolve: {server: ServerResolver}`
 
 With this in place it will work as before but now with using a resolver. This is important when using asynch data.
+
+### L153: Understanding location stratagies
+
+
