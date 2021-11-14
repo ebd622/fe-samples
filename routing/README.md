@@ -826,9 +826,7 @@ When necessary we can enable using a hash sign in routes (for instance, to suppo
 ```
 @NgModule({
   imports: [
-    RouterModule.forRoot(appRoutes)
-    // Option2: use hash (see L153)
-    // RouterModule.forRoot(appRoutes, {useHash: true})
+    RouterModule.forRoot(appRoutes, {useHash: true})
   ],
   exports: [RouterModule]
 })
