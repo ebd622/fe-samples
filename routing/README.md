@@ -822,5 +822,7 @@ The name 'server' in `data['server']` has to mutch the name in [app-routing.modu
 With this in place it will work as before but now with using a resolver. This is important when using asynch data.
 
 ### L153: Understanding location stratagies
-When necessary we can enable using a hash sign in routes (for instance, to support some old brawsers).
+When necessary we can enable using a hash sign in routes (for instance, to support some old brawsers). It can be enabled in [app-routing.module.ts](https://github.com/ebd622/fe-samples/blob/master/routing/src/app/app-routing.module.ts) where we register your routes
+
+
 
