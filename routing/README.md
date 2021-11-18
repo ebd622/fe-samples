@@ -26,7 +26,7 @@
 * L150: [Controlling navigation with canDeactivate](#l150-controlling-navigation-with-candeactivate)
 * L151: [Passing static data to a route](https://github.com/ebd622/fe-samples/tree/master/routing#l151-passing-static-data-to-a-route)
 * L152: [Resolving dynamic data with the resolve guard](#l152-resolving-dynamic-data-with-the-resolve-guard)
-* L153: Understanding location stratagies
+* L153: Understanding location stratagies(listOfRelations)
 
 ### L126: Setting up and loading Routers
 In the example app.componemt we are using three components:
