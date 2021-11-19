@@ -4,7 +4,7 @@ Pipses are a feature build in Angular2 which allows to transform output in a **t
 
 There are pipes for different types of output and also for synch- and asynch data.
 ## Key points
-* L240: Using pipes
+* L240: Using pipes()
 * L241: Parametrizing Pipes
 * L244: Creating a custom pipe
 * L246: [Creating a filter pipe](#l246-creating-a-filter-pipe)
