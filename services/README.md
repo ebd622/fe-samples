@@ -15,10 +15,6 @@ This is a demo of how to design and use services
 Angular has a tool called Angular dependency injector. We need to inform Angular that we need an instance of a service which needs to be injected.
 ```
   constructor(//private logginService: LoggingService, /*Create a service "logginService": dependency injection */
-              private accountService: AccountService){
-    this.accountService.statusUpdated.subscribe(
-      (status: string) => alert('New Status: ' + status)
-    );
-  }
+              ){}
 ```
-
+In this way we inform Angular that we need an instance of `logginService`
