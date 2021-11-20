@@ -16,4 +16,4 @@ Angular has a tool called Angular dependency injector. We need to inform Angular
 ```
   constructor(private logginService: LoggingService){}
 ```
-In this way we inform Angular that we need an instance of `logginService`
+In this way we inform Angular that we need an instance of `logginService`. Angular is responsible for creating a new instance of a component. 
