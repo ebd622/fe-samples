@@ -11,3 +11,4 @@ This is a demo of how to design and use services
 * 112: Injecting services into services
 * 113: Using services for cross-component communication
 
+### 108: Injecting a logging service into Components
