@@ -12,3 +12,4 @@ This is a demo of how to design and use services
 * 113: Using services for cross-component communication
 
 ### 108: Injecting a logging service into Components
+Angular has a tool called Angular dependency injector.
