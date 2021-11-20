@@ -28,4 +28,4 @@ With Angular knows what we need but doesn't know how to give it. Here we need on
   ...
 constructor(private logginService: LoggingService){}
 ```
-In this way Angular will create an instance. This way is better than manual creating instance
+In this way Angular will create an instance. This way is better than manual creating instance because we stay in Angular ecosystem and Ang knows how the application works.
