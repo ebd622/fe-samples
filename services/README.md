@@ -18,4 +18,4 @@ Angular has a tool called Angular dependency injector. We need to inform Angular
 ```
 In this way we inform Angular that we need an instance of `logginService`. Angular is responsible for creating a new instance of a component. 
 
-With Angular knows what we need but doesn't know how to give it. Here we need one more additional step.
+With Angular knows what we need but doesn't know how to give it. Here we need one more additional step to provide a service. Provide means tell Angular how to create a service.
