@@ -63,3 +63,8 @@ export class AppComponent implements OnInit{
   }
 }
 ```
+Also let's add `AccountService` to new-account.component.ts:
+https://github.com/ebd622/fe-samples/blob/master/services/src/app/new-account/new-account.component.ts
+```
+
+```
