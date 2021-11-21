@@ -35,3 +35,17 @@ In this way Angular will create an instance. This way is better than manual crea
 ### 109: Creating a Data Service
 
 Let's consider a typica use case for using services - store and manage data.
+
+[account.service.ts](https://github.com/ebd622/fe-samples/blob/master/services/src/app/account.service.ts)
+```
+export class AccountService {
+  ...
+  addAccount(name: string, status: string){
+    this.accounts.push({name: name, status: status});
+  }
+
+  updateAccount(id: number, status: string){
+    this.accounts[id].status = status;
+  }
+}
+```
