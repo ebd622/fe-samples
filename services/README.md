@@ -49,3 +49,7 @@ export class AccountService {
   }
 }
 ```
+
+[app.component.ts](https://github.com/ebd622/fe-samples/blob/master/services/src/app/app.component.ts)
+```
+```
