@@ -34,3 +34,4 @@ In this way Angular will create an instance. This way is better than manual crea
 
 ### 109: Creating a Data Service
 
+Let's consider a typica use case for using services - store and manage data.
