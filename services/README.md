@@ -67,5 +67,13 @@ Also let's add `AccountService` to new-account.component.ts:
 
 [new-account.component.ts](https://github.com/ebd622/fe-samples/blob/master/services/src/app/new-account/new-account.component.ts)
 ```
+export class NewAccountComponent {
+  constructor(private accountService: AccountService){
+      ...
+  }
 
+  onCreateAccount(accountName: string, accountStatus: string) {
+    this.accountService.addAccount(accountStatus, accountName);
+  }
+}
 ```
