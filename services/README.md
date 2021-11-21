@@ -49,7 +49,17 @@ export class AccountService {
   }
 }
 ```
+Then let's inject `AccountService` into app.component.ts and add an array `accounts`:
 
 [app.component.ts](https://github.com/ebd622/fe-samples/blob/master/services/src/app/app.component.ts)
 ```
+export class AppComponent implements OnInit{
+  accounts: {name: string, status: string}[] = [];
+
+  constructor(private accountService: AccountService){}
+
+  ngOnInit(): void {
+    this.accounts = this.accountService.accounts;
+  }
+}
 ```
