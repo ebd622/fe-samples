@@ -4,7 +4,7 @@ This is a demo of how to design and use services
 
 ## Key points
 
-* 108: [Injecting a logging service into Components] (https://github.com/ebd622/fe-samples/tree/master/services#108-injecting-a-logging-service-into-components)
+* 108: [Injecting a logging service into Components](#108-injecting-a-logging-service-into-components)
 * 109: Creating a Data Service
 * 110: Understanding the hierarchical injector
 * 111: How many instances of services should be?
