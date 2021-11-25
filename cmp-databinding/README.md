@@ -14,7 +14,7 @@ This is an example of how components can communicate to each other using custom 
 * L71: Custom property and event binding summary
 * L74: [Using local references in templates](#L74-Using-local-references-in-templates)
 * L75 -76: [@ViewChild](#l75-getting-access-to-the-template--dom-with-viewchild)
-* L76: Projecting content into components with ng-content(https://github.com/ebd622/fe-samples/tree/master/cmp-databinding#l76-projecting-content-into-components-with-ng-content)
+* L76: [Projecting content into components with ng-content](#l76-projecting-content-into-components-with-ng-content)
 * L77: Understanding the component lifecycle
 * L78: Seeing livecycle hooks in action
 
