@@ -78,3 +78,4 @@ export class NewAccountComponent {
 }
 ```
 ### 110. Understanding the hierarchical injector
+Angulat dependeny injector is a hierarchical injector.
