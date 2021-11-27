@@ -80,4 +80,14 @@ export class NewAccountComponent {
 ### 110. Understanding the hierarchical injector
 Angulat dependeny injector is a hierarchical injector. When we provide a service in a component, Angular knows how to created an instance of a sevice for the component and *all its child components*. And the component and all its child components will receive the same instance of the servce.
 
-So, if we provide a service on a highest level (in AppModule), the instance will be available for the whole app - in all components, directives, other services where we may need to inject it.
+For instace, if we provide a service on a highest level (in **AppModule**), the instance will be available for the whole app - in all components, directives, other services where we may need to inject it.
+
+These are all possible levels:
+* AppModule: the same instance of service is available application-wide;
+* AppComponent: the same instance of service is available for all components (but not for other services)
+* Any other component: the same instance of service is available for the components and all its child components.
+
+
+
+
+
