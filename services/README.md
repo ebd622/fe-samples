@@ -78,4 +78,4 @@ export class NewAccountComponent {
 }
 ```
 ### 110. Understanding the hierarchical injector
-Angulat dependeny injector is a hierarchical injector.
+Angulat dependeny injector is a hierarchical injector. When we provide a service in a component, Angular knows how to created an instance of a sevice for the component and *all its child components*.
