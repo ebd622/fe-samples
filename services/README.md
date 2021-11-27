@@ -84,8 +84,10 @@ For instace, if we provide a service on a highest level (in **AppModule**), the 
 
 These are all possible levels:
 * **AppModule**: the same instance of service is available application-wide;
-* **AppComponent**: the same instance of service is available for all components (but not for other services)
+* **AppComponent**: the same instance of service is available for all components (but not for other services);
 * **Any other component**: the same instance of service is available for the components and all its child components.
+
+When a few instances of the same serice created on differnt levels, an instance on a low level will overwride an instance created on a higher level.
 
 
 
