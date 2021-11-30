@@ -6,7 +6,7 @@ This is a demo of how to design and use services
 
 * 108: [Injecting a logging service into Components](#108-injecting-a-logging-service-into-components)
 * 109: [Creating a Data Service](https://github.com/ebd622/fe-samples/tree/master/services#109-creating-a-data-service)
-* 110: [Understanding the hierarchical injector](https://github.com/ebd622/fe-samples/tree/master/services#110-understanding-the-hierarchical-injector)
+* 110: [Understanding the hierarchical injector](#110-understanding-the-hierarchical-injector)
 * 111: How many instances of services should be?
 * 112: Injecting services into services
 * 113: Using services for cross-component communication
