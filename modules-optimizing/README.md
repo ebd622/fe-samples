@@ -7,8 +7,8 @@ https://firebase.google.com/docs/reference/rest/auth#section-sign-in-email-passw
 
 TOC
 
-L321: What is modules?
-L322: Analysing the AppModule
+* L321: What is modules?
+* L322: Analysing the AppModule
 
 
 
