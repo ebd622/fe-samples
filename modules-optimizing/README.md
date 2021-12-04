@@ -5,8 +5,10 @@ Firebase is used as a backend in the examples.
 Here you can find more info about Firebase Auth REST API: 
 https://firebase.google.com/docs/reference/rest/auth#section-sign-in-email-password
 
-TOC:
+TOC
+
 L321: What is modules?
+L322: Analysing the AppModule
 
 
 
