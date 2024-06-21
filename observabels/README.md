@@ -83,7 +83,7 @@ A valid qustion: why there is no need to unsubscribe in this example [user.compo
   }
 ```
 The answer is: Angular does it. </br> 
-Angula manages all the observales (including `unsubscribe`) provided by Angular.
+Angula manages all the observables (including `unsubscribe`) provided by Angular.
 
 ## L172: Building a custom observable
 A custom observable example [home.component.ts](https://github.com/ebd622/fe-samples/blob/master/observabels/src/app/home/home.component.ts):
