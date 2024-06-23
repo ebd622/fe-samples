@@ -1,5 +1,12 @@
 class Person {
-  constructor(name: string, surname: string, age: number){}
+  //private id: number = 1;
+  constructor(private firstName: string, lastName: string, age: number){}
+
+  
+//  public toString = () : string => {
+//    return `Person (name: ${this.firstName})`;
+//  }
+
 }
 
 class Employee extends Person {
@@ -8,4 +15,5 @@ class Employee extends Person {
   }
 }
 
-console.log('Hello')
+const person = new Person("Name1", 'Surname1', 25);
+console.log(person)
