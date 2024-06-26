@@ -1,6 +1,6 @@
 # TypeScript Examples
 
-Run the following command to execute a typescript file:
+TypeScript can be executed with ts-node. 
 ```
 npx ts-node classHierarchy.ts
 ```
