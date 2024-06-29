@@ -8,3 +8,6 @@ Run TypeScript compiler to genearate js-file:
 ```
 npx tsc ClassHierarchy.ts
 ```
+
+## References
+https://www.tutorialsteacher.com/typescript/typescript-array
