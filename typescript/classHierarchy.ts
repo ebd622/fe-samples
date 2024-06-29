@@ -1,6 +1,6 @@
 class Person {
   //private id: number = 1;
-  constructor(private firstName: string, lastName: string, age: number){}
+  constructor(private firstName: string, private lastName: string, private age: number){}
 
   
 //  public toString = () : string => {
