@@ -1,6 +1,10 @@
 class Person {
   //private id: number = 1;
   constructor(private id: number, public firstName: string, public lastName: string, public age: number){}
+
+  getId():number {
+    return this.id
+  }
 }
 
 class Employee extends Person {
@@ -16,3 +20,5 @@ console.log(person)
 //--- Create Employee
 const employee = new Employee(1, "Name1_empl1", 'Surnameempl1', 35, 'Developer' );
 console.log(employee)
+console.log('Employee id: ' + employee.getId());
+console.log('Employee firstName: ' + employee.firstName);
