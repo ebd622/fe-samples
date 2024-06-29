@@ -1,19 +1,18 @@
 class Person {
   //private id: number = 1;
-  constructor(private firstName: string, private lastName: string, private age: number){}
-
-  
-//  public toString = () : string => {
-//    return `Person (name: ${this.firstName})`;
-//  }
-
+  constructor(private id: number, public firstName: string, public lastName: string, public age: number){}
 }
 
 class Employee extends Person {
-  constructor(name: string, surname: string, age: number, jobTitle: string){
-    super(name, surname, age)
+  constructor(id: number, name: string, surname: string, age: number, jobTitle: string){
+    super(id, name, surname, age)
   }
 }
 
-const person = new Person("Name1", 'Surname1', 25);
+//--- Create Person
+const person = new Person(1, "Name_person1", 'Surname_person1', 25);
 console.log(person)
+
+//--- Create Employee
+const employee = new Employee(1, "Name1_empl1", 'Surnameempl1', 35, 'Developer' );
+console.log(employee)
