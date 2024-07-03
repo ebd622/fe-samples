@@ -19,4 +19,5 @@ The repository contains examples of Angular apps provided in [Angular - The Comp
 ### References:
 * [Angular - The Complete Guide](https://www.udemy.com/course/the-complete-guide-to-angular-2/)
 * [Angular API](https://angular.io/api)
-* https://www.itsolutionstuff.com/post/angular-17-crud-with-node-js-express-mongodb-tutorialexample.html?utm_content=cmp-true
+* [Angular 17 CRUD with Node JS Express MongoDB Tutorial](https://www.itsolutionstuff.com/post/angular-17-crud-with-node-js-express-mongodb-tutorialexample.html?utm_content=cmp-true)
+  
