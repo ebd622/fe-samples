@@ -10,4 +10,5 @@ npx tsc ClassHierarchy.ts
 ```
 
 ## References
+* [TypeScript Documentation]
 * [TypeScript - Arrays](https://www.tutorialsteacher.com/typescript/typescript-array)
