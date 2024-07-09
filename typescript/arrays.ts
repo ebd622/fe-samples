@@ -13,7 +13,7 @@ const user = {
 
 
 // --- Arrays: specified types
-let fruits1: string[] = ['Apple', 'Orange', 'Banana'];
+let fruits1: string[] = ['Apple', 'Orange', 'Banana', 'Cherry'];
 let fruits2: Array<string> = ['Apple', 'Orange', 'Banana'];
 console.log('fruits1: ' + fruits1)
 console.log('fruits2: ' + fruits2)
