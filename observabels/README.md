@@ -155,7 +155,7 @@ Every observable has a method `pipe()` which may have one or more parameters ([h
 ## L176: Subjects
 Subject is a special kind of Observable, it is provided by RxJS.  
 
-Subject is similar to EventEmitter (provided be Angular) but Subject is recommended way. At the end using Subject is more efficient than EventEmitter.
+Subject is similar to EventEmitter (provided by Angular) but Subject is recommended way. At the end using Subject is more efficient than EventEmitter.
 
 <img src="../img/subjects.webp" width="80%">
 
