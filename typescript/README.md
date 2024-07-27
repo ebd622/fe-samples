@@ -8,6 +8,7 @@ Run TypeScript compiler to genearate js-file:
 ```
 npx tsc ClassHierarchy.ts
 ```
+After that a node.js can be used to run a generated js-file.
 
 ## References
 * [TypeScript Documentation](https://www.typescriptlang.org/docs/)
