@@ -10,7 +10,7 @@ npx tsc ClassHierarchy.ts
 ```
 After that a node.js can be used to run a generated js-file:
 ```
-npx tsc ClassHierarchy.ts
+node ClassHierarchy.js
 ```
 
 
