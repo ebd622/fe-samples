@@ -22,6 +22,6 @@ The repository contains examples of Angular apps provided in [Angular - The Comp
 * [Angular 17 CRUD with Node JS Express MongoDB Tutorial](https://www.itsolutionstuff.com/post/angular-17-crud-with-node-js-express-mongodb-tutorialexample.html?utm_content=cmp-true)
 * [What's new in Angular 15?](https://www.youtube.com/live/9rj8kR0q0c8?si=wYdqkizNLHsZierp)
 * [Standalone components](https://v17.angular.io/guide/standalone-components)
-* https://www.geeksforgeeks.org/what-is-the-difference-between-css-and-scss/
+* [Difference Between CSS and SCSS](https://www.geeksforgeeks.org/what-is-the-difference-between-css-and-scss/)
 * https://www.npmjs.com/package/http-server
   
