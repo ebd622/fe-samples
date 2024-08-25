@@ -23,5 +23,5 @@ The repository contains examples of Angular apps provided in [Angular - The Comp
 * [What's new in Angular 15?](https://www.youtube.com/live/9rj8kR0q0c8?si=wYdqkizNLHsZierp)
 * [Standalone components](https://v17.angular.io/guide/standalone-components)
 * [Difference Between CSS and SCSS](https://www.geeksforgeeks.org/what-is-the-difference-between-css-and-scss/)
-* https://www.npmjs.com/package/http-server
+* [npmjs: http-server](https://www.npmjs.com/package/http-server)
   
