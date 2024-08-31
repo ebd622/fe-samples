@@ -24,5 +24,5 @@ The repository contains examples of Angular apps provided in [Angular - The Comp
 * [Standalone components](https://v17.angular.io/guide/standalone-components)
 * [Difference Between CSS and SCSS](https://www.geeksforgeeks.org/what-is-the-difference-between-css-and-scss/)
 * [npmjs: http-server](https://www.npmjs.com/package/http-server)
-* https://github.com/http-party/node-http-proxy#options
+* [node-http-proxy](https://github.com/http-party/node-http-proxy#options)
   
