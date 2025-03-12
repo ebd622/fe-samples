@@ -1,4 +1,4 @@
-# Section 20-21: [Authentication and Route Protection in Angular] and [Dynamic Components]
+# Section 40 Angular Signals
 
 ## Key points
 #### Section 20: Authentication and Route Protection in Angular
