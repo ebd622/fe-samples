@@ -2,3 +2,6 @@
 ## Introduction
 Angular Signals were originally introduced in Angular 17.
 ## TODO
+
+## References
+TODO
