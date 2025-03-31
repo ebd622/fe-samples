@@ -4,4 +4,4 @@ Angular Signals were originally introduced in Angular 17.
 ## TODO
 
 ## References
-TODO
+* https://angular.dev/guide/signals
